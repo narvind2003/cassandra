@@ -1,5 +1,7 @@
 # Project Cassandra
 
+![Cassandra](cassandra.png)
+
 Project Cassandra is a digital twin of the global commodities supply chain. It models physical flows, market dynamics, and geopolitical shocks across 30+ commodities in an interactive map-based simulation.
 
 **Status:** Active (Cassandra v2)  
