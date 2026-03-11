@@ -287,27 +287,61 @@ export default function App() {
   const [showDossier, setShowDossier] = useState(false);
 
   const data = timeline.length > 0 ? timeline[day] : null;
+  const [backendWarming, setBackendWarming] = useState(false);
+
+  const fetchWithTimeout = async (url: string, options: RequestInit = {}, timeoutMs = 60000) => {
+    const controller = new AbortController();
+    const id = setTimeout(() => controller.abort(), timeoutMs);
+    try {
+      const res = await fetch(url, { ...options, signal: controller.signal });
+      return res;
+    } finally {
+      clearTimeout(id);
+    }
+  };
+
+  const fetchJsonWithRetry = async (url: string, options: RequestInit = {}, retries = 3) => {
+    let attempt = 0;
+    let lastErr: any = null;
+    while (attempt <= retries) {
+      try {
+        if (attempt > 0) {
+          setBackendWarming(true);
+          const delay = Math.min(1000 * Math.pow(2, attempt), 8000);
+          await new Promise((r) => setTimeout(r, delay));
+        }
+        const res = await fetchWithTimeout(url, options, 60000);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+        setBackendWarming(false);
+        return data;
+      } catch (err) {
+        lastErr = err;
+        attempt += 1;
+      }
+    }
+    setBackendWarming(false);
+    throw lastErr;
+  };
 
   useEffect(() => {
     // Initial Simulation (Normal Ops)
-    fetch('http://localhost:8002/api/simulate_timeline', {
+    fetchJsonWithRetry('http://localhost:8002/api/simulate_timeline', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify([]) // No injections
-    })
-      .then(res => res.json())
+    }, 5)
       .then(newTimeline => {
-          setTimeline(newTimeline);
-          setDay(0);
-          setIsPlaying(true); // Auto-play on load
+        setTimeline(newTimeline);
+        setDay(0);
+        setIsPlaying(true); // Auto-play on load
       })
       .catch(console.error);
 
     // Sprint 1 (v7.0): Load Actors
-    fetch('http://localhost:8002/api/actors')
-        .then(res => res.json())
-        .then(setActors)
-        .catch(console.error);
+    fetchJsonWithRetry('http://localhost:8002/api/actors', {}, 5)
+      .then(setActors)
+      .catch(console.error);
   }, []);
 
   useEffect(() => {
@@ -328,9 +362,9 @@ export default function App() {
 
   useEffect(() => {
       if (selectedNode) {
-          fetch(`http://localhost:8002/api/trace/${selectedNode.id}`)
-            .then(res => res.json())
-            .then(setTraceData);
+          fetchJsonWithRetry(`http://localhost:8002/api/trace/${selectedNode.id}`, {}, 3)
+            .then(setTraceData)
+            .catch(console.error);
       } else {
           setTraceData(null);
       }
@@ -338,31 +372,31 @@ export default function App() {
 
   const handleSim = (targetId: string | null, type: string = 'blockage', severity: number = 1.0) => {
     if (!targetId) return;
-    fetch('http://localhost:8002/api/simulate_timeline', {
+    fetchJsonWithRetry('http://localhost:8002/api/simulate_timeline', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify([{ target_id: targetId, type, severity }])
-    })
-    .then(res => res.json())
-    .then(newTimeline => {
+    }, 5)
+      .then(newTimeline => {
         setTimeline(newTimeline);
         setDay(0);
         setIsPlaying(true);
-    });
+      })
+      .catch(console.error);
   };
 
   const handlePlaybook = (injections: any[]) => {
-    fetch('http://localhost:8002/api/simulate_timeline', {
+    fetchJsonWithRetry('http://localhost:8002/api/simulate_timeline', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(injections)
-    })
-    .then(res => res.json())
-    .then(newTimeline => {
+    }, 5)
+      .then(newTimeline => {
         setTimeline(newTimeline);
         setDay(0);
         setIsPlaying(true);
-    });
+      })
+      .catch(console.error);
   };
 
   const handleFlowClick = (flow: string) => {
@@ -745,6 +779,11 @@ export default function App() {
             {data.global_loss > 0 && (
                 <div className="absolute top-0 left-0 w-full z-[3000] bg-red-600/90 backdrop-blur text-white text-center py-1 text-[10px] font-bold tracking-[0.2em] uppercase animate-pulse">
                     Critical Supply Disruption Detected — Day {day}
+                </div>
+            )}
+            {backendWarming && (
+                <div className="absolute top-0 left-0 w-full z-[3001] bg-amber-500/90 backdrop-blur text-slate-900 text-center py-1 text-[10px] font-bold tracking-[0.2em] uppercase">
+                    Backend Warming Up — Retrying
                 </div>
             )}
 

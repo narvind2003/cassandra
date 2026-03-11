@@ -2,5 +2,6 @@ fastapi
 uvicorn
 networkx
 pydantic
+pydantic-settings
 yfinance
 feedparser
