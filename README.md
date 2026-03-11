@@ -111,4 +111,4 @@ Actors:
 - Narrative AI layer for compliance and risk summaries
 
 ## License
-TBD. Add a LICENSE file before publishing.
+MIT License
