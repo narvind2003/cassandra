@@ -1,0 +1,472 @@
+{
+  "commodity": "Rice",
+  "version": "2.1",
+  "nodes": [
+    {
+      "id": "farm_thai",
+      "label": "Central Plains (Thai)",
+      "type": "resource",
+      "location": {
+        "lat": 15.87,
+        "lng": 100.99
+      },
+      "inventory": 2000.0,
+      "notes": "Jasmine Rice heartland.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_state_thai"
+    },
+    {
+      "id": "farm_mekong",
+      "label": "Mekong Delta (VN)",
+      "type": "resource",
+      "location": {
+        "lat": 10.03,
+        "lng": 105.78
+      },
+      "inventory": 2500.0,
+      "notes": "3 crops per year.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "farm_punjab",
+      "label": "Punjab (India)",
+      "type": "resource",
+      "location": {
+        "lat": 31.14,
+        "lng": 75.34
+      },
+      "inventory": 1500.0,
+      "notes": "Basmati region.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "farm_andhra",
+      "label": "Andhra Pradesh (Ind)",
+      "type": "resource",
+      "location": {
+        "lat": 16.5,
+        "lng": 80.64
+      },
+      "inventory": 3000.0,
+      "notes": "Non-Basmati export engine.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "farm_arkansas",
+      "label": "Arkansas (USA)",
+      "type": "resource",
+      "location": {
+        "lat": 34.74,
+        "lng": -92.28
+      },
+      "inventory": 1000.0,
+      "notes": "Long grain US supply.",
+      "jurisdiction": "USA",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_adm"
+    },
+    {
+      "id": "mill_bangkok",
+      "label": "Bangkok Mills",
+      "type": "transformation",
+      "location": {
+        "lat": 13.75,
+        "lng": 100.5
+      },
+      "revenue_per_day": 400.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_state_thai"
+    },
+    {
+      "id": "mill_can_tho",
+      "label": "Can Tho Mills",
+      "type": "transformation",
+      "location": {
+        "lat": 10.04,
+        "lng": 105.78
+      },
+      "revenue_per_day": 350.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_ko_sichang",
+      "label": "Ko Sichang Anchorage",
+      "type": "logistic",
+      "location": {
+        "lat": 13.15,
+        "lng": 100.81
+      },
+      "notes": "Midstream loading.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_hcmc",
+      "label": "Cat Lai Port",
+      "type": "logistic",
+      "location": {
+        "lat": 10.76,
+        "lng": 106.77
+      },
+      "notes": "Vietnam's rice exit.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_kandla",
+      "label": "Kandla Port",
+      "type": "logistic",
+      "location": {
+        "lat": 23.0,
+        "lng": 70.22
+      },
+      "notes": "Basmati exit.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_kakinada",
+      "label": "Kakinada Anchorage",
+      "type": "logistic",
+      "location": {
+        "lat": 16.98,
+        "lng": 82.28
+      },
+      "notes": "Africa/Asia cheap rice hub.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_nola",
+      "label": "Port of NOLA",
+      "type": "logistic",
+      "location": {
+        "lat": 29.94,
+        "lng": -90.05
+      },
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_manila",
+      "label": "Manila (Philippines)",
+      "type": "retail",
+      "location": {
+        "lat": 14.59,
+        "lng": 120.98
+      },
+      "revenue_per_day": 500.0,
+      "notes": "World's top importer.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_jakarta",
+      "label": "Bulog Jakarta",
+      "type": "retail",
+      "location": {
+        "lat": -6.1,
+        "lng": 106.88
+      },
+      "revenue_per_day": 450.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_dakar",
+      "label": "Dakar (Senegal)",
+      "type": "retail",
+      "location": {
+        "lat": 14.69,
+        "lng": -17.44
+      },
+      "revenue_per_day": 300.0,
+      "notes": "Broken rice hub.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_riyadh",
+      "label": "Riyadh Markets",
+      "type": "retail",
+      "location": {
+        "lat": 24.71,
+        "lng": 46.67
+      },
+      "revenue_per_day": 250.0,
+      "notes": "Basmati premium market.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_port_of_lagos_nigeria",
+      "label": "Port of Lagos (Nigeria)",
+      "type": "logistic",
+      "location": {
+        "lat": 6.45,
+        "lng": 3.4
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_kakinada_port",
+      "label": "Kakinada Port",
+      "type": "logistic",
+      "location": {
+        "lat": 16.98,
+        "lng": 82.24
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_bangkok_canneries",
+      "label": "Bangkok Canneries",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_bangkok_port",
+      "label": "Bangkok Port",
+      "type": "logistic",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "farm_thai",
+      "target": "mill_bangkok",
+      "lag": 1,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mill_bangkok",
+      "target": "port_ko_sichang",
+      "lag": 2,
+      "notes": "Barge",
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "farm_mekong",
+      "target": "mill_can_tho",
+      "lag": 1,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mill_can_tho",
+      "target": "port_hcmc",
+      "lag": 2,
+      "notes": "River transport",
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "farm_punjab",
+      "target": "port_kandla",
+      "lag": 4,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "farm_andhra",
+      "target": "port_kakinada",
+      "lag": 2,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "farm_arkansas",
+      "target": "port_nola",
+      "lag": 3,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_ko_sichang",
+      "target": "mkt_manila",
+      "lag": 6,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_ko_sichang",
+      "target": "mkt_dakar",
+      "lag": 28,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_hcmc",
+      "target": "mkt_manila",
+      "lag": 5,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_hcmc",
+      "target": "mkt_jakarta",
+      "lag": 4,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_kakinada",
+      "target": "mkt_dakar",
+      "lag": 22,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_kakinada",
+      "target": "mkt_manila",
+      "lag": 12,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_kandla",
+      "target": "mkt_riyadh",
+      "lag": 8,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_nola",
+      "target": "mkt_dakar",
+      "lag": 18,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "farm_mekong",
+      "target": "port_hcmc",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "farm_andhra",
+      "target": "port_kakinada_port",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "proc_bangkok",
+      "target": "mkt_manila",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_kakinada",
+      "target": "port_port_of_lagos_nigeria",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "farm_thai",
+      "target": "port_bangkok_port",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_bangkok_canneries",
+      "target": "mkt_manila",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    }
+  ]
+}

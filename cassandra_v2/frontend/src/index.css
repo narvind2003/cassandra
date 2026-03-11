@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .custom-scrollbar::-webkit-scrollbar {
+        width: 4px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+        background: #0f172a;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #334155;
+        border-radius: 2px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+        background: #475569;
+    }
+}
+
+/* Node Pulse Ring */
+@keyframes pulse-ring {
+    0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
+    70% { box-shadow: 0 0 0 10px rgba(239, 68, 68, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+}
+.animate-pulse-ring {
+    animation: pulse-ring 2s infinite;
+}
+
+/* Flowline Animation */
+@keyframes dash-flow {
+    to {
+        stroke-dashoffset: -20;
+    }
+}
+.flow-line-normal {
+    animation: dash-flow 1s linear infinite;
+}
+.flow-line-stressed {
+    animation: dash-flow 0.2s linear infinite; /* Faster flow for stress propagation */
+}
+
+
+/* Flow Animations */
+@keyframes dash-flow {
+  to { stroke-dashoffset: -20; }
+}
+
+.flow-line {
+  animation: dash-flow 2s linear infinite;
+}
+
+.flow-line-stressed {
+  animation: dash-flow 0.5s linear infinite;
+  filter: drop-shadow(0 0 3px #ef4444);
+}
+
+.leaflet-popup-content-wrapper {
+  background: rgba(15, 23, 42, 0.9) !important;
+  color: white !important;
+  border: 1px solid #334155;
+  backdrop-filter: blur(4px);
+}
+.leaflet-popup-tip {
+  background: rgba(15, 23, 42, 0.9) !important;
+}
+
+/* Geometric Identity Shapes */
+.clip-hexagon {
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+.clip-triangle {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}

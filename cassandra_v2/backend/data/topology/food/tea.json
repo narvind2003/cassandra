@@ -1,0 +1,295 @@
+{
+  "commodity": "Tea",
+  "version": "2.1",
+  "nodes": [
+    {
+      "id": "farm_kenya",
+      "label": "Kericho (Kenya)",
+      "type": "resource",
+      "location": {
+        "lat": -0.36,
+        "lng": 35.28
+      },
+      "inventory": 2000.0,
+      "notes": "Black tea giant.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_unilever"
+    },
+    {
+      "id": "farm_srilanka",
+      "label": "Ceylon Tea",
+      "type": "resource",
+      "location": {
+        "lat": 6.92,
+        "lng": 80.77
+      },
+      "inventory": 1500.0,
+      "notes": "Orthodox tea.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "farm_china",
+      "label": "Yunnan/Fujian",
+      "type": "resource",
+      "location": {
+        "lat": 25.04,
+        "lng": 102.7
+      },
+      "inventory": 3000.0,
+      "notes": "Green/Pu-erh.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "auction_mombasa",
+      "label": "Mombasa Auction",
+      "type": "transformation",
+      "location": {
+        "lat": -4.04,
+        "lng": 39.66
+      },
+      "revenue_per_day": 500.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_state_kenya"
+    },
+    {
+      "id": "port_mombasa",
+      "label": "Port of Mombasa",
+      "type": "logistic",
+      "location": {
+        "lat": -4.05,
+        "lng": 39.66
+      },
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_colombo",
+      "label": "Port of Colombo",
+      "type": "logistic",
+      "location": {
+        "lat": 6.94,
+        "lng": 79.84
+      },
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_pakistan",
+      "label": "Karachi Tea Mkt",
+      "type": "retail",
+      "location": {
+        "lat": 24.86,
+        "lng": 67.0
+      },
+      "revenue_per_day": 400.0,
+      "notes": "Top importer.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_uk",
+      "label": "UK Blenders",
+      "type": "retail",
+      "location": {
+        "lat": 51.5,
+        "lng": -0.12
+      },
+      "revenue_per_day": 300.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_assam_india",
+      "label": "Assam (India)",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_port_of_kolkata",
+      "label": "Port of Kolkata",
+      "type": "logistic",
+      "location": {
+        "lat": 22.57,
+        "lng": 88.36
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_london_tea_hub",
+      "label": "London Tea Hub",
+      "type": "logistic",
+      "location": {
+        "lat": 51.5,
+        "lng": -0.12
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_kolkata",
+      "label": "Kolkata",
+      "type": "retail",
+      "location": {
+        "lat": 22.57,
+        "lng": 88.36
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_dubai_gold_souk",
+      "label": "Dubai Gold Souk",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "farm_kenya",
+      "target": "auction_mombasa",
+      "lag": 1,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "auction_mombasa",
+      "target": "port_mombasa",
+      "lag": 1,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_mombasa",
+      "target": "mkt_pakistan",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_mombasa",
+      "target": "mkt_uk",
+      "lag": 18,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "farm_srilanka",
+      "target": "port_colombo",
+      "lag": 1,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_colombo",
+      "target": "mkt_uk",
+      "lag": 16,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "farm_kenya",
+      "target": "port_mombasa",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_assam_india",
+      "target": "port_port_of_kolkata",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "hub_dubai",
+      "target": "port_london_tea_hub",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_kolkata",
+      "target": "mkt_pakistan",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_mombasa",
+      "target": "mkt_dubai_gold_souk",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_dubai_gold_souk",
+      "target": "port_london_tea_hub",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    }
+  ]
+}

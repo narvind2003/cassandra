@@ -1,0 +1,752 @@
+{
+  "commodity": "Semiconductors",
+  "version": "2.0",
+  "nodes": [
+    {
+      "id": "mine_spruce_pine",
+      "label": "Spruce Pine Mines (USA)",
+      "type": "resource",
+      "location": {
+        "lat": 35.9,
+        "lng": -82.0
+      },
+      "inventory": 1000.0,
+      "notes": "Purest quartz in the world",
+      "jurisdiction": "USA",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mine_jiangxi",
+      "label": "Jiangxi Quartz (China)",
+      "type": "resource",
+      "location": {
+        "lat": 28.0,
+        "lng": 116.0
+      },
+      "inventory": 800.0,
+      "jurisdiction": "China",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_cofco"
+    },
+    {
+      "id": "poly_hemlock",
+      "label": "Hemlock Semi (USA)",
+      "type": "transformation",
+      "location": {
+        "lat": 43.4,
+        "lng": -84.0
+      },
+      "revenue_per_day": 200.0,
+      "jurisdiction": "USA",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "poly_wacker",
+      "label": "Wacker Chemie (Germany)",
+      "type": "transformation",
+      "location": {
+        "lat": 48.1,
+        "lng": 12.8
+      },
+      "revenue_per_day": 220.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "poly_tongwei",
+      "label": "Tongwei Solar (China)",
+      "type": "transformation",
+      "location": {
+        "lat": 30.5,
+        "lng": 104.0
+      },
+      "revenue_per_day": 250.0,
+      "jurisdiction": "China",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_sinopec"
+    },
+    {
+      "id": "wafer_shin_etsu",
+      "label": "Shin-Etsu Handotai (Japan)",
+      "type": "transformation",
+      "location": {
+        "lat": 36.0,
+        "lng": 136.0
+      },
+      "revenue_per_day": 300.0,
+      "notes": "Top global wafer supplier",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "wafer_globalwafers",
+      "label": "GlobalWafers (Taiwan)",
+      "type": "transformation",
+      "location": {
+        "lat": 24.8,
+        "lng": 121.0
+      },
+      "revenue_per_day": 280.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "wafer_sk_siltron",
+      "label": "SK Siltron (Korea)",
+      "type": "transformation",
+      "location": {
+        "lat": 36.1,
+        "lng": 128.3
+      },
+      "revenue_per_day": 260.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "fab_tsmc_18",
+      "label": "TSMC Fab 18 (Tainan)",
+      "type": "transformation",
+      "location": {
+        "lat": 23.1,
+        "lng": 120.2
+      },
+      "revenue_per_day": 2000.0,
+      "notes": "3nm/5nm Logic",
+      "owner_id": "actor_tsmc",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "fab_samsung_pyeongtaek",
+      "label": "Samsung Pyeongtaek",
+      "type": "transformation",
+      "location": {
+        "lat": 37.0,
+        "lng": 127.0
+      },
+      "revenue_per_day": 1500.0,
+      "notes": "Memory/Logic",
+      "owner_id": "actor_samsung",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "fab_intel_ocotillo",
+      "label": "Intel Ocotillo (Arizona)",
+      "type": "transformation",
+      "location": {
+        "lat": 33.2,
+        "lng": -111.9
+      },
+      "revenue_per_day": 1200.0,
+      "owner_id": "actor_intel",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "fab_smic_shanghai",
+      "label": "SMIC Shanghai",
+      "type": "transformation",
+      "location": {
+        "lat": 31.2,
+        "lng": 121.6
+      },
+      "revenue_per_day": 800.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "atmp_ase_kaohsiung",
+      "label": "ASE Kaohsiung (Taiwan)",
+      "type": "transformation",
+      "location": {
+        "lat": 22.7,
+        "lng": 120.3
+      },
+      "revenue_per_day": 400.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "atmp_amkor_vietnam",
+      "label": "Amkor Bac Ninh (Vietnam)",
+      "type": "transformation",
+      "location": {
+        "lat": 21.1,
+        "lng": 106.0
+      },
+      "revenue_per_day": 350.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "atmp_intel_penang",
+      "label": "Intel Penang (Malaysia)",
+      "type": "transformation",
+      "location": {
+        "lat": 5.3,
+        "lng": 100.2
+      },
+      "revenue_per_day": 300.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "air_taoyuan",
+      "label": "Taoyuan Int. Airport",
+      "type": "logistic",
+      "location": {
+        "lat": 25.0,
+        "lng": 121.2
+      },
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "air_incheon",
+      "label": "Incheon Int. Airport",
+      "type": "logistic",
+      "location": {
+        "lat": 37.4,
+        "lng": 126.4
+      },
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_la",
+      "label": "Port of Los Angeles",
+      "type": "logistic",
+      "location": {
+        "lat": 33.7,
+        "lng": -118.2
+      },
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_shanghai",
+      "label": "Port of Shanghai",
+      "type": "logistic",
+      "location": {
+        "lat": 31.2,
+        "lng": 121.5
+      },
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "oem_apple_shenzhen",
+      "label": "Foxconn City (Shenzhen)",
+      "type": "retail",
+      "location": {
+        "lat": 22.6,
+        "lng": 114.0
+      },
+      "revenue_per_day": 5000.0,
+      "owner_id": "actor_foxconn",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "oem_tesla_austin",
+      "label": "Tesla Giga Texas",
+      "type": "retail",
+      "location": {
+        "lat": 30.2,
+        "lng": -97.6
+      },
+      "revenue_per_day": 1000.0,
+      "owner_id": "actor_tesla",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "dist_arrow",
+      "label": "Arrow Electronics (Rotterdam)",
+      "type": "retail",
+      "location": {
+        "lat": 51.9,
+        "lng": 4.4
+      },
+      "revenue_per_day": 500.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_apple_cupertino",
+      "label": "Apple Cupertino",
+      "type": "retail",
+      "location": {
+        "lat": 37.33,
+        "lng": -122.03
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_asml_nl",
+      "label": "ASML (NL)",
+      "type": "retail",
+      "location": {
+        "lat": 51.4,
+        "lng": 5.41
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_foxconn_shenzhen",
+      "label": "Foxconn Shenzhen",
+      "type": "retail",
+      "location": {
+        "lat": 22.54,
+        "lng": 114.05
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_elkem_norway",
+      "label": "Elkem (Norway)",
+      "type": "retail",
+      "location": {
+        "lat": 59.91,
+        "lng": 10.75
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_eu_foundries",
+      "label": "EU Foundries",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_helsinki_fi",
+      "label": "Helsinki (FI)",
+      "type": "retail",
+      "location": {
+        "lat": 60.16,
+        "lng": 24.93
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_samsung_electronics",
+      "label": "Samsung Electronics",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_helsinki",
+      "label": "Helsinki",
+      "type": "retail",
+      "location": {
+        "lat": 60.16,
+        "lng": 24.93
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_ningbo_magnet_hub",
+      "label": "Ningbo Magnet Hub",
+      "type": "logistic",
+      "location": {
+        "lat": 29.88,
+        "lng": 122.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_ningbo_zhoushan",
+      "label": "Ningbo-Zhoushan",
+      "type": "retail",
+      "location": {
+        "lat": 29.88,
+        "lng": 122.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_xinjiang_xpcc_china",
+      "label": "Xinjiang XPCC (China)",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_port_of_la",
+      "label": "Port of LA",
+      "type": "logistic",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "mine_spruce_pine",
+      "target": "poly_hemlock",
+      "lag": 2,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_spruce_pine",
+      "target": "poly_wacker",
+      "lag": 15,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_jiangxi",
+      "target": "poly_tongwei",
+      "lag": 3,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "poly_hemlock",
+      "target": "wafer_shin_etsu",
+      "lag": 12,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_panama"
+    },
+    {
+      "source": "poly_wacker",
+      "target": "wafer_globalwafers",
+      "lag": 10,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "poly_tongwei",
+      "target": "wafer_sk_siltron",
+      "lag": 5,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "wafer_shin_etsu",
+      "target": "fab_tsmc_18",
+      "lag": 2,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "wafer_shin_etsu",
+      "target": "fab_intel_ocotillo",
+      "lag": 3,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "wafer_globalwafers",
+      "target": "fab_tsmc_18",
+      "lag": 1,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "wafer_sk_siltron",
+      "target": "fab_samsung_pyeongtaek",
+      "lag": 1,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "fab_tsmc_18",
+      "target": "atmp_ase_kaohsiung",
+      "lag": 1,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "fab_tsmc_18",
+      "target": "atmp_amkor_vietnam",
+      "lag": 3,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "fab_intel_ocotillo",
+      "target": "atmp_intel_penang",
+      "lag": 5,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "fab_smic_shanghai",
+      "target": "atmp_ase_kaohsiung",
+      "lag": 2,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "atmp_ase_kaohsiung",
+      "target": "air_taoyuan",
+      "lag": 1,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "atmp_amkor_vietnam",
+      "target": "oem_apple_shenzhen",
+      "lag": 2,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "air_taoyuan",
+      "target": "oem_apple_shenzhen",
+      "lag": 1,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "atmp_intel_penang",
+      "target": "port_la",
+      "lag": 14,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_la",
+      "target": "oem_tesla_austin",
+      "lag": 3,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "air_incheon",
+      "target": "dist_arrow",
+      "lag": 1,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_asml_nl",
+      "target": "fab_tsmc_18",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "fab_tsmc_18",
+      "target": "mkt_foxconn_shenzhen",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mfr_samsung",
+      "target": "mkt_apple_cupertino",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_helsinki_fi",
+      "target": "poly_wacker",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_elkem_norway",
+      "target": "mkt_eu_foundries",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "farm_xinjiang",
+      "target": "poly_hemlock",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_samsung_electronics",
+      "target": "mkt_apple_cupertino",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_xinjiang_xpcc_china",
+      "target": "mkt_ningbo_zhoushan",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_helsinki",
+      "target": "poly_wacker",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_ningbo_magnet_hub",
+      "target": "port_port_of_la",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_xinjiang_xpcc_china",
+      "target": "poly_hemlock",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    }
+  ]
+}

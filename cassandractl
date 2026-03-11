@@ -1,0 +1,138 @@
+#!/bin/bash
+
+# Cassandra Control Script (cassandractl)
+# v1.0 - Wrapper for Project Cassandra v2 operations
+
+PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+BACKEND_DIR="$PROJECT_ROOT/cassandra_v2/backend"
+FRONTEND_DIR="$PROJECT_ROOT/cassandra_v2/frontend"
+VENV_DIR="$BACKEND_DIR/venv"
+
+# ANSI Colors
+GREEN='\033[0;32m'
+BLUE='\033[0;34m'
+RED='\033[0;31m'
+NC='\033[0m' # No Color
+
+function print_usage() {
+    echo -e "${BLUE}Usage: $0 {start|stop|restart|test|install|clean|status}${NC}"
+}
+
+function check_venv() {
+    if [ ! -d "$VENV_DIR" ]; then
+        echo -e "${RED}Virtual environment not found at $VENV_DIR${NC}"
+        echo "Run '$0 install' to set it up."
+        exit 1
+    fi
+}
+
+function start() {
+    check_venv
+    echo -e "${GREEN}Starting Cassandra v2...${NC}"
+    
+    # Start Backend
+    echo "Starting Backend (FastAPI :8002)..."
+    source "$VENV_DIR/bin/activate"
+    cd "$BACKEND_DIR"
+    nohup uvicorn main:app --host 0.0.0.0 --port 8002 --reload > "$PROJECT_ROOT/backend.log" 2>&1 &
+    BACKEND_PID=$!
+    echo $BACKEND_PID > "$PROJECT_ROOT/backend.pid"
+    
+    # Start Frontend
+    echo "Starting Frontend (Vite :5174)..."
+    cd "$FRONTEND_DIR"
+    nohup npm run dev -- --port 5174 > "$PROJECT_ROOT/frontend.log" 2>&1 &
+    FRONTEND_PID=$!
+    echo $FRONTEND_PID > "$PROJECT_ROOT/frontend.pid"
+    
+    echo -e "${GREEN}System Running!${NC}"
+    echo "Backend: http://localhost:8002"
+    echo "Frontend: http://localhost:5174"
+    echo "Logs: backend.log, frontend.log"
+}
+
+function stop() {
+    echo -e "${BLUE}Stopping Cassandra...${NC}"
+    
+    if [ -f "$PROJECT_ROOT/backend.pid" ]; then
+        kill $(cat "$PROJECT_ROOT/backend.pid") 2>/dev/null
+        rm "$PROJECT_ROOT/backend.pid"
+        echo "Backend stopped."
+    fi
+    
+    if [ -f "$PROJECT_ROOT/frontend.pid" ]; then
+        kill $(cat "$PROJECT_ROOT/frontend.pid") 2>/dev/null
+        rm "$PROJECT_ROOT/frontend.pid"
+        echo "Frontend stopped."
+    fi
+    
+    # Failsafe kill
+    pkill -f "uvicorn main:app"
+    pkill -f "vite"
+}
+
+function restart() {
+    stop
+    sleep 2
+    start
+}
+
+function test() {
+    check_venv
+    echo -e "${BLUE}Running Backend Tests...${NC}"
+    source "$VENV_DIR/bin/activate"
+    cd "$BACKEND_DIR"
+    pytest
+}
+
+function install() {
+    echo -e "${BLUE}Installing Dependencies...${NC}"
+    
+    # Backend
+    if [ ! -d "$VENV_DIR" ]; then
+        echo "Creating Python venv..."
+        python3 -m venv "$VENV_DIR"
+    fi
+    source "$VENV_DIR/bin/activate"
+    pip install -r "$BACKEND_DIR/requirements.txt"
+    
+    # Frontend
+    echo "Installing Node modules..."
+    cd "$FRONTEND_DIR"
+    npm install --legacy-peer-deps
+    
+    echo -e "${GREEN}Installation Complete.${NC}"
+}
+
+function clean() {
+    echo -e "${BLUE}Cleaning up...${NC}"
+    find . -type d -name "__pycache__" -exec rm -rf {} +
+    find . -type d -name ".pytest_cache" -exec rm -rf {} +
+    rm -f "$PROJECT_ROOT/*.log" "$PROJECT_ROOT/*.pid"
+    echo "Cleaned."
+}
+
+function status() {
+    if pgrep -f "uvicorn main:app" > /dev/null; then
+        echo -e "${GREEN}Backend is RUNNING${NC}"
+    else
+        echo -e "${RED}Backend is STOPPED${NC}"
+    fi
+    
+    if pgrep -f "vite" > /dev/null; then
+        echo -e "${GREEN}Frontend is RUNNING${NC}"
+    else
+        echo -e "${RED}Frontend is STOPPED${NC}"
+    fi
+}
+
+case "$1" in
+    start) start ;;
+    stop) stop ;;
+    restart) restart ;;
+    test) test ;;
+    install) install ;;
+    clean) clean ;;
+    status) status ;;
+    *) print_usage; exit 1 ;;
+esac

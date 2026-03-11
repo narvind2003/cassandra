@@ -1,0 +1,435 @@
+{
+  "commodity": "Nickel",
+  "version": "2.1",
+  "nodes": [
+    {
+      "id": "mine_morowali",
+      "label": "Morowali IMIP (Indo)",
+      "type": "resource",
+      "location": {
+        "lat": -2.63,
+        "lng": 121.95
+      },
+      "inventory": 5000.0,
+      "notes": "Global nickel capital.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mine_weda_bay",
+      "label": "Weda Bay IWIP (Indo)",
+      "type": "resource",
+      "location": {
+        "lat": 0.48,
+        "lng": 127.94
+      },
+      "inventory": 4500.0,
+      "notes": "Tsingshan/Eramet massive pit.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mine_obi",
+      "label": "Obi Island (Harita)",
+      "type": "resource",
+      "location": {
+        "lat": -1.55,
+        "lng": 127.65
+      },
+      "inventory": 3000.0,
+      "notes": "HPAL battery nickel.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mine_surigao",
+      "label": "Surigao Mines (Phil)",
+      "type": "resource",
+      "location": {
+        "lat": 9.55,
+        "lng": 125.65
+      },
+      "inventory": 2500.0,
+      "notes": "Raw ore to China.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mine_norilsk",
+      "label": "Norilsk (Russia)",
+      "type": "resource",
+      "location": {
+        "lat": 69.35,
+        "lng": 88.2
+      },
+      "inventory": 4000.0,
+      "notes": "Sulfide Class 1 Nickel.",
+      "jurisdiction": "Russia",
+      "risk_level": 0.9,
+      "is_sanctioned": true,
+      "conflict_zone": false,
+      "owner_id": "actor_norilsk"
+    },
+    {
+      "id": "mine_sudbury",
+      "label": "Sudbury Basin (Can)",
+      "type": "resource",
+      "location": {
+        "lat": 46.49,
+        "lng": -81.01
+      },
+      "inventory": 1500.0,
+      "notes": "Vale/Glencore deep mines.",
+      "jurisdiction": "Canada",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_nutrien"
+    },
+    {
+      "id": "port_morowali",
+      "label": "IMIP Port",
+      "type": "logistic",
+      "location": {
+        "lat": -2.63,
+        "lng": 122.0
+      },
+      "notes": "NPI/Stainless export.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_dudinka",
+      "label": "Dudinka Port",
+      "type": "logistic",
+      "location": {
+        "lat": 69.4,
+        "lng": 86.17
+      },
+      "notes": "Arctic route for Norilsk.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_surigao",
+      "label": "Surigao Anchorages",
+      "type": "logistic",
+      "location": {
+        "lat": 9.78,
+        "lng": 125.49
+      },
+      "notes": "Barge loading.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "ref_jinchuan",
+      "label": "Jinchuan Group (China)",
+      "type": "transformation",
+      "location": {
+        "lat": 38.5,
+        "lng": 102.18
+      },
+      "revenue_per_day": 1200.0,
+      "notes": "Top Chinese refiner.",
+      "jurisdiction": "China",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_sinopec"
+    },
+    {
+      "id": "ref_sumitomo",
+      "label": "Sumitomo Niihama (JP)",
+      "type": "transformation",
+      "location": {
+        "lat": 33.96,
+        "lng": 133.28
+      },
+      "revenue_per_day": 800.0,
+      "notes": "Battery cathode precursor.",
+      "jurisdiction": "Japan",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "ref_kwinana",
+      "label": "BHP Nickel West (Aus)",
+      "type": "transformation",
+      "location": {
+        "lat": -32.22,
+        "lng": 115.77
+      },
+      "revenue_per_day": 600.0,
+      "notes": "Sulfate for EVs.",
+      "owner_id": "actor_bhp",
+      "jurisdiction": "Australia",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "smelter_tsingshan",
+      "label": "Tsingshan Wenzhou",
+      "type": "transformation",
+      "location": {
+        "lat": 27.8,
+        "lng": 120.7
+      },
+      "revenue_per_day": 1500.0,
+      "notes": "Stainless giant.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "factory_tesla_tx",
+      "label": "Tesla Giga Texas",
+      "type": "retail",
+      "location": {
+        "lat": 30.22,
+        "lng": -97.62
+      },
+      "revenue_per_day": 1000.0,
+      "owner_id": "actor_tesla",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "factory_catl",
+      "label": "CATL Ningde",
+      "type": "retail",
+      "location": {
+        "lat": 26.66,
+        "lng": 119.54
+      },
+      "revenue_per_day": 2000.0,
+      "owner_id": "actor_catl",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_thompson",
+      "label": "Thompson",
+      "type": "retail",
+      "location": {
+        "lat": 55.74,
+        "lng": -97.85
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_tianqi_kwinana_aus",
+      "label": "Tianqi Kwinana (Aus)",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_tesla_fremont",
+      "label": "Tesla Fremont",
+      "type": "retail",
+      "location": {
+        "lat": 37.54,
+        "lng": -121.98
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_rotterdam_coal_terminal",
+      "label": "Rotterdam Coal Terminal",
+      "type": "logistic",
+      "location": {
+        "lat": 51.95,
+        "lng": 4.05
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "mine_morowali",
+      "target": "port_morowali",
+      "lag": 1,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_morowali",
+      "target": "smelter_tsingshan",
+      "lag": 8,
+      "notes": "NPI shipment",
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_morowali",
+      "target": "factory_catl",
+      "lag": 10,
+      "notes": "MHP for batteries",
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_weda_bay",
+      "target": "smelter_tsingshan",
+      "lag": 9,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_surigao",
+      "target": "port_surigao",
+      "lag": 1,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_surigao",
+      "target": "ref_jinchuan",
+      "lag": 12,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_surigao",
+      "target": "ref_sumitomo",
+      "lag": 8,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_norilsk",
+      "target": "port_dudinka",
+      "lag": 2,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_dudinka",
+      "target": "ref_jinchuan",
+      "lag": 20,
+      "notes": "NSR route",
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_dudinka",
+      "target": "ref_sumitomo",
+      "lag": 18,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_sudbury",
+      "target": "factory_tesla_tx",
+      "lag": 5,
+      "notes": "Rail",
+      "carrier_id": "actor_cn_rail",
+      "transport_mode": "rail",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_trans_siberian"
+    },
+    {
+      "source": "ref_jinchuan",
+      "target": "smelter_tsingshan",
+      "lag": 4,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "ref_sumitomo",
+      "target": "factory_catl",
+      "lag": 3,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "ref_kwinana",
+      "target": "factory_tesla_tx",
+      "lag": 30,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_sudbury",
+      "target": "mkt_thompson",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_norilsk",
+      "target": "port_rotterdam_coal_terminal",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_tianqi_kwinana_aus",
+      "target": "mkt_tesla_fremont",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    }
+  ]
+}

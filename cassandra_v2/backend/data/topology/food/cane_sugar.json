@@ -1,0 +1,497 @@
+{
+  "commodity": "Cane Sugar",
+  "version": "2.1",
+  "nodes": [
+    {
+      "id": "farm_sao_paulo",
+      "label": "Ribeir\u00e3o Preto (Brazil)",
+      "type": "resource",
+      "location": {
+        "lat": -21.17,
+        "lng": -47.81
+      },
+      "inventory": 6000.0,
+      "notes": "World's sugar capital.",
+      "jurisdiction": "Brazil",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_jbs"
+    },
+    {
+      "id": "farm_thai_isan",
+      "label": "Isan Region (Thailand)",
+      "type": "resource",
+      "location": {
+        "lat": 16.43,
+        "lng": 102.82
+      },
+      "inventory": 3000.0,
+      "notes": "Mitr Phol supply base.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_state_thai"
+    },
+    {
+      "id": "farm_maharashtra",
+      "label": "Maharashtra (India)",
+      "type": "resource",
+      "location": {
+        "lat": 19.75,
+        "lng": 75.71
+      },
+      "inventory": 2500.0,
+      "notes": "Export contingent on policy.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "farm_florida",
+      "label": "Florida Crystals (USA)",
+      "type": "resource",
+      "location": {
+        "lat": 26.69,
+        "lng": -80.67
+      },
+      "inventory": 1500.0,
+      "notes": "Protected domestic market.",
+      "jurisdiction": "USA",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_santos",
+      "label": "Santos (Copersucar)",
+      "type": "logistic",
+      "location": {
+        "lat": -23.96,
+        "lng": -46.3
+      },
+      "notes": "60% of global sugar trade.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_cargill"
+    },
+    {
+      "id": "port_paranagua",
+      "label": "Port of Paranagu\u00e1",
+      "type": "logistic",
+      "location": {
+        "lat": -25.51,
+        "lng": -48.5
+      },
+      "notes": "Alternative Brazilian exit.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_laem_chabang",
+      "label": "Laem Chabang (Thai)",
+      "type": "logistic",
+      "location": {
+        "lat": 13.08,
+        "lng": 100.88
+      },
+      "notes": "Asian supply hub.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_jnpt",
+      "label": "JNPT (India)",
+      "type": "logistic",
+      "location": {
+        "lat": 18.95,
+        "lng": 72.95
+      },
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_priok",
+      "label": "Tanjung Priok (Indo)",
+      "type": "logistic",
+      "location": {
+        "lat": -6.1,
+        "lng": 106.88
+      },
+      "notes": "Major raw sugar entry.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "refinery_dubai",
+      "label": "Al Khaleej Sugar (Dubai)",
+      "type": "transformation",
+      "location": {
+        "lat": 25.02,
+        "lng": 55.08
+      },
+      "revenue_per_day": 800.0,
+      "notes": "World's largest standalone refinery.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "refinery_london",
+      "label": "Tate & Lyle (London)",
+      "type": "transformation",
+      "location": {
+        "lat": 51.5,
+        "lng": 0.05
+      },
+      "revenue_per_day": 500.0,
+      "notes": "EU refining hub.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "refinery_domino",
+      "label": "Domino Sugar (Baltimore)",
+      "type": "transformation",
+      "location": {
+        "lat": 39.27,
+        "lng": -76.59
+      },
+      "revenue_per_day": 600.0,
+      "notes": "US East Coast supply.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "refinery_rizhao",
+      "label": "Rizhao Refinery (China)",
+      "type": "transformation",
+      "location": {
+        "lat": 35.42,
+        "lng": 119.52
+      },
+      "revenue_per_day": 700.0,
+      "jurisdiction": "China",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_sinopec"
+    },
+    {
+      "id": "market_eu",
+      "label": "EU Confectionery",
+      "type": "retail",
+      "location": {
+        "lat": 50.85,
+        "lng": 4.35
+      },
+      "revenue_per_day": 1200.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "market_indonesia",
+      "label": "Indo Food/Bev",
+      "type": "retail",
+      "location": {
+        "lat": -6.2,
+        "lng": 106.85
+      },
+      "revenue_per_day": 1000.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_uttar_pradesh_india",
+      "label": "Uttar Pradesh (India)",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_port_sudan",
+      "label": "Port Sudan",
+      "type": "logistic",
+      "location": {
+        "lat": 19.61,
+        "lng": 37.21
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_sao_paulo_groves",
+      "label": "Sao Paulo Groves",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_dubai_gold_souk",
+      "label": "Dubai Gold Souk",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_kandla_port",
+      "label": "Kandla Port",
+      "type": "logistic",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_port_of_santos",
+      "label": "Port of Santos",
+      "type": "logistic",
+      "location": {
+        "lat": -23.96,
+        "lng": -46.33
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "farm_sao_paulo",
+      "target": "port_santos",
+      "lag": 2,
+      "notes": "Rumo Rail",
+      "carrier_id": "actor_bnsf",
+      "transport_mode": "rail",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_trans_siberian"
+    },
+    {
+      "source": "farm_sao_paulo",
+      "target": "port_paranagua",
+      "lag": 3,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_santos",
+      "target": "refinery_dubai",
+      "lag": 18,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_santos",
+      "target": "refinery_london",
+      "lag": 15,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_santos",
+      "target": "refinery_domino",
+      "lag": 14,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_santos",
+      "target": "refinery_rizhao",
+      "lag": 35,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_santos",
+      "target": "port_priok",
+      "lag": 30,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "farm_thai_isan",
+      "target": "port_laem_chabang",
+      "lag": 2,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_laem_chabang",
+      "target": "port_priok",
+      "lag": 6,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_laem_chabang",
+      "target": "refinery_rizhao",
+      "lag": 10,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "farm_maharashtra",
+      "target": "port_jnpt",
+      "lag": 2,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_jnpt",
+      "target": "refinery_dubai",
+      "lag": 4,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "farm_florida",
+      "target": "refinery_domino",
+      "lag": 4,
+      "notes": "Coastal barge",
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "refinery_dubai",
+      "target": "market_indonesia",
+      "lag": 12,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "refinery_london",
+      "target": "market_eu",
+      "lag": 2,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_priok",
+      "target": "market_indonesia",
+      "lag": 1,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_kandla",
+      "target": "port_port_sudan",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_sao_paulo_groves",
+      "target": "port_port_of_santos",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_port_of_santos",
+      "target": "mkt_dubai_gold_souk",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_port_of_santos",
+      "target": "refinery_london",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_uttar_pradesh_india",
+      "target": "port_kandla_port",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_kandla_port",
+      "target": "port_port_sudan",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    }
+  ]
+}

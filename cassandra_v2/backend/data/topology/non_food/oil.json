@@ -1,0 +1,621 @@
+{
+  "commodity": "Crude Oil",
+  "version": "2.1",
+  "nodes": [
+    {
+      "id": "field_ghawar",
+      "label": "Ghawar (Saudi)",
+      "type": "resource",
+      "owner_id": "actor_aramco",
+      "location": {
+        "lat": 24.33,
+        "lng": 49.61
+      },
+      "inventory": 8000.0,
+      "notes": "The Elephant. 3.8M bpd.",
+      "jurisdiction": "Saudi Arabia",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "field_permian",
+      "label": "Permian Basin (USA)",
+      "type": "resource",
+      "owner_id": "actor_exxon",
+      "location": {
+        "lat": 31.9,
+        "lng": -102.1
+      },
+      "inventory": 6000.0,
+      "notes": "Shale revolution engine.",
+      "jurisdiction": "USA",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "field_oilsands",
+      "label": "Athabasca Oil Sands (Can)",
+      "type": "resource",
+      "location": {
+        "lat": 57.06,
+        "lng": -111.62
+      },
+      "inventory": 5000.0,
+      "notes": "Heavy crude. TMX expansion key.",
+      "owner_id": "actor_shell",
+      "jurisdiction": "Canada",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "field_urals",
+      "label": "Urals/Siberia (Russia)",
+      "type": "resource",
+      "location": {
+        "lat": 61.25,
+        "lng": 73.4
+      },
+      "inventory": 5500.0,
+      "notes": "Source of ESPO/Urals blend.",
+      "jurisdiction": "Russia",
+      "risk_level": 0.9,
+      "is_sanctioned": true,
+      "conflict_zone": false,
+      "owner_id": "actor_gazprom"
+    },
+    {
+      "id": "field_pre_salt",
+      "label": "Lula (Brazil)",
+      "type": "resource",
+      "location": {
+        "lat": -25.5,
+        "lng": -42.8
+      },
+      "inventory": 3000.0,
+      "notes": "Deepwater giant.",
+      "owner_id": "actor_jbs",
+      "jurisdiction": "Brazil",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "term_ras_tanura",
+      "label": "Ras Tanura",
+      "type": "logistic",
+      "owner_id": "actor_aramco",
+      "location": {
+        "lat": 26.63,
+        "lng": 50.16
+      },
+      "notes": "World's largest oil terminal.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "term_corpus",
+      "label": "Corpus Christi (USA)",
+      "type": "logistic",
+      "location": {
+        "lat": 27.83,
+        "lng": -97.42
+      },
+      "notes": "Main US export hub.",
+      "jurisdiction": "USA",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "term_westridge",
+      "label": "Westridge Marine (Vancouver)",
+      "type": "logistic",
+      "location": {
+        "lat": 49.29,
+        "lng": -122.95
+      },
+      "notes": "TMX export to Asia.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "term_kozmino",
+      "label": "Kozmino (Russia)",
+      "type": "logistic",
+      "location": {
+        "lat": 42.73,
+        "lng": 133.08
+      },
+      "notes": "ESPO blend exit to Asia.",
+      "jurisdiction": "Russia",
+      "risk_level": 0.9,
+      "is_sanctioned": true,
+      "conflict_zone": false,
+      "owner_id": "actor_gazprom"
+    },
+    {
+      "id": "term_novorossiysk",
+      "label": "Novorossiysk",
+      "type": "logistic",
+      "location": {
+        "lat": 44.72,
+        "lng": 37.78
+      },
+      "notes": "CPC/Urals exit (Black Sea).",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_viterra"
+    },
+    {
+      "id": "port_zhoushan",
+      "label": "Ningbo-Zhoushan",
+      "type": "logistic",
+      "location": {
+        "lat": 29.98,
+        "lng": 121.82
+      },
+      "notes": "China's strategic reserve entry.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "hub_cushing",
+      "label": "Cushing Storage (USA)",
+      "type": "logistic",
+      "location": {
+        "lat": 35.98,
+        "lng": -96.76
+      },
+      "revenue_per_day": 1000.0,
+      "notes": "WTI delivery point.",
+      "jurisdiction": "USA",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "hub_rotterdam",
+      "label": "ARA Storage (EU)",
+      "type": "logistic",
+      "location": {
+        "lat": 51.95,
+        "lng": 4.1
+      },
+      "revenue_per_day": 1200.0,
+      "notes": "Brent benchmark zone.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "hub_fujairah",
+      "label": "Fujairah (UAE)",
+      "type": "logistic",
+      "location": {
+        "lat": 25.17,
+        "lng": 56.36
+      },
+      "revenue_per_day": 800.0,
+      "notes": "Bunkering hub.",
+      "jurisdiction": "UAE",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "choke_panama",
+      "label": "Panama Canal",
+      "type": "logistic",
+      "location": {
+        "lat": 9.11,
+        "lng": -79.69
+      },
+      "notes": "US -> Asia route.",
+      "jurisdiction": "Panama",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "choke_hormuz",
+      "label": "Strait of Hormuz",
+      "type": "logistic",
+      "location": {
+        "lat": 26.56,
+        "lng": 56.47
+      },
+      "notes": "20% of world oil flows here.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "choke_malacca",
+      "label": "Strait of Malacca",
+      "type": "logistic",
+      "location": {
+        "lat": 1.42,
+        "lng": 102.13
+      },
+      "notes": "Critical Asian artery.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "choke_suez",
+      "label": "Suez Canal",
+      "type": "logistic",
+      "location": {
+        "lat": 30.58,
+        "lng": 32.27
+      },
+      "notes": "Red Sea risk point.",
+      "jurisdiction": "Egypt",
+      "risk_level": 0.9,
+      "is_sanctioned": false,
+      "conflict_zone": true
+    },
+    {
+      "id": "ref_jamnagar",
+      "label": "Jamnagar (India)",
+      "type": "transformation",
+      "location": {
+        "lat": 22.36,
+        "lng": 69.83
+      },
+      "revenue_per_day": 2000.0,
+      "notes": "World's largest refinery complex.",
+      "owner_id": "actor_reliance",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "ref_zhenhai",
+      "label": "Zhenhai Refining (China)",
+      "type": "transformation",
+      "owner_id": "actor_sinopec",
+      "location": {
+        "lat": 29.96,
+        "lng": 121.68
+      },
+      "revenue_per_day": 1800.0,
+      "notes": "Sinopec giant.",
+      "jurisdiction": "China",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "ref_jurong",
+      "label": "Jurong Island (Singapore)",
+      "type": "transformation",
+      "location": {
+        "lat": 1.27,
+        "lng": 103.68
+      },
+      "revenue_per_day": 1500.0,
+      "owner_id": "actor_shell",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "retail_gas_usa",
+      "label": "US Gasoline Market",
+      "type": "retail",
+      "location": {
+        "lat": 40.71,
+        "lng": -74.0
+      },
+      "revenue_per_day": 3000.0,
+      "jurisdiction": "USA",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "retail_gas_eu",
+      "label": "EU Fuel/Diesel Market",
+      "type": "retail",
+      "location": {
+        "lat": 48.85,
+        "lng": 2.35
+      },
+      "revenue_per_day": 2500.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "retail_petro_china",
+      "label": "China Petrochemicals",
+      "type": "retail",
+      "location": {
+        "lat": 31.23,
+        "lng": 121.47
+      },
+      "revenue_per_day": 2800.0,
+      "jurisdiction": "China",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "retail_bunker_singapore",
+      "label": "Global Bunker Fuel",
+      "type": "retail",
+      "location": {
+        "lat": 1.35,
+        "lng": 103.82
+      },
+      "revenue_per_day": 1200.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "field_ghawar",
+      "target": "term_ras_tanura",
+      "lag": 1,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "term_ras_tanura",
+      "target": "choke_hormuz",
+      "lag": 1,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_hormuz"
+    },
+    {
+      "source": "choke_hormuz",
+      "target": "hub_fujairah",
+      "lag": 1,
+      "carrier_id": "actor_frontline",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_hormuz"
+    },
+    {
+      "source": "choke_hormuz",
+      "target": "ref_jamnagar",
+      "lag": 3,
+      "carrier_id": "actor_frontline",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_hormuz"
+    },
+    {
+      "source": "choke_hormuz",
+      "target": "choke_malacca",
+      "lag": 12,
+      "carrier_id": "actor_frontline",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_hormuz"
+    },
+    {
+      "source": "choke_hormuz",
+      "target": "choke_suez",
+      "lag": 8,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_suez"
+    },
+    {
+      "source": "field_permian",
+      "target": "term_corpus",
+      "lag": 2,
+      "notes": "Pipeline",
+      "carrier_id": "actor_colonial",
+      "transport_mode": "pipe",
+      "risk_level": 0.1
+    },
+    {
+      "source": "field_permian",
+      "target": "hub_cushing",
+      "lag": 2,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "hub_cushing",
+      "target": "retail_gas_usa",
+      "lag": 3,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "term_corpus",
+      "target": "hub_rotterdam",
+      "lag": 14,
+      "carrier_id": "actor_frontline",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "term_corpus",
+      "target": "choke_panama",
+      "lag": 6,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_panama"
+    },
+    {
+      "source": "field_oilsands",
+      "target": "term_westridge",
+      "lag": 3,
+      "notes": "TMX Pipeline",
+      "carrier_id": "actor_tc_energy",
+      "transport_mode": "pipe",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_trans_mountain"
+    },
+    {
+      "source": "term_westridge",
+      "target": "port_zhoushan",
+      "lag": 16,
+      "carrier_id": "actor_euronav",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "term_westridge",
+      "target": "ref_jurong",
+      "lag": 20,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "field_urals",
+      "target": "term_kozmino",
+      "lag": 8,
+      "notes": "ESPO Pipe",
+      "carrier_id": "actor_transneft",
+      "transport_mode": "pipe",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_transneft_espo"
+    },
+    {
+      "source": "field_urals",
+      "target": "term_novorossiysk",
+      "lag": 5,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "term_kozmino",
+      "target": "port_zhoushan",
+      "lag": 4,
+      "carrier_id": "actor_frontline",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "term_novorossiysk",
+      "target": "choke_suez",
+      "lag": 6,
+      "notes": "Shadow fleet route",
+      "carrier_id": "actor_frontline",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_suez"
+    },
+    {
+      "source": "field_pre_salt",
+      "target": "port_zhoushan",
+      "lag": 25,
+      "carrier_id": "actor_frontline",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "choke_malacca",
+      "target": "port_zhoushan",
+      "lag": 5,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_malacca"
+    },
+    {
+      "source": "choke_malacca",
+      "target": "ref_jurong",
+      "lag": 1,
+      "carrier_id": "actor_frontline",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_malacca"
+    },
+    {
+      "source": "choke_malacca",
+      "target": "ref_zhenhai",
+      "lag": 6,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_malacca"
+    },
+    {
+      "source": "choke_suez",
+      "target": "hub_rotterdam",
+      "lag": 8,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_suez"
+    },
+    {
+      "source": "hub_rotterdam",
+      "target": "retail_gas_eu",
+      "lag": 2,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "ref_jamnagar",
+      "target": "hub_rotterdam",
+      "lag": 20,
+      "notes": "Diesel export",
+      "carrier_id": "actor_euronav",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "ref_jurong",
+      "target": "port_zhoushan",
+      "lag": 5,
+      "carrier_id": "actor_frontline",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "ref_jurong",
+      "target": "retail_bunker_singapore",
+      "lag": 1,
+      "carrier_id": "actor_frontline",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "ref_zhenhai",
+      "target": "retail_petro_china",
+      "lag": 2,
+      "carrier_id": "actor_euronav",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    }
+  ]
+}

@@ -1,0 +1,440 @@
+{
+  "commodity": "Silver",
+  "version": "2.1",
+  "nodes": [
+    {
+      "id": "mine_fresnillo",
+      "label": "Fresnillo (Mexico)",
+      "type": "resource",
+      "location": {
+        "lat": 23.17,
+        "lng": -102.87
+      },
+      "inventory": 3000.0,
+      "notes": "World's largest primary silver mine.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_fresnillo"
+    },
+    {
+      "id": "mine_penasquito",
+      "label": "Pe\u00f1asquito (Mexico)",
+      "type": "resource",
+      "location": {
+        "lat": 24.47,
+        "lng": -101.52
+      },
+      "inventory": 2500.0,
+      "notes": "Newmont. Massive polymetallic.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_newmont"
+    },
+    {
+      "id": "mine_antamina",
+      "label": "Antamina (Peru)",
+      "type": "resource",
+      "location": {
+        "lat": -9.53,
+        "lng": -77.05
+      },
+      "inventory": 2000.0,
+      "notes": "Major silver byproduct.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_glencore"
+    },
+    {
+      "id": "mine_kghm",
+      "label": "KGHM (Poland)",
+      "type": "resource",
+      "location": {
+        "lat": 51.42,
+        "lng": 16.2
+      },
+      "inventory": 1500.0,
+      "notes": "Top European producer.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "ref_metmex",
+      "label": "Met-Mex Pe\u00f1oles (MX)",
+      "type": "transformation",
+      "location": {
+        "lat": 25.54,
+        "lng": -103.4
+      },
+      "revenue_per_day": 1200.0,
+      "notes": "Largest silver refinery in Americas.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "ref_yuguang",
+      "label": "Henan Yuguang (CN)",
+      "type": "transformation",
+      "location": {
+        "lat": 35.08,
+        "lng": 112.58
+      },
+      "revenue_per_day": 1000.0,
+      "notes": "Top Chinese lead/silver refiner.",
+      "jurisdiction": "China",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_sinopec"
+    },
+    {
+      "id": "ref_korea_zinc",
+      "label": "Korea Zinc (Onsan)",
+      "type": "transformation",
+      "location": {
+        "lat": 35.43,
+        "lng": 129.35
+      },
+      "revenue_per_day": 900.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_korea_zinc"
+    },
+    {
+      "id": "port_manzanillo",
+      "label": "Manzanillo (Mexico)",
+      "type": "logistic",
+      "location": {
+        "lat": 19.05,
+        "lng": -104.32
+      },
+      "notes": "Pacific exit to Asia.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_callao",
+      "label": "Callao (Peru)",
+      "type": "logistic",
+      "location": {
+        "lat": -12.05,
+        "lng": -77.15
+      },
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_shanghai",
+      "label": "Shanghai Port",
+      "type": "logistic",
+      "location": {
+        "lat": 31.23,
+        "lng": 121.47
+      },
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_gdansk",
+      "label": "Port of Gdansk (PL)",
+      "type": "logistic",
+      "location": {
+        "lat": 54.35,
+        "lng": 18.66
+      },
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_mumbai",
+      "label": "JNPT Mumbai",
+      "type": "logistic",
+      "location": {
+        "lat": 18.95,
+        "lng": 72.95
+      },
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mfr_longi",
+      "label": "Longi Solar (China)",
+      "type": "retail",
+      "location": {
+        "lat": 34.34,
+        "lng": 108.94
+      },
+      "revenue_per_day": 2000.0,
+      "notes": "Silver paste for PV cells.",
+      "jurisdiction": "China",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mfr_samsung",
+      "label": "Samsung Electronics",
+      "type": "retail",
+      "location": {
+        "lat": 37.26,
+        "lng": 127.02
+      },
+      "revenue_per_day": 1800.0,
+      "owner_id": "actor_samsung",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mfr_jewelry_india",
+      "label": "India Jewelry Mkt",
+      "type": "retail",
+      "location": {
+        "lat": 19.07,
+        "lng": 72.87
+      },
+      "revenue_per_day": 1500.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_global_solar_hubs",
+      "label": "Global Solar Hubs",
+      "type": "logistic",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_port_of_manzanillo",
+      "label": "Port of Manzanillo",
+      "type": "logistic",
+      "location": {
+        "lat": 19.05,
+        "lng": -104.31
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_tianqi_kwinana_aus",
+      "label": "Tianqi Kwinana (Aus)",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_port_of_callao",
+      "label": "Port of Callao",
+      "type": "logistic",
+      "location": {
+        "lat": -12.05,
+        "lng": -77.15
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "mine_fresnillo",
+      "target": "ref_metmex",
+      "lag": 1,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_penasquito",
+      "target": "ref_metmex",
+      "lag": 2,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "ref_metmex",
+      "target": "port_manzanillo",
+      "lag": 3,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_antamina",
+      "target": "port_callao",
+      "lag": 2,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_callao",
+      "target": "ref_korea_zinc",
+      "lag": 22,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_callao",
+      "target": "ref_yuguang",
+      "lag": 25,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_manzanillo",
+      "target": "port_shanghai",
+      "lag": 18,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_manzanillo",
+      "target": "ref_korea_zinc",
+      "lag": 16,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_shanghai",
+      "target": "ref_yuguang",
+      "lag": 4,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "ref_yuguang",
+      "target": "mfr_longi",
+      "lag": 2,
+      "notes": "Silver paste",
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "ref_korea_zinc",
+      "target": "mfr_samsung",
+      "lag": 1,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_kghm",
+      "target": "port_gdansk",
+      "lag": 1,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_gdansk",
+      "target": "port_mumbai",
+      "lag": 22,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_mumbai",
+      "target": "mfr_jewelry_india",
+      "lag": 2,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "ref_metmex",
+      "target": "port_port_of_manzanillo",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "ref_kwinana",
+      "target": "port_global_solar_hubs",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_port_of_manzanillo",
+      "target": "port_shanghai",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_port_of_callao",
+      "target": "ref_korea_zinc",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_tianqi_kwinana_aus",
+      "target": "port_global_solar_hubs",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    }
+  ]
+}

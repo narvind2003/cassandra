@@ -1,0 +1,324 @@
+{
+  "commodity": "Beef",
+  "version": "2.2",
+  "nodes": [
+    {
+      "id": "farm_brazil",
+      "label": "Mato Grosso Cattle",
+      "type": "resource",
+      "location": {
+        "lat": -12.68,
+        "lng": -55.92
+      },
+      "inventory": 4000.0,
+      "notes": "JBS/Marfrig supply. Produces Live Cattle.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "farm_aus",
+      "label": "Queensland Cattle",
+      "type": "resource",
+      "location": {
+        "lat": -22.57,
+        "lng": 144.08
+      },
+      "inventory": 2000.0,
+      "notes": "Grass fed. Produces Live Cattle.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "process_jbs",
+      "label": "JBS Plant (Brazil)",
+      "type": "transformation",
+      "location": {
+        "lat": -23.55,
+        "lng": -46.63
+      },
+      "revenue_per_day": 1000.0,
+      "recipes": [
+        {
+          "name": "Cattle Processing",
+          "inputs": {
+            "Live Cattle": 1.0
+          },
+          "outputs": {
+            "Beef": 1.0
+          }
+        }
+      ],
+      "jurisdiction": "Brazil",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_jbs"
+    },
+    {
+      "id": "process_brisbane",
+      "label": "Teys Australia (Brisbane)",
+      "type": "transformation",
+      "location": {
+        "lat": -27.4,
+        "lng": 153.0
+      },
+      "revenue_per_day": 800.0,
+      "recipes": [
+        {
+          "name": "Cattle Processing",
+          "inputs": {
+            "Live Cattle": 1.0
+          },
+          "outputs": {
+            "Beef": 1.0
+          }
+        }
+      ],
+      "jurisdiction": "Australia",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_santos",
+      "label": "Port of Santos",
+      "type": "logistic",
+      "location": {
+        "lat": -23.96,
+        "lng": -46.3
+      },
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_cargill"
+    },
+    {
+      "id": "port_brisbane",
+      "label": "Port of Brisbane",
+      "type": "logistic",
+      "location": {
+        "lat": -27.39,
+        "lng": 153.12
+      },
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_china",
+      "label": "China Cold Chain",
+      "type": "retail",
+      "location": {
+        "lat": 31.23,
+        "lng": 121.47
+      },
+      "revenue_per_day": 1500.0,
+      "jurisdiction": "China",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_nestle"
+    },
+    {
+      "id": "mkt_usa",
+      "label": "US Burger Chains",
+      "type": "retail",
+      "location": {
+        "lat": 41.87,
+        "lng": -87.62
+      },
+      "revenue_per_day": 1200.0,
+      "jurisdiction": "USA",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_tokyo_jp",
+      "label": "Tokyo (JP)",
+      "type": "retail",
+      "location": {
+        "lat": 35.67,
+        "lng": 139.75
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_sge_shanghai",
+      "label": "SGE (Shanghai)",
+      "type": "retail",
+      "location": {
+        "lat": 31.23,
+        "lng": 121.47
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_georgia_arkansas",
+      "label": "Georgia/Arkansas",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_tokyo_port",
+      "label": "Tokyo Port",
+      "type": "logistic",
+      "location": {
+        "lat": 35.67,
+        "lng": 139.75
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_port_of_long_beach",
+      "label": "Port of Long Beach",
+      "type": "logistic",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "farm_brazil",
+      "target": "process_jbs",
+      "lag": 2,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "process_jbs",
+      "target": "port_santos",
+      "lag": 1,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_santos",
+      "target": "mkt_china",
+      "lag": 35,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "farm_aus",
+      "target": "process_brisbane",
+      "lag": 2,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "process_brisbane",
+      "target": "port_brisbane",
+      "lag": 1,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_brisbane",
+      "target": "mkt_usa",
+      "lag": 20,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_brisbane",
+      "target": "mkt_china",
+      "lag": 15,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "farm_matogrosso",
+      "target": "port_santos",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "farm_aus",
+      "target": "port_brisbane",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_brisbane",
+      "target": "mkt_tokyo_jp",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_santos",
+      "target": "mkt_sge_shanghai",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_brisbane",
+      "target": "port_tokyo_port",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_georgia_arkansas",
+      "target": "port_port_of_long_beach",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    }
+  ]
+}

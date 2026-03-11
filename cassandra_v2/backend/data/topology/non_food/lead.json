@@ -1,0 +1,330 @@
+{
+  "commodity": "Lead",
+  "version": "2.1",
+  "nodes": [
+    {
+      "id": "recycle_greencycle",
+      "label": "GreenCycle (Shanghai)",
+      "type": "resource",
+      "location": {
+        "lat": 31.23,
+        "lng": 121.47
+      },
+      "inventory": 5000.0,
+      "notes": "World's largest battery recycler.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "recycle_clarios_eu",
+      "label": "Clarios (Germany)",
+      "type": "resource",
+      "location": {
+        "lat": 52.37,
+        "lng": 9.73
+      },
+      "inventory": 4000.0,
+      "notes": "Circular economy giant.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_clarios"
+    },
+    {
+      "id": "recycle_gopher",
+      "label": "Gopher Resource (USA)",
+      "type": "resource",
+      "location": {
+        "lat": 27.95,
+        "lng": -82.45
+      },
+      "inventory": 3000.0,
+      "notes": "US recycling hub.",
+      "jurisdiction": "USA",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mine_mt_isa",
+      "label": "Mount Isa (Aus)",
+      "type": "resource",
+      "location": {
+        "lat": -20.72,
+        "lng": 139.49
+      },
+      "inventory": 2000.0,
+      "notes": "Primary lead source.",
+      "jurisdiction": "Australia",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_bhp"
+    },
+    {
+      "id": "mine_viburnum",
+      "label": "Viburnum Trend (USA)",
+      "type": "resource",
+      "location": {
+        "lat": 37.6,
+        "lng": -91.13
+      },
+      "inventory": 1500.0,
+      "notes": "Missouri lead belt.",
+      "jurisdiction": "USA",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "smelter_port_pirie",
+      "label": "Nyrstar Port Pirie",
+      "type": "transformation",
+      "location": {
+        "lat": -33.18,
+        "lng": 138.01
+      },
+      "revenue_per_day": 1200.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_nyrstar"
+    },
+    {
+      "id": "smelter_greencycle",
+      "label": "GreenCycle Smelter",
+      "type": "transformation",
+      "location": {
+        "lat": 31.3,
+        "lng": 121.5
+      },
+      "revenue_per_day": 800.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "smelter_henan_yuguang",
+      "label": "Henan Yuguang (CN)",
+      "type": "transformation",
+      "location": {
+        "lat": 35.08,
+        "lng": 112.58
+      },
+      "revenue_per_day": 1000.0,
+      "jurisdiction": "China",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_sinopec"
+    },
+    {
+      "id": "mfr_tianneng",
+      "label": "Tianneng Battery",
+      "type": "retail",
+      "location": {
+        "lat": 30.89,
+        "lng": 119.9
+      },
+      "revenue_per_day": 1500.0,
+      "notes": "E-bike battery giant.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mfr_exide",
+      "label": "Exide Industries (India)",
+      "type": "retail",
+      "location": {
+        "lat": 22.57,
+        "lng": 88.36
+      },
+      "revenue_per_day": 800.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mfr_clarios_us",
+      "label": "Clarios (USA)",
+      "type": "retail",
+      "location": {
+        "lat": 43.03,
+        "lng": -87.91
+      },
+      "revenue_per_day": 1200.0,
+      "jurisdiction": "USA",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_clarios"
+    },
+    {
+      "id": "mkt_cannington_aus",
+      "label": "Cannington (Aus)",
+      "type": "retail",
+      "location": {
+        "lat": -21.86,
+        "lng": 140.92
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_vw_wolfsburg",
+      "label": "VW Wolfsburg",
+      "type": "retail",
+      "location": {
+        "lat": 52.42,
+        "lng": 10.78
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_korea_zinc_onsan",
+      "label": "Korea Zinc (Onsan)",
+      "type": "retail",
+      "location": {
+        "lat": 35.42,
+        "lng": 129.35
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_port_of_townsville",
+      "label": "Port of Townsville",
+      "type": "logistic",
+      "location": {
+        "lat": -19.25,
+        "lng": 146.81
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "recycle_greencycle",
+      "target": "smelter_greencycle",
+      "lag": 1,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "smelter_greencycle",
+      "target": "mfr_tianneng",
+      "lag": 1,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "recycle_clarios_eu",
+      "target": "mfr_clarios_us",
+      "lag": 15,
+      "notes": "Trans-Atlantic lead",
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_mt_isa",
+      "target": "smelter_port_pirie",
+      "lag": 4,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "smelter_port_pirie",
+      "target": "mfr_tianneng",
+      "lag": 12,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "smelter_port_pirie",
+      "target": "mfr_exide",
+      "lag": 14,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_viburnum",
+      "target": "recycle_gopher",
+      "lag": 5,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "recycle_gopher",
+      "target": "mfr_clarios_us",
+      "lag": 3,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "smelter_henan_yuguang",
+      "target": "mfr_tianneng",
+      "lag": 2,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_cannington_aus",
+      "target": "port_port_of_townsville",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mfr_clarios_us",
+      "target": "mkt_vw_wolfsburg",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_port_of_townsville",
+      "target": "mkt_korea_zinc_onsan",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    }
+  ]
+}

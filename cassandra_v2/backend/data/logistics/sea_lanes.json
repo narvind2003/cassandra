@@ -1,0 +1,31 @@
+{
+  "waypoints": [
+    {"id": "wp_gibraltar", "label": "Strait of Gibraltar", "location": {"lat": 35.95, "lng": -5.55}},
+    {"id": "wp_cape", "label": "Cape of Good Hope", "location": {"lat": -34.35, "lng": 18.47}},
+    {"id": "wp_singapore", "label": "Singapore Hub", "location": {"lat": 1.29, "lng": 103.85}},
+    {"id": "wp_suez_north", "label": "Suez North", "location": {"lat": 31.26, "lng": 32.30}},
+    {"id": "wp_suez_south", "label": "Suez South", "location": {"lat": 29.93, "lng": 32.55}},
+    {"id": "wp_panama_atl", "label": "Panama Atlantic", "location": {"lat": 9.35, "lng": -79.91}},
+    {"id": "wp_panama_pac", "label": "Panama Pacific", "location": {"lat": 8.92, "lng": -79.55}},
+    {"id": "choke_suez", "label": "Suez Canal", "location": {"lat": 30.58, "lng": 32.26}, "is_choke": true},
+    {"id": "choke_panama", "label": "Panama Canal", "location": {"lat": 9.11, "lng": -79.69}, "is_choke": true},
+    {"id": "choke_malacca", "label": "Strait of Malacca", "location": {"lat": 1.42, "lng": 102.13}, "is_choke": true},
+    {"id": "choke_hormuz", "label": "Strait of Hormuz", "location": {"lat": 26.56, "lng": 56.47}, "is_choke": true},
+    {"id": "hub_rotterdam", "label": "Rotterdam", "location": {"lat": 51.95, "lng": 4.10}},
+    {"id": "hub_zhoushan", "label": "Zhoushan", "location": {"lat": 29.98, "lng": 121.82}},
+    {"id": "hub_nola", "label": "New Orleans", "location": {"lat": 29.94, "lng": -90.05}}
+  ],
+  "edges": [
+    {"source": "hub_rotterdam", "target": "wp_gibraltar", "distance": 1300},
+    {"source": "wp_gibraltar", "target": "choke_suez", "distance": 1900},
+    {"source": "choke_suez", "target": "choke_hormuz", "distance": 3300},
+    {"source": "choke_hormuz", "target": "wp_singapore", "distance": 3500},
+    {"source": "wp_singapore", "target": "hub_zhoushan", "distance": 1500},
+    
+    {"source": "wp_gibraltar", "target": "wp_cape", "distance": 5000},
+    {"source": "wp_cape", "target": "wp_singapore", "distance": 6000},
+    
+    {"source": "hub_nola", "target": "choke_panama", "distance": 1400},
+    {"source": "choke_panama", "target": "hub_zhoushan", "distance": 9000}
+  ]
+}

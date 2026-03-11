@@ -1,0 +1,266 @@
+{
+  "commodity": "Bananas",
+  "version": "2.1",
+  "nodes": [
+    {
+      "id": "farm_ecuador",
+      "label": "Machala (Ecuador)",
+      "type": "resource",
+      "location": {
+        "lat": -3.25,
+        "lng": -79.95
+      },
+      "inventory": 3000.0,
+      "notes": "Banana capital of the world.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "farm_philippines",
+      "label": "Davao (Philippines)",
+      "type": "resource",
+      "location": {
+        "lat": 7.19,
+        "lng": 125.45
+      },
+      "inventory": 1500.0,
+      "notes": "Asian supply.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_guayaquil",
+      "label": "Port of Guayaquil",
+      "type": "logistic",
+      "location": {
+        "lat": -2.27,
+        "lng": -79.9
+      },
+      "notes": "Top banana port.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_antwerp",
+      "label": "Antwerp (EU)",
+      "type": "logistic",
+      "location": {
+        "lat": 51.22,
+        "lng": 4.4
+      },
+      "notes": "Major entry.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_st_petersburg",
+      "label": "St. Petersburg (RU)",
+      "type": "logistic",
+      "location": {
+        "lat": 59.89,
+        "lng": 30.26
+      },
+      "notes": "Russia loves bananas.",
+      "jurisdiction": "Russia",
+      "risk_level": 0.9,
+      "is_sanctioned": true,
+      "conflict_zone": false,
+      "owner_id": "actor_gazprom"
+    },
+    {
+      "id": "choke_panama",
+      "label": "Panama Canal",
+      "type": "logistic",
+      "location": {
+        "lat": 9.11,
+        "lng": -79.69
+      },
+      "jurisdiction": "Panama",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_eu",
+      "label": "EU Supermarkets",
+      "type": "retail",
+      "location": {
+        "lat": 50.85,
+        "lng": 4.35
+      },
+      "revenue_per_day": 800.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_port_of_st_petersburg_ru",
+      "label": "Port of St. Petersburg (RU)",
+      "type": "logistic",
+      "location": {
+        "lat": 59.93,
+        "lng": 30.33
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_port_of_rotterdam",
+      "label": "Port of Rotterdam",
+      "type": "logistic",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_eu_ripening_rooms",
+      "label": "EU Ripening Rooms",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_sge_shanghai",
+      "label": "SGE (Shanghai)",
+      "type": "retail",
+      "location": {
+        "lat": 31.23,
+        "lng": 121.47
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_rotterdam_coal_terminal",
+      "label": "Rotterdam Coal Terminal",
+      "type": "logistic",
+      "location": {
+        "lat": 51.95,
+        "lng": 4.05
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "farm_ecuador",
+      "target": "port_guayaquil",
+      "lag": 1,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_guayaquil",
+      "target": "choke_panama",
+      "lag": 3,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_panama"
+    },
+    {
+      "source": "choke_panama",
+      "target": "port_antwerp",
+      "lag": 12,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_panama"
+    },
+    {
+      "source": "choke_panama",
+      "target": "port_st_petersburg",
+      "lag": 16,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_panama"
+    },
+    {
+      "source": "port_antwerp",
+      "target": "mkt_eu",
+      "lag": 2,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "choke_panama",
+      "target": "port_port_of_rotterdam",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "choke_panama",
+      "target": "port_port_of_st_petersburg_ru",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "plant_rotterdam",
+      "target": "mkt_eu_ripening_rooms",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "farm_philippines",
+      "target": "mkt_sge_shanghai",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_rotterdam_coal_terminal",
+      "target": "mkt_eu_ripening_rooms",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    }
+  ]
+}

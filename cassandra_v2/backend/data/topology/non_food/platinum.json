@@ -1,0 +1,236 @@
+{
+  "commodity": "Platinum",
+  "version": "1.0",
+  "nodes": [
+    {
+      "id": "mine_bushveld",
+      "label": "Bushveld Complex (SA)",
+      "type": "resource",
+      "location": {
+        "lat": -25.7,
+        "lng": 27.8
+      },
+      "inventory": 300.0,
+      "jurisdiction": "Saudi Arabia",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_anglo_plat"
+    },
+    {
+      "id": "refinery_anglo",
+      "label": "Anglo American Plat.",
+      "type": "transformation",
+      "location": {
+        "lat": -25.7,
+        "lng": 27.2
+      },
+      "revenue_per_day": 250.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "factory_vw",
+      "label": "VW Wolfsburg",
+      "type": "retail",
+      "location": {
+        "lat": 52.4,
+        "lng": 10.8
+      },
+      "revenue_per_day": 500.0,
+      "owner_id": "actor_vw",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_rustenburg",
+      "label": "Rustenburg",
+      "type": "retail",
+      "location": {
+        "lat": -25.66,
+        "lng": 27.24
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_shanghai_pgm_market",
+      "label": "Shanghai PGM Market",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_sa_refineries",
+      "label": "SA Refineries",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "proc_rustenburg_smelter",
+      "label": "Rustenburg Smelter",
+      "type": "transformation",
+      "location": {
+        "lat": -25.66,
+        "lng": 27.24
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_sibanye_usa",
+      "label": "Sibanye (USA)",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_zurich_vaults",
+      "label": "Zurich Vaults",
+      "type": "retail",
+      "location": {
+        "lat": 47.37,
+        "lng": 8.54
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_ford_rouge_complex",
+      "label": "Ford Rouge Complex",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_zurich_airport",
+      "label": "Zurich Airport",
+      "type": "logistic",
+      "location": {
+        "lat": 47.37,
+        "lng": 8.54
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "mine_bushveld",
+      "target": "refinery_anglo",
+      "lag": 2,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "refinery_anglo",
+      "target": "factory_vw",
+      "lag": 15,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_bushveld",
+      "target": "proc_rustenburg_smelter",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_rustenburg",
+      "target": "mkt_zurich_vaults",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "hub_zurich_airport",
+      "target": "factory_vw",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_sa_refineries",
+      "target": "mkt_shanghai_pgm_market",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_zurich_airport",
+      "target": "factory_vw",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_sibanye_usa",
+      "target": "mkt_ford_rouge_complex",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    }
+  ]
+}

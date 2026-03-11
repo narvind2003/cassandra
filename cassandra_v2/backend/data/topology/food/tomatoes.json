@@ -1,0 +1,321 @@
+{
+  "commodity": "Tomatoes",
+  "version": "2.1",
+  "nodes": [
+    {
+      "id": "farm_xinjiang",
+      "label": "Xinjiang (China)",
+      "type": "resource",
+      "location": {
+        "lat": 41.11,
+        "lng": 85.16
+      },
+      "inventory": 5000.0,
+      "notes": "Paste capital.",
+      "jurisdiction": "China",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_cofco"
+    },
+    {
+      "id": "farm_california",
+      "label": "California (USA)",
+      "type": "resource",
+      "location": {
+        "lat": 36.77,
+        "lng": -119.41
+      },
+      "inventory": 3000.0,
+      "notes": "Morning Star.",
+      "jurisdiction": "USA",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_morning_star"
+    },
+    {
+      "id": "farm_italy",
+      "label": "Puglia (Italy)",
+      "type": "resource",
+      "location": {
+        "lat": 41.11,
+        "lng": 16.87
+      },
+      "inventory": 2000.0,
+      "notes": "San Marzano.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "proc_cofco",
+      "label": "COFCO Tunhe (CN)",
+      "type": "transformation",
+      "location": {
+        "lat": 43.82,
+        "lng": 87.61
+      },
+      "revenue_per_day": 800.0,
+      "owner_id": "actor_cofco",
+      "jurisdiction": "China",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_tianjin",
+      "label": "Tianjin Port",
+      "type": "logistic",
+      "location": {
+        "lat": 38.99,
+        "lng": 117.7
+      },
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_naples",
+      "label": "Naples Port",
+      "type": "logistic",
+      "location": {
+        "lat": 40.83,
+        "lng": 14.26
+      },
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_africa",
+      "label": "African Markets",
+      "type": "retail",
+      "location": {
+        "lat": 9.08,
+        "lng": 8.67
+      },
+      "revenue_per_day": 500.0,
+      "notes": "Paste importer.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_eu",
+      "label": "EU Retail",
+      "type": "retail",
+      "location": {
+        "lat": 48.85,
+        "lng": 2.35
+      },
+      "revenue_per_day": 1000.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_central_valley_usa",
+      "label": "Central Valley (USA)",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_tokyo_port",
+      "label": "Tokyo Port",
+      "type": "logistic",
+      "location": {
+        "lat": 35.67,
+        "lng": 139.75
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_port_of_naples_italy",
+      "label": "Port of Naples (Italy)",
+      "type": "logistic",
+      "location": {
+        "lat": 40.85,
+        "lng": 14.26
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_port_of_lagos_nigeria",
+      "label": "Port of Lagos (Nigeria)",
+      "type": "logistic",
+      "location": {
+        "lat": 6.45,
+        "lng": 3.4
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_port_of_oakland",
+      "label": "Port of Oakland",
+      "type": "logistic",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_xinjiang_xpcc_china",
+      "label": "Xinjiang XPCC (China)",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "farm_xinjiang",
+      "target": "proc_cofco",
+      "lag": 1,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "proc_cofco",
+      "target": "port_tianjin",
+      "lag": 5,
+      "notes": "Rail",
+      "carrier_id": "actor_bnsf",
+      "transport_mode": "rail",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_trans_siberian"
+    },
+    {
+      "source": "port_tianjin",
+      "target": "mkt_africa",
+      "lag": 30,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_tianjin",
+      "target": "mkt_eu",
+      "lag": 25,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "farm_italy",
+      "target": "port_naples",
+      "lag": 1,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_naples",
+      "target": "mkt_eu",
+      "lag": 2,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "farm_xinjiang",
+      "target": "port_tianjin",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_tianjin",
+      "target": "port_port_of_lagos_nigeria",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_tianjin",
+      "target": "port_port_of_naples_italy",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_oakland",
+      "target": "port_tokyo_port",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_central_valley_usa",
+      "target": "port_port_of_oakland",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_xinjiang_xpcc_china",
+      "target": "port_tianjin",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_port_of_oakland",
+      "target": "port_tokyo_port",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    }
+  ]
+}

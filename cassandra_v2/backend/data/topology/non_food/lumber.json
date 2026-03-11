@@ -1,0 +1,354 @@
+{
+  "commodity": "Lumber",
+  "version": "2.1",
+  "nodes": [
+    {
+      "id": "forest_bc",
+      "label": "British Columbia (Can)",
+      "type": "resource",
+      "location": {
+        "lat": 53.72,
+        "lng": -127.64
+      },
+      "inventory": 4000.0,
+      "notes": "SPF Lumber. West Fraser/Canfor.",
+      "jurisdiction": "Canada",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_nutrien"
+    },
+    {
+      "id": "forest_us_south",
+      "label": "US South (Yellow Pine)",
+      "type": "resource",
+      "location": {
+        "lat": 32.16,
+        "lng": -82.9
+      },
+      "inventory": 3500.0,
+      "notes": "Weyerhaeuser.",
+      "jurisdiction": "USA",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "forest_siberia",
+      "label": "Irkutsk (Russia)",
+      "type": "resource",
+      "location": {
+        "lat": 52.28,
+        "lng": 104.31
+      },
+      "inventory": 5000.0,
+      "notes": "Massive taiga reserves.",
+      "jurisdiction": "Russia",
+      "risk_level": 0.9,
+      "is_sanctioned": true,
+      "conflict_zone": false,
+      "owner_id": "actor_gazprom"
+    },
+    {
+      "id": "forest_sweden",
+      "label": "Dalarna (Sweden)",
+      "type": "resource",
+      "location": {
+        "lat": 60.12,
+        "lng": 13.5
+      },
+      "inventory": 2000.0,
+      "notes": "Stora Enso.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_vancouver",
+      "label": "Port of Vancouver",
+      "type": "logistic",
+      "location": {
+        "lat": 49.28,
+        "lng": -123.12
+      },
+      "notes": "Lumber to Asia.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_manzhouli",
+      "label": "Manzhouli Rail",
+      "type": "logistic",
+      "location": {
+        "lat": 49.6,
+        "lng": 117.44
+      },
+      "notes": "Russia->China timber gateway.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mill_west_fraser",
+      "label": "West Fraser Mills",
+      "type": "transformation",
+      "location": {
+        "lat": 52.13,
+        "lng": -122.14
+      },
+      "revenue_per_day": 800.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_west_fraser"
+    },
+    {
+      "id": "sawmill_georgia",
+      "label": "Georgia-Pacific Sawmill",
+      "type": "transformation",
+      "location": {
+        "lat": 32.5,
+        "lng": -83.0
+      },
+      "revenue_per_day": 700.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "depot_homedepot",
+      "label": "Home Depot Dist.",
+      "type": "retail",
+      "location": {
+        "lat": 33.85,
+        "lng": -84.48
+      },
+      "revenue_per_day": 1500.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "const_china_housing",
+      "label": "China Housing",
+      "type": "retail",
+      "location": {
+        "lat": 34.0,
+        "lng": 113.0
+      },
+      "revenue_per_day": 2000.0,
+      "jurisdiction": "China",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_port_of_tokyo",
+      "label": "Port of Tokyo",
+      "type": "logistic",
+      "location": {
+        "lat": 35.67,
+        "lng": 139.75
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_home_depot_distribution",
+      "label": "Home Depot Distribution",
+      "type": "retail",
+      "location": {
+        "lat": 33.74,
+        "lng": -84.38
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_westridge_marine_vancouver",
+      "label": "Westridge Marine (Vancouver)",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_port_of_la",
+      "label": "Port of LA",
+      "type": "logistic",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_urals_siberia_russia",
+      "label": "Urals/Siberia (Russia)",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "forest_bc",
+      "target": "mill_west_fraser",
+      "lag": 1,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mill_west_fraser",
+      "target": "port_vancouver",
+      "lag": 3,
+      "notes": "CN Rail",
+      "carrier_id": "actor_bnsf",
+      "transport_mode": "rail",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_trans_siberian"
+    },
+    {
+      "source": "mill_west_fraser",
+      "target": "depot_homedepot",
+      "lag": 7,
+      "notes": "Rail to US South",
+      "carrier_id": "actor_bnsf",
+      "transport_mode": "rail",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_trans_siberian"
+    },
+    {
+      "source": "forest_siberia",
+      "target": "port_manzhouli",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_manzhouli",
+      "target": "const_china_housing",
+      "lag": 4,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "forest_us_south",
+      "target": "sawmill_georgia",
+      "lag": 1,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "sawmill_georgia",
+      "target": "depot_homedepot",
+      "lag": 1,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_vancouver",
+      "target": "const_china_housing",
+      "lag": 18,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "forest_bc",
+      "target": "port_vancouver",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "term_westridge",
+      "target": "port_port_of_tokyo",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "field_urals",
+      "target": "port_manzhouli",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "forest_us_south",
+      "target": "mkt_home_depot_distribution",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_westridge_marine_vancouver",
+      "target": "port_port_of_tokyo",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_urals_siberia_russia",
+      "target": "port_manzhouli",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_westridge_marine_vancouver",
+      "target": "port_port_of_la",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    }
+  ]
+}

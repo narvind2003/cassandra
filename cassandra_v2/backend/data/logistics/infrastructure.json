@@ -1,0 +1,134 @@
+[
+  {
+    "id": "infra_suez",
+    "name": "Suez Canal",
+    "type": "canal",
+    "capacity_bpd": 5500000.0,
+    "max_draft": 20.1,
+    "max_beam": 77.5,
+    "length_km": 193.0,
+    "location": { "lat": 30.6, "lng": 32.3 },
+    "description": "Critical choke point connecting the Red Sea and Mediterranean."
+  },
+  {
+    "id": "infra_panama",
+    "name": "Panama Canal",
+    "type": "canal",
+    "max_draft": 15.2,
+    "max_beam": 51.25,
+    "length_km": 82.0,
+    "location": { "lat": 9.08, "lng": -79.68 },
+    "description": "Key route for US Grain to Asia and LNG."
+  },
+  {
+    "id": "infra_hormuz",
+    "name": "Strait of Hormuz",
+    "type": "strait",
+    "capacity_bpd": 21000000.0,
+    "max_draft": 30.0, # Deep enough for anything
+    "location": { "lat": 26.56, "lng": 56.47 },
+    "description": "The world's most critical oil choke point."
+  },
+  {
+    "id": "infra_malacca",
+    "name": "Strait of Malacca",
+    "type": "strait",
+    "capacity_bpd": 16000000.0,
+    "max_draft": 25.0, # Malaccamax limit
+    "location": { "lat": 4.2, "lng": 100.0 },
+    "description": "Main artery for energy flows to China and Japan."
+  },
+  {
+    "id": "infra_druzhba",
+    "name": "Druzhba Pipeline",
+    "type": "pipeline",
+    "capacity_bpd": 1400000.0,
+    "length_km": 4000.0,
+    "owner_id": "actor_transneft",
+    "description": "The 'Friendship' pipeline connecting Russia to Europe."
+  },
+  {
+    "id": "infra_eilat_ashkelon",
+    "name": "Eilat-Ashkelon Pipeline",
+    "type": "pipeline",
+    "capacity_bpd": 600000.0,
+    "length_km": 254.0,
+    "description": "Secretive Israeli pipeline linking Red Sea to Med. Used by Marc Rich and Glencore."
+  },
+  {
+    "id": "infra_btc",
+    "name": "Baku-Tbilisi-Ceyhan (BTC)",
+    "type": "pipeline",
+    "capacity_bpd": 1000000.0,
+    "length_km": 1768.0,
+    "owner_id": "actor_bp",
+    "description": "Strategic route bypassing Russia for Caspian oil."
+  },
+  {
+    "id": "infra_cpc",
+    "name": "Caspian Pipeline Consortium (CPC)",
+    "type": "pipeline",
+    "capacity_bpd": 1500000.0,
+    "length_km": 1510.0,
+    "owner_id": "actor_chevron",
+    "description": "Kazakh oil to Black Sea."
+  },
+  {
+    "id": "infra_trans_siberian",
+    "name": "Trans-Siberian Railway",
+    "type": "rail_line",
+    "capacity_tpy": 120000000.0,
+    "length_km": 9289.0,
+    "owner_id": "actor_rzd",
+    "description": "Artery for Russian Coal, Metals and Lumber to China."
+  },
+  {
+    "id": "infra_bnsf_grain",
+    "name": "BNSF Northern Corridor",
+    "type": "rail_line",
+    "owner_id": "actor_bnsf",
+    "description": "US Grain from Midwest to PNW ports."
+  },
+  {
+    "id": "infra_carajas_rail",
+    "name": "Carajas Railway",
+    "type": "rail_line",
+    "owner_id": "actor_vale",
+    "description": "Iron Ore from Amazon to Ponta da Madeira."
+  },
+  {
+    "id": "infra_colonial",
+    "name": "Colonial Pipeline",
+    "type": "pipeline",
+    "capacity_bpd": 2500000.0,
+    "owner_id": "actor_colonial",
+    "description": "US Gulf Coast refined products to East Coast."
+  },
+  {
+    "id": "infra_keystone",
+    "name": "Keystone Pipeline",
+    "type": "pipeline",
+    "capacity_bpd": 590000.0,
+    "owner_id": "actor_tc_energy",
+    "description": "Canadian heavy crude to US refineries."
+  },
+  {
+    "id": "infra_tanap",
+    "name": "Trans-Anatolian Pipeline",
+    "type": "pipeline",
+    "description": "Azeri Gas to Europe."
+  },
+  {
+    "id": "infra_nord_stream",
+    "name": "Nord Stream",
+    "type": "pipeline",
+    "owner_id": "actor_gazprom",
+    "description": "Russian gas under Baltic Sea to Germany."
+  },
+  {
+    "id": "infra_lobito_corridor",
+    "name": "Lobito Corridor",
+    "type": "rail_line",
+    "description": "Copper/Cobalt from DRC/Zambia to Atlantic port of Lobito."
+  }
+]

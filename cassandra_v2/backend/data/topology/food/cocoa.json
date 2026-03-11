@@ -1,0 +1,188 @@
+{
+  "commodity": "Cocoa",
+  "version": "2.1",
+  "nodes": [
+    {
+      "id": "farm_ivory_coast",
+      "label": "Ivory Coast Farms",
+      "type": "resource",
+      "location": {
+        "lat": 6.84,
+        "lng": -5.35
+      },
+      "inventory": 4000.0,
+      "notes": "40% of world supply.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_state_ivory_coast"
+    },
+    {
+      "id": "farm_ghana",
+      "label": "Ghana Farms",
+      "type": "resource",
+      "location": {
+        "lat": 6.7,
+        "lng": -1.6
+      },
+      "inventory": 2000.0,
+      "notes": "Cocoa Board controlled.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_abidjan",
+      "label": "Port of Abidjan",
+      "type": "logistic",
+      "location": {
+        "lat": 5.3,
+        "lng": -4.01
+      },
+      "notes": "Top cocoa port.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_amsterdam",
+      "label": "Port of Amsterdam",
+      "type": "logistic",
+      "location": {
+        "lat": 52.37,
+        "lng": 4.89
+      },
+      "notes": "World's cocoa warehouse.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "proc_barry",
+      "label": "Barry Callebaut (BE)",
+      "type": "transformation",
+      "location": {
+        "lat": 50.96,
+        "lng": 4.07
+      },
+      "revenue_per_day": 800.0,
+      "jurisdiction": "Belgium",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_swiss",
+      "label": "Swiss Chocolatiers",
+      "type": "retail",
+      "location": {
+        "lat": 46.81,
+        "lng": 8.22
+      },
+      "revenue_per_day": 1200.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_hershey_usa",
+      "label": "Hershey (USA)",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_tema",
+      "label": "Tema",
+      "type": "retail",
+      "location": {
+        "lat": 5.66,
+        "lng": 0.01
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_port_of_tema",
+      "label": "Port of Tema",
+      "type": "logistic",
+      "location": {
+        "lat": 5.66,
+        "lng": 0.01
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "farm_ivory_coast",
+      "target": "port_abidjan",
+      "lag": 2,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_abidjan",
+      "target": "port_amsterdam",
+      "lag": 12,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_amsterdam",
+      "target": "proc_barry",
+      "lag": 1,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "proc_barry",
+      "target": "mkt_swiss",
+      "lag": 2,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "farm_ghana",
+      "target": "port_port_of_tema",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_tema",
+      "target": "mkt_hershey_usa",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    }
+  ]
+}

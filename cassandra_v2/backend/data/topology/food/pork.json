@@ -1,0 +1,297 @@
+{
+  "commodity": "Pork",
+  "version": "2.1",
+  "nodes": [
+    {
+      "id": "farm_spain",
+      "label": "Catalonia Farms (ES)",
+      "type": "resource",
+      "location": {
+        "lat": 41.38,
+        "lng": 2.17
+      },
+      "inventory": 3000.0,
+      "notes": "Top EU exporter.",
+      "jurisdiction": "Spain",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "farm_usa",
+      "label": "Iowa/NC Hog Farms",
+      "type": "resource",
+      "location": {
+        "lat": 42.03,
+        "lng": -93.62
+      },
+      "inventory": 3500.0,
+      "notes": "Smithfield (WH Group).",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_adm"
+    },
+    {
+      "id": "proc_shuanghui",
+      "label": "Shuanghui (China)",
+      "type": "transformation",
+      "location": {
+        "lat": 34.76,
+        "lng": 113.62
+      },
+      "revenue_per_day": 1500.0,
+      "jurisdiction": "China",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_sinopec"
+    },
+    {
+      "id": "port_valencia",
+      "label": "Port of Valencia",
+      "type": "logistic",
+      "location": {
+        "lat": 39.46,
+        "lng": -0.37
+      },
+      "owner_id": "actor_vale",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_longbeach",
+      "label": "Port of Long Beach",
+      "type": "logistic",
+      "location": {
+        "lat": 33.77,
+        "lng": -118.19
+      },
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_china",
+      "label": "China Pork Market",
+      "type": "retail",
+      "location": {
+        "lat": 31.23,
+        "lng": 121.47
+      },
+      "revenue_per_day": 3000.0,
+      "notes": "Half of world consumption.",
+      "jurisdiction": "China",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_nestle"
+    },
+    {
+      "id": "res_smithfield_nc",
+      "label": "Smithfield (NC)",
+      "type": "resource",
+      "location": {
+        "lat": 36.97,
+        "lng": -76.62
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_us_domestic_hubs",
+      "label": "US Domestic Hubs",
+      "type": "logistic",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_port_of_hamburg",
+      "label": "Port of Hamburg",
+      "type": "logistic",
+      "location": {
+        "lat": 53.55,
+        "lng": 9.99
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_denmark",
+      "label": "Denmark",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_aurubis_hamburg_de",
+      "label": "Aurubis Hamburg (DE)",
+      "type": "retail",
+      "location": {
+        "lat": 53.55,
+        "lng": 9.99
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_port_of_la_long_beach",
+      "label": "Port of LA/Long Beach",
+      "type": "logistic",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_cf_industries_iowa",
+      "label": "CF Industries (Iowa)",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_port_of_shanghai",
+      "label": "Port of Shanghai",
+      "type": "logistic",
+      "location": {
+        "lat": 31.23,
+        "lng": 121.47
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "farm_spain",
+      "target": "port_valencia",
+      "lag": 1,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_valencia",
+      "target": "mkt_china",
+      "lag": 25,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "farm_usa",
+      "target": "port_longbeach",
+      "lag": 4,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_longbeach",
+      "target": "mkt_china",
+      "lag": 15,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "plant_cf_iowa",
+      "target": "port_longbeach",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_denmark",
+      "target": "port_port_of_hamburg",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "res_smithfield_nc",
+      "target": "port_us_domestic_hubs",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_cf_industries_iowa",
+      "target": "port_longbeach",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_port_of_la_long_beach",
+      "target": "port_port_of_shanghai",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_aurubis_hamburg_de",
+      "target": "port_port_of_shanghai",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    }
+  ]
+}

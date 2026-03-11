@@ -1,0 +1,516 @@
+{
+  "commodity": "Natural Gas (LNG)",
+  "version": "2.2",
+  "nodes": [
+    {
+      "id": "field_north_dome",
+      "label": "North Field (Qatar)",
+      "type": "resource",
+      "location": {
+        "lat": 26.65,
+        "lng": 52.03
+      },
+      "inventory": 6000.0,
+      "notes": "World's largest gas field.",
+      "owner_id": "actor_aramco",
+      "jurisdiction": "Qatar",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "field_marcellus",
+      "label": "Marcellus Shale (USA)",
+      "type": "resource",
+      "location": {
+        "lat": 41.5,
+        "lng": -76.5
+      },
+      "inventory": 5000.0,
+      "notes": "Fracking giant.",
+      "owner_id": "actor_exxon",
+      "jurisdiction": "USA",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "field_prelude",
+      "label": "Prelude Gas Field (Aus)",
+      "type": "resource",
+      "location": {
+        "lat": -13.78,
+        "lng": 123.32
+      },
+      "inventory": 3000.0,
+      "notes": "Offshore Browse Basin.",
+      "jurisdiction": "Australia",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_bhp"
+    },
+    {
+      "id": "field_yamal",
+      "label": "South Tambey (Russia)",
+      "type": "resource",
+      "location": {
+        "lat": 71.27,
+        "lng": 72.07
+      },
+      "inventory": 4000.0,
+      "notes": "Arctic gas.",
+      "owner_id": "actor_gazprom",
+      "jurisdiction": "Russia",
+      "risk_level": 0.9,
+      "is_sanctioned": true,
+      "conflict_zone": false
+    },
+    {
+      "id": "lng_ras_laffan",
+      "label": "Ras Laffan LNG",
+      "type": "transformation",
+      "location": {
+        "lat": 25.93,
+        "lng": 51.55
+      },
+      "revenue_per_day": 4000.0,
+      "notes": "Qatargas/RasGas hub.",
+      "owner_id": "actor_aramco",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "lng_sabine_pass",
+      "label": "Sabine Pass (Cheniere)",
+      "type": "transformation",
+      "location": {
+        "lat": 29.74,
+        "lng": -93.88
+      },
+      "revenue_per_day": 2500.0,
+      "notes": "Largest US export terminal.",
+      "owner_id": "actor_cheniere",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "lng_freeport",
+      "label": "Freeport LNG (Texas)",
+      "type": "logistic",
+      "location": {
+        "lat": 28.94,
+        "lng": -95.33
+      },
+      "revenue_per_day": 2000.0,
+      "notes": "Prone to outages.",
+      "owner_id": "actor_freeport",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "lng_prelude_flng",
+      "label": "Prelude FLNG (Shell)",
+      "type": "transformation",
+      "location": {
+        "lat": -13.78,
+        "lng": 123.32
+      },
+      "revenue_per_day": 1800.0,
+      "notes": "Floating Liquefaction.",
+      "owner_id": "actor_shell",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "lng_yamal",
+      "label": "Yamal LNG",
+      "type": "transformation",
+      "location": {
+        "lat": 71.27,
+        "lng": 72.07
+      },
+      "revenue_per_day": 2200.0,
+      "notes": "Ice-class tankers required.",
+      "owner_id": "actor_gazprom",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "choke_hormuz",
+      "label": "Strait of Hormuz",
+      "type": "logistic",
+      "location": {
+        "lat": 26.56,
+        "lng": 56.47
+      },
+      "notes": "Qatar exit.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "choke_panama",
+      "label": "Panama Canal",
+      "type": "logistic",
+      "location": {
+        "lat": 9.11,
+        "lng": -79.69
+      },
+      "notes": "US -> Asia route.",
+      "jurisdiction": "Panama",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "choke_nsr",
+      "label": "Northern Sea Route",
+      "type": "logistic",
+      "location": {
+        "lat": 75.0,
+        "lng": 140.0
+      },
+      "notes": "Summer route Yamal -> China.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "regas_futtsu",
+      "label": "Futtsu LNG (Japan)",
+      "type": "retail",
+      "location": {
+        "lat": 35.33,
+        "lng": 139.84
+      },
+      "revenue_per_day": 1200.0,
+      "notes": "TEPCO power generation.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "regas_gate",
+      "label": "Gate Terminal (NL)",
+      "type": "retail",
+      "location": {
+        "lat": 51.95,
+        "lng": 4.07
+      },
+      "revenue_per_day": 1000.0,
+      "notes": "Rotterdam gas hub.",
+      "jurisdiction": "Netherlands",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "regas_zeebrugge",
+      "label": "Zeebrugge (EU)",
+      "type": "retail",
+      "location": {
+        "lat": 51.33,
+        "lng": 3.2
+      },
+      "revenue_per_day": 1100.0,
+      "notes": "Fluxys terminal in Belgium.",
+      "jurisdiction": "Belgium",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "regas_wilhelmshaven",
+      "label": "Wilhelmshaven FSRU",
+      "type": "retail",
+      "location": {
+        "lat": 53.63,
+        "lng": 8.12
+      },
+      "revenue_per_day": 800.0,
+      "notes": "New German terminal.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "regas_shanghai",
+      "label": "Shanghai LNG",
+      "type": "retail",
+      "location": {
+        "lat": 31.0,
+        "lng": 122.0
+      },
+      "revenue_per_day": 1100.0,
+      "notes": "Yangshan deepwater.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_sabine_pass_lng",
+      "label": "Sabine Pass LNG",
+      "type": "retail",
+      "location": {
+        "lat": 29.74,
+        "lng": -93.88
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_zeebrugge_hub_eu",
+      "label": "Zeebrugge Hub (EU)",
+      "type": "logistic",
+      "location": {
+        "lat": 51.33,
+        "lng": 3.2
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_suez_canal",
+      "label": "Suez Canal",
+      "type": "logistic",
+      "location": {
+        "lat": 30.58,
+        "lng": 32.27
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "field_north_dome",
+      "target": "lng_ras_laffan",
+      "lag": 1,
+      "carrier_id": "actor_frontline",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "lng_ras_laffan",
+      "target": "choke_hormuz",
+      "lag": 1,
+      "carrier_id": "actor_teekay",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_hormuz"
+    },
+    {
+      "source": "choke_hormuz",
+      "target": "regas_futtsu",
+      "lag": 14,
+      "carrier_id": "actor_teekay",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_hormuz"
+    },
+    {
+      "source": "choke_hormuz",
+      "target": "regas_gate",
+      "lag": 18,
+      "carrier_id": "actor_frontline",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_hormuz"
+    },
+    {
+      "source": "choke_hormuz",
+      "target": "regas_shanghai",
+      "lag": 12,
+      "carrier_id": "actor_frontline",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_hormuz"
+    },
+    {
+      "source": "field_marcellus",
+      "target": "lng_sabine_pass",
+      "lag": 3,
+      "notes": "Pipeline",
+      "carrier_id": "actor_colonial",
+      "transport_mode": "pipe",
+      "risk_level": 0.1
+    },
+    {
+      "source": "field_marcellus",
+      "target": "lng_freeport",
+      "lag": 3,
+      "carrier_id": "actor_teekay",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "lng_sabine_pass",
+      "target": "choke_panama",
+      "lag": 5,
+      "carrier_id": "actor_frontline",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_panama"
+    },
+    {
+      "source": "lng_sabine_pass",
+      "target": "regas_wilhelmshaven",
+      "lag": 12,
+      "carrier_id": "actor_teekay",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "lng_freeport",
+      "target": "choke_panama",
+      "lag": 5,
+      "carrier_id": "actor_teekay",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_panama"
+    },
+    {
+      "source": "choke_panama",
+      "target": "regas_futtsu",
+      "lag": 20,
+      "carrier_id": "actor_frontline",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_panama"
+    },
+    {
+      "source": "choke_panama",
+      "target": "regas_shanghai",
+      "lag": 22,
+      "carrier_id": "actor_frontline",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_panama"
+    },
+    {
+      "source": "field_prelude",
+      "target": "lng_prelude_flng",
+      "lag": 1,
+      "carrier_id": "actor_frontline",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "lng_prelude_flng",
+      "target": "regas_futtsu",
+      "lag": 8,
+      "carrier_id": "actor_frontline",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "lng_prelude_flng",
+      "target": "regas_shanghai",
+      "lag": 9,
+      "carrier_id": "actor_frontline",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "field_yamal",
+      "target": "lng_yamal",
+      "lag": 1,
+      "carrier_id": "actor_frontline",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "lng_yamal",
+      "target": "choke_nsr",
+      "lag": 5,
+      "notes": "Summer only",
+      "carrier_id": "actor_teekay",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "lng_yamal",
+      "target": "regas_zeebrugge",
+      "lag": 6,
+      "carrier_id": "actor_teekay",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "lng_yamal",
+      "target": "regas_gate",
+      "lag": 8,
+      "carrier_id": "actor_teekay",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "choke_nsr",
+      "target": "regas_shanghai",
+      "lag": 15,
+      "carrier_id": "actor_frontline",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "field_marcellus",
+      "target": "mkt_sabine_pass_lng",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "lng_yamal",
+      "target": "port_zeebrugge_hub_eu",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "choke_suez",
+      "target": "regas_gate",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_suez_canal",
+      "target": "regas_gate",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    }
+  ]
+}

@@ -1,0 +1,842 @@
+[
+  {
+    "id": "actor_aramco",
+    "name": "Saudi Aramco",
+    "type": "state",
+    "hq_country": "Saudi Arabia",
+    "commodities": ["Crude Oil", "Natural Gas (LNG)"],
+    "market_cap": 2000.0,
+    "description": "The world's largest oil producer.",
+    "attributes": { "sanctions_risk": 0.0, "spare_capacity": 2000000.0 }
+  },
+  {
+    "id": "actor_glencore",
+    "name": "Glencore",
+    "type": "trader",
+    "hq_country": "Switzerland",
+    "commodities": ["Copper", "Cobalt", "Zinc", "Thermal Coal", "Oil"],
+    "market_cap": 60.0,
+    "description": "Commodity trading and mining giant.",
+    "attributes": { "risk_appetite": "high", "logistics_fleet": 150 }
+  },
+  {
+    "id": "actor_vitol",
+    "name": "Vitol",
+    "type": "trader",
+    "hq_country": "Netherlands",
+    "commodities": ["Crude Oil", "LNG"],
+    "market_cap": 0.0,
+    "description": "The world's largest independent oil trader.",
+    "attributes": { "risk_appetite": "very_high", "volume_traded_bpd": 8000000 }
+  },
+  {
+    "id": "actor_trafigura",
+    "name": "Trafigura",
+    "type": "trader",
+    "hq_country": "Singapore/Switzerland",
+    "commodities": ["Oil", "Metals", "LNG"],
+    "market_cap": 0.0,
+    "description": "Major physical commodity trader.",
+    "attributes": { "risk_appetite": "high" }
+  },
+  {
+    "id": "actor_maersk",
+    "name": "A.P. Moller - Maersk",
+    "type": "logistics",
+    "hq_country": "Denmark",
+    "commodities": ["Logistics"],
+    "market_cap": 30.0,
+    "description": "Global container logistics integrator.",
+    "attributes": { "fleet_size": 700 }
+  },
+  {
+    "id": "actor_msc",
+    "name": "MSC (Mediterranean Shipping Company)",
+    "type": "logistics",
+    "hq_country": "Switzerland",
+    "commodities": ["Logistics"],
+    "market_cap": 0.0,
+    "description": "Largest container shipping line.",
+    "attributes": { "fleet_size": 800 }
+  },
+  {
+    "id": "actor_tesla",
+    "name": "Tesla",
+    "type": "consumer",
+    "hq_country": "USA",
+    "commodities": ["Lithium-Ion Battery", "Nickel", "Cobalt"],
+    "market_cap": 800.0,
+    "description": "EV manufacturer and energy storage.",
+    "attributes": { "supply_chain_verticality": "high" }
+  },
+  {
+    "id": "actor_apple",
+    "name": "Apple",
+    "type": "consumer",
+    "hq_country": "USA",
+    "commodities": ["Gold", "Rare Earths", "Semiconductors"],
+    "market_cap": 3000.0,
+    "description": "Consumer electronics giant.",
+    "attributes": { "supply_chain_complexity": "extreme" }
+  },
+  {
+    "id": "actor_tsmc",
+    "name": "TSMC",
+    "type": "producer",
+    "hq_country": "Taiwan",
+    "commodities": ["Semiconductors"],
+    "market_cap": 500.0,
+    "description": "World's largest semiconductor foundry.",
+    "attributes": { "geopolitical_criticality": "maximum" }
+  },
+  {
+    "id": "actor_gazprom",
+    "name": "Gazprom",
+    "type": "state",
+    "hq_country": "Russia",
+    "commodities": ["Natural Gas (LNG)", "Oil"],
+    "market_cap": 50.0,
+    "description": "Russian state-owned energy corporation.",
+    "attributes": { "sanctions_status": "active" }
+  },
+  {
+    "id": "actor_cargill",
+    "name": "Cargill",
+    "type": "trader",
+    "hq_country": "USA",
+    "commodities": ["Soybeans", "Corn (Maize)", "Wheat", "Beef"],
+    "market_cap": 0.0,
+    "description": "Largest private US company, agri-giant (The 'C' in ABCD).",
+    "attributes": { "dominance": "global_food" }
+  },
+  {
+    "id": "actor_adm",
+    "name": "ADM (Archer Daniels Midland)",
+    "type": "trader",
+    "hq_country": "USA",
+    "commodities": ["Corn (Maize)", "Soybeans", "Wheat"],
+    "market_cap": 40.0,
+    "description": "Major food processing and commodities trading corporation.",
+    "attributes": { "dominance": "global_food" }
+  },
+  {
+    "id": "actor_bunge",
+    "name": "Bunge",
+    "type": "trader",
+    "hq_country": "USA",
+    "commodities": ["Soybeans", "Wheat", "Corn (Maize)"],
+    "market_cap": 15.0,
+    "description": "Global agribusiness and food company.",
+    "attributes": { "dominance": "global_food" }
+  },
+  {
+    "id": "actor_ldc",
+    "name": "Louis Dreyfus Company",
+    "type": "trader",
+    "hq_country": "Netherlands",
+    "commodities": ["Cotton", "Rice", "Sugar", "Coffee"],
+    "market_cap": 0.0,
+    "description": "Merchant firm involved in agriculture and food processing.",
+    "attributes": { "dominance": "global_food" }
+  },
+  {
+    "id": "actor_wilmar",
+    "name": "Wilmar International",
+    "type": "producer",
+    "hq_country": "Singapore",
+    "commodities": ["Palm Oil", "Sugar"],
+    "market_cap": 20.0,
+    "description": "Asia's leading agribusiness group.",
+    "attributes": { "dominance": "palm_oil" }
+  },
+  {
+    "id": "actor_cofco",
+    "name": "COFCO",
+    "type": "state",
+    "hq_country": "China",
+    "commodities": ["Corn (Maize)", "Wheat", "Soybeans"],
+    "market_cap": 0.0,
+    "description": "China's state-owned food processing holding company.",
+    "attributes": { "strategic_role": "food_security" }
+  },
+  {
+    "id": "actor_sinopec",
+    "name": "Sinopec",
+    "type": "producer",
+    "hq_country": "China",
+    "commodities": ["Crude Oil", "Petrochemicals"],
+    "market_cap": 80.0,
+    "description": "World's largest oil refining, gas and petrochemical conglomerate.",
+    "attributes": { "state_owned": true }
+  },
+  {
+    "id": "actor_exxon",
+    "name": "ExxonMobil",
+    "type": "producer",
+    "hq_country": "USA",
+    "commodities": ["Crude Oil", "Natural Gas (LNG)"],
+    "market_cap": 450.0,
+    "description": "American multinational oil and gas corporation.",
+    "attributes": { "integrated_major": true }
+  },
+  {
+    "id": "actor_shell",
+    "name": "Shell",
+    "type": "producer",
+    "hq_country": "UK",
+    "commodities": ["Crude Oil", "Natural Gas (LNG)"],
+    "market_cap": 200.0,
+    "description": "Global group of energy and petrochemical companies.",
+    "attributes": { "integrated_major": true }
+  },
+  {
+    "id": "actor_bp",
+    "name": "BP",
+    "type": "producer",
+    "hq_country": "UK",
+    "commodities": ["Crude Oil", "Natural Gas (LNG)"],
+    "market_cap": 100.0,
+    "description": "British multinational oil and gas company.",
+    "attributes": { "integrated_major": true }
+  },
+  {
+    "id": "actor_chevron",
+    "name": "Chevron",
+    "type": "producer",
+    "hq_country": "USA",
+    "commodities": ["Crude Oil", "Natural Gas (LNG)"],
+    "market_cap": 300.0,
+    "description": "American multinational energy corporation.",
+    "attributes": { "integrated_major": true }
+  },
+  {
+    "id": "actor_total",
+    "name": "TotalEnergies",
+    "type": "producer",
+    "hq_country": "France",
+    "commodities": ["Crude Oil", "Natural Gas (LNG)"],
+    "market_cap": 150.0,
+    "description": "French multinational integrated energy and petroleum company.",
+    "attributes": { "integrated_major": true }
+  },
+  {
+    "id": "actor_cmoc",
+    "name": "CMOC Group",
+    "type": "producer",
+    "hq_country": "China",
+    "commodities": ["Cobalt", "Copper", "Niobium"],
+    "market_cap": 25.0,
+    "description": "World's largest cobalt producer via DRC assets.",
+    "attributes": { "strategic_resource_control": "high" }
+  },
+  {
+    "id": "actor_huayou",
+    "name": "Huayou Cobalt",
+    "type": "transformation",
+    "hq_country": "China",
+    "commodities": ["Cobalt", "Nickel", "Lithium-Ion Battery"],
+    "market_cap": 15.0,
+    "description": "Top global cobalt refiner and battery material supplier.",
+    "attributes": { "vertical_integration": "high" }
+  },
+  {
+    "id": "actor_catl",
+    "name": "CATL",
+    "type": "consumer",
+    "hq_country": "China",
+    "commodities": ["Lithium-Ion Battery", "Cobalt", "Nickel", "Lithium"],
+    "market_cap": 200.0,
+    "description": "The world's largest EV battery manufacturer.",
+    "attributes": { "market_share": "37%" }
+  },
+  {
+    "id": "actor_byd",
+    "name": "BYD",
+    "type": "consumer",
+    "hq_country": "China",
+    "commodities": ["Lithium-Ion Battery", "Cobalt"],
+    "market_cap": 80.0,
+    "description": "Major EV and battery manufacturer.",
+    "attributes": { "vertical_integration": "high" }
+  },
+  {
+    "id": "actor_albemarle",
+    "name": "Albemarle",
+    "type": "producer",
+    "hq_country": "USA",
+    "commodities": ["Lithium", "Lithium-Ion Battery"],
+    "market_cap": 15.0,
+    "description": "Leading global lithium producer.",
+    "attributes": { "resource_base": "diverse" }
+  },
+  {
+    "id": "actor_sqm",
+    "name": "SQM",
+    "type": "producer",
+    "hq_country": "Chile",
+    "commodities": ["Lithium", "Iodine"],
+    "market_cap": 12.0,
+    "description": "Major lithium brine operator in the Atacama.",
+    "attributes": { "state_involvement": "medium" }
+  },
+  {
+    "id": "actor_pilbara",
+    "name": "Pilbara Minerals",
+    "type": "producer",
+    "hq_country": "Australia",
+    "commodities": ["Lithium"],
+    "market_cap": 10.0,
+    "description": "Key hard-rock lithium miner (spodumene).",
+    "attributes": { "growth": "high" }
+  },
+  {
+    "id": "actor_ganfeng",
+    "name": "Ganfeng Lithium",
+    "type": "transformation",
+    "hq_country": "China",
+    "commodities": ["Lithium", "Lithium-Ion Battery"],
+    "market_cap": 18.0,
+    "description": "Largest lithium compounds producer in China.",
+    "attributes": { "global_footprint": "expanding" }
+  },
+  {
+    "id": "actor_bhp",
+    "name": "BHP",
+    "type": "producer",
+    "hq_country": "Australia",
+    "commodities": ["Iron Ore", "Copper", "Nickel", "Coal"],
+    "market_cap": 140.0,
+    "description": "World's largest mining company.",
+    "attributes": { "diversified": true }
+  },
+  {
+    "id": "actor_rio",
+    "name": "Rio Tinto",
+    "type": "producer",
+    "hq_country": "UK/Australia",
+    "commodities": ["Iron Ore", "Aluminum", "Copper"],
+    "market_cap": 100.0,
+    "description": "Global mining and metals corporation.",
+    "attributes": { "diversified": true }
+  },
+  {
+    "id": "actor_vale",
+    "name": "Vale",
+    "type": "producer",
+    "hq_country": "Brazil",
+    "commodities": ["Iron Ore", "Nickel", "Copper"],
+    "market_cap": 60.0,
+    "description": "World's largest producer of iron ore and nickel.",
+    "attributes": { "logistics_control": "high" }
+  },
+  {
+    "id": "actor_freeport",
+    "name": "Freeport-McMoRan",
+    "type": "producer",
+    "hq_country": "USA",
+    "commodities": ["Copper", "Gold", "Molybdenum"],
+    "market_cap": 60.0,
+    "description": "Leading international mining company.",
+    "attributes": { "copper_focus": "high" }
+  },
+  {
+    "id": "actor_codelco",
+    "name": "Codelco",
+    "type": "state",
+    "hq_country": "Chile",
+    "commodities": ["Copper"],
+    "market_cap": 0.0,
+    "description": "National Copper Corporation of Chile.",
+    "attributes": { "state_owned": true }
+  },
+  {
+    "id": "actor_nutrien",
+    "name": "Nutrien",
+    "type": "producer",
+    "hq_country": "Canada",
+    "commodities": ["Potash", "Nitrogen", "Phosphate"],
+    "market_cap": 30.0,
+    "description": "World's largest provider of crop inputs and services.",
+    "attributes": { "fertilizer_dominance": "high" }
+  },
+  {
+    "id": "actor_mosaic",
+    "name": "The Mosaic Company",
+    "type": "producer",
+    "hq_country": "USA",
+    "commodities": ["Phosphate", "Potash"],
+    "market_cap": 10.0,
+    "description": "Leading producer of concentrated phosphate and potash.",
+    "attributes": { "fertilizer_focus": "high" }
+  },
+  {
+    "id": "actor_toyota",
+    "name": "Toyota",
+    "type": "consumer",
+    "hq_country": "Japan",
+    "commodities": ["Steel", "Aluminum", "Copper", "Rubber"],
+    "market_cap": 250.0,
+    "description": "Largest automobile manufacturer.",
+    "attributes": { "JIT_pioneer": true }
+  },
+  {
+    "id": "actor_vw",
+    "name": "Volkswagen Group",
+    "type": "consumer",
+    "hq_country": "Germany",
+    "commodities": ["Steel", "Aluminum", "Lithium-Ion Battery"],
+    "market_cap": 60.0,
+    "description": "Major German automotive manufacturing corporation.",
+    "attributes": { "EV_transition": "aggressive" }
+  },
+  {
+    "id": "actor_samsung",
+    "name": "Samsung Electronics",
+    "type": "consumer",
+    "hq_country": "South Korea",
+    "commodities": ["Semiconductors", "Rare Earths", "Gold"],
+    "market_cap": 350.0,
+    "description": "Global leader in technology and semiconductors.",
+    "attributes": { "supply_chain_complexity": "high" }
+  },
+  {
+    "id": "actor_foxconn",
+    "name": "Foxconn",
+    "type": "transformation",
+    "hq_country": "Taiwan",
+    "commodities": ["Semiconductors", "Copper", "Aluminum"],
+    "market_cap": 50.0,
+    "description": "World's largest contract electronics manufacturer.",
+    "attributes": { "assembly_dominance": "high" }
+  },
+  {
+    "id": "actor_teck",
+    "name": "Teck Resources",
+    "type": "producer",
+    "hq_country": "Canada",
+    "commodities": ["Zinc", "Copper", "Coal"],
+    "market_cap": 25.0,
+    "description": "Major Canadian diversified miner.",
+    "attributes": { "zinc_focus": "high" }
+  },
+  {
+    "id": "actor_nyrstar",
+    "name": "Nyrstar",
+    "type": "transformation",
+    "hq_country": "Switzerland/Belgium",
+    "commodities": ["Zinc", "Lead"],
+    "market_cap": 0.0,
+    "description": "Global leader in zinc and lead smelting.",
+    "attributes": { "owner": "Trafigura" }
+  },
+  {
+    "id": "actor_korea_zinc",
+    "name": "Korea Zinc",
+    "type": "transformation",
+    "hq_country": "South Korea",
+    "commodities": ["Zinc", "Silver", "Gold"],
+    "market_cap": 10.0,
+    "description": "The world's largest non-ferrous metal smelter.",
+    "attributes": { "efficiency": "extreme" }
+  },
+  {
+    "id": "actor_west_fraser",
+    "name": "West Fraser",
+    "type": "producer",
+    "hq_country": "Canada",
+    "commodities": ["Lumber", "Pulp"],
+    "market_cap": 8.0,
+    "description": "Largest lumber producer in North America.",
+    "attributes": { "forestry_certified": true }
+  },
+  {
+    "id": "actor_canfor",
+    "name": "Canfor",
+    "type": "producer",
+    "hq_country": "Canada",
+    "commodities": ["Lumber"],
+    "market_cap": 3.0,
+    "description": "Major Canadian forest products company.",
+    "attributes": { "capacity": "global" }
+  },
+  {
+    "id": "actor_jbs",
+    "name": "JBS S.A.",
+    "type": "producer",
+    "hq_country": "Brazil",
+    "commodities": ["Beef", "Pork", "Poultry"],
+    "market_cap": 12.0,
+    "description": "The world's largest meat processing company.",
+    "attributes": { "global_footprint": "extreme" }
+  },
+  {
+    "id": "actor_tyson",
+    "name": "Tyson Foods",
+    "type": "producer",
+    "hq_country": "USA",
+    "commodities": ["Poultry", "Beef", "Pork"],
+    "market_cap": 20.0,
+    "description": "Major US food corporation.",
+    "attributes": { "vertical_integration": "high" }
+  },
+  {
+    "id": "actor_nestle",
+    "name": "Nestle",
+    "type": "consumer",
+    "hq_country": "Switzerland",
+    "commodities": ["Coffee", "Cocoa", "Dairy"],
+    "market_cap": 300.0,
+    "description": "World's largest food and beverage company.",
+    "attributes": { "supply_chain_complexity": "high" }
+  },
+  {
+    "id": "actor_starbucks",
+    "name": "Starbucks",
+    "type": "consumer",
+    "hq_country": "USA",
+    "commodities": ["Coffee"],
+    "market_cap": 100.0,
+    "description": "World's largest coffeehouse chain.",
+    "attributes": { "ethical_sourcing": "certified" }
+  },
+  {
+    "id": "actor_mcdonalds",
+    "name": "McDonald's",
+    "type": "consumer",
+    "hq_country": "USA",
+    "commodities": ["Beef", "Potatoes", "Poultry"],
+    "market_cap": 200.0,
+    "description": "Fast food giant.",
+    "attributes": { "logistics_dependency": "extreme" }
+  },
+  {
+    "id": "actor_clarios",
+    "name": "Clarios",
+    "type": "transformation",
+    "hq_country": "USA",
+    "commodities": ["Lead", "Lead-Acid Battery"],
+    "market_cap": 0.0,
+    "description": "World's largest lead-acid battery manufacturer.",
+    "attributes": { "recycling_rate": 0.99 }
+  },
+  {
+    "id": "actor_viterra",
+    "name": "Viterra",
+    "type": "trader",
+    "hq_country": "Netherlands/Canada",
+    "commodities": ["Wheat", "Corn (Maize)", "Soybeans"],
+    "market_cap": 0.0,
+    "description": "Agribusiness subsidiary of Glencore.",
+    "attributes": { "market_share": "top_tier" }
+  },
+  {
+    "id": "actor_thai_union",
+    "name": "Thai Union",
+    "type": "transformation",
+    "hq_country": "Thailand",
+    "commodities": ["Tuna", "Fish"],
+    "market_cap": 2.0,
+    "description": "World's largest tuna processor (brands: John West, Chicken of the Sea).",
+    "attributes": { "sustainability": "sea_change" }
+  },
+  {
+    "id": "actor_maruha_nichiro",
+    "name": "Maruha Nichiro",
+    "type": "trader",
+    "hq_country": "Japan",
+    "commodities": ["Tuna", "Salmon"],
+    "market_cap": 1.5,
+    "description": "Japanese seafood giant.",
+    "attributes": { "fleet": "global" }
+  },
+  {
+    "id": "actor_fonterra",
+    "name": "Fonterra",
+    "type": "producer",
+    "hq_country": "New Zealand",
+    "commodities": ["Dairy"],
+    "market_cap": 8.0,
+    "description": "World's largest dairy exporter.",
+    "attributes": { "coop": true }
+  },
+  {
+    "id": "actor_mowi",
+    "name": "Mowi",
+    "type": "producer",
+    "hq_country": "Norway",
+    "commodities": ["Salmon"],
+    "market_cap": 10.0,
+    "description": "World's largest salmon farmer.",
+    "attributes": { "aquaculture": "leader" }
+  },
+  {
+    "id": "actor_lvmh",
+    "name": "LVMH",
+    "type": "consumer",
+    "hq_country": "France",
+    "commodities": ["Wine", "Leather"],
+    "market_cap": 400.0,
+    "description": "Luxury goods conglomerate (Moët & Chandon).",
+    "attributes": { "brand_power": "extreme" }
+  },
+  {
+    "id": "actor_constellation",
+    "name": "Constellation Brands",
+    "type": "producer",
+    "hq_country": "USA",
+    "commodities": ["Wine", "Beer"],
+    "market_cap": 45.0,
+    "description": "Major alcohol producer.",
+    "attributes": { "distribution": "global" }
+  },
+  {
+    "id": "actor_halcyon",
+    "name": "Halcyon Agri",
+    "type": "producer",
+    "hq_country": "Singapore",
+    "commodities": ["Rubber"],
+    "market_cap": 1.0,
+    "description": "Leading integrated natural rubber franchise.",
+    "attributes": { "hevea": "dominant" }
+  },
+  {
+    "id": "actor_bridgestone",
+    "name": "Bridgestone",
+    "type": "consumer",
+    "hq_country": "Japan",
+    "commodities": ["Rubber"],
+    "market_cap": 30.0,
+    "description": "Largest tire manufacturer.",
+    "attributes": { "tire_tech": "leader" }
+  },
+  {
+    "id": "actor_lamb_weston",
+    "name": "Lamb Weston",
+    "type": "transformation",
+    "hq_country": "USA",
+    "commodities": ["Potatoes"],
+    "market_cap": 15.0,
+    "description": "Largest potato processor (French Fries).",
+    "attributes": { "qsr_partner": "key" }
+  },
+  {
+    "id": "actor_unilever",
+    "name": "Unilever",
+    "type": "consumer",
+    "hq_country": "UK",
+    "commodities": ["Palm Oil", "Tea"],
+    "market_cap": 120.0,
+    "description": "FMCG giant (Lipton, Dove).",
+    "attributes": { "sustainable_sourcing": "target" }
+  },
+  {
+    "id": "actor_barry_callebaut",
+    "name": "Barry Callebaut",
+    "type": "transformation",
+    "hq_country": "Switzerland",
+    "commodities": ["Cocoa"],
+    "market_cap": 12.0,
+    "description": "World's leading manufacturer of high-quality chocolate and cocoa products.",
+    "attributes": { "b2b": "dominant" }
+  },
+  {
+    "id": "actor_morning_star",
+    "name": "Morning Star",
+    "type": "producer",
+    "hq_country": "USA",
+    "commodities": ["Tomatoes"],
+    "market_cap": 0.0,
+    "description": "Largest tomato processor in the world.",
+    "attributes": { "california_base": true }
+  },
+  {
+    "id": "actor_state_india",
+    "name": "Govt of India (FCI)",
+    "type": "state",
+    "hq_country": "India",
+    "commodities": ["Rice", "Wheat"],
+    "market_cap": 0.0,
+    "description": "Food Corporation of India.",
+    "attributes": { "food_security": "priority" }
+  },
+  {
+    "id": "actor_state_thai",
+    "name": "Govt of Thailand",
+    "type": "state",
+    "hq_country": "Thailand",
+    "commodities": ["Rice", "Rubber"],
+    "market_cap": 0.0,
+    "description": "Thai Rice Exporters Association.",
+    "attributes": { "trade_policy": "active" }
+  },
+  {
+    "id": "actor_state_vietnam",
+    "name": "Vinafood",
+    "type": "state",
+    "hq_country": "Vietnam",
+    "commodities": ["Rice"],
+    "market_cap": 0.0,
+    "description": "Vietnam Northern Food Corporation.",
+    "attributes": { "export_control": "high" }
+  },
+  {
+    "id": "actor_kroger",
+    "name": "Kroger",
+    "type": "retail",
+    "hq_country": "USA",
+    "commodities": ["Food"],
+    "market_cap": 35.0,
+    "description": "Major US supermarket chain.",
+    "attributes": { "grocery": "leader" }
+  },
+  {
+    "id": "actor_walmart",
+    "name": "Walmart",
+    "type": "retail",
+    "hq_country": "USA",
+    "commodities": ["Food", "Consumer Goods"],
+    "market_cap": 400.0,
+    "description": "World's largest retailer.",
+    "attributes": { "logistics": "benchmark" }
+  },
+  {
+    "id": "actor_carrefour",
+    "name": "Carrefour",
+    "type": "retail",
+    "hq_country": "France",
+    "commodities": ["Food"],
+    "market_cap": 12.0,
+    "description": "European hypermarket pioneer.",
+    "attributes": { "eu_footprint": "high" }
+  },
+  {
+    "id": "actor_frontline",
+    "name": "Frontline",
+    "type": "logistics",
+    "hq_country": "Cyprus/Norway",
+    "commodities": ["Logistics", "Oil"],
+    "market_cap": 3.0,
+    "description": "World's largest oil tanker shipping company (John Fredriksen).",
+    "attributes": { "fleet": "VLCC" }
+  },
+  {
+    "id": "actor_euronav",
+    "name": "Euronav",
+    "type": "logistics",
+    "hq_country": "Belgium",
+    "commodities": ["Logistics", "Oil"],
+    "market_cap": 2.5,
+    "description": "Major independent crude oil tanker company.",
+    "attributes": { "fleet": "Suezmax" }
+  },
+  {
+    "id": "actor_star_bulk",
+    "name": "Star Bulk Carriers",
+    "type": "logistics",
+    "hq_country": "Greece",
+    "commodities": ["Logistics", "Dry Bulk"],
+    "market_cap": 2.0,
+    "description": "Global dry bulk shipping company.",
+    "attributes": { "fleet": "Capesize" }
+  },
+  {
+    "id": "actor_golden_ocean",
+    "name": "Golden Ocean Group",
+    "type": "logistics",
+    "hq_country": "Bermuda/Norway",
+    "commodities": ["Logistics", "Dry Bulk"],
+    "market_cap": 1.5,
+    "description": "Leading dry bulk shipping company.",
+    "attributes": { "fleet": "Panamax" }
+  },
+  {
+    "id": "actor_teekay",
+    "name": "Teekay",
+    "type": "logistics",
+    "hq_country": "Bermuda",
+    "commodities": ["Logistics", "LNG"],
+    "market_cap": 0.5,
+    "description": "One of the world's largest marine energy transportation companies.",
+    "attributes": { "fleet": "LNG" }
+  },
+  {
+    "id": "actor_rzd",
+    "name": "Russian Railways (RZD)",
+    "type": "logistics",
+    "hq_country": "Russia",
+    "commodities": ["Logistics", "Coal", "Oil"],
+    "market_cap": 0.0,
+    "description": "State-owned railway monopoly.",
+    "attributes": { "infrastructure": "Trans-Siberian" }
+  },
+  {
+    "id": "actor_bnsf",
+    "name": "BNSF Railway",
+    "type": "logistics",
+    "hq_country": "USA",
+    "commodities": ["Logistics", "Grain", "Oil"],
+    "market_cap": 0.0,
+    "description": "North America's largest freight railroad (Berkshire Hathaway).",
+    "attributes": { "network": "West" }
+  },
+  {
+    "id": "actor_cn_rail",
+    "name": "Canadian National (CN)",
+    "type": "logistics",
+    "hq_country": "Canada",
+    "commodities": ["Logistics", "Grain", "Oil", "Lumber"],
+    "market_cap": 80.0,
+    "description": "Transcontinental railway network.",
+    "attributes": { "network": "Canada-US" }
+  },
+  {
+    "id": "actor_aurizon",
+    "name": "Aurizon",
+    "type": "logistics",
+    "hq_country": "Australia",
+    "commodities": ["Logistics", "Coal"],
+    "market_cap": 5.0,
+    "description": "Australia's largest rail freight operator.",
+    "attributes": { "network": "Queensland" }
+  },
+  {
+    "id": "actor_transneft",
+    "name": "Transneft",
+    "type": "logistics",
+    "hq_country": "Russia",
+    "commodities": ["Logistics", "Oil"],
+    "market_cap": 10.0,
+    "description": "State-owned oil pipeline monopoly.",
+    "attributes": { "monopoly": true }
+  },
+  {
+    "id": "actor_colonial",
+    "name": "Colonial Pipeline",
+    "type": "logistics",
+    "hq_country": "USA",
+    "commodities": ["Logistics", "Oil"],
+    "market_cap": 0.0,
+    "description": "Largest refined products pipeline in the US.",
+    "attributes": { "critical": true }
+  },
+  {
+    "id": "actor_tc_energy",
+    "name": "TC Energy",
+    "type": "logistics",
+    "hq_country": "Canada",
+    "commodities": ["Logistics", "Oil", "Gas"],
+    "market_cap": 40.0,
+    "description": "Major North American energy infrastructure company (Keystone).",
+    "attributes": { "network": "cross-border" }
+  },
+  {
+    "id": "actor_cosco",
+    "name": "COSCO Shipping",
+    "type": "logistics",
+    "hq_country": "China",
+    "commodities": ["Logistics"],
+    "market_cap": 20.0,
+    "description": "Chinese state-owned shipping giant.",
+    "attributes": { "fleet": "diverse" }
+  }
+]

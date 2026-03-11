@@ -1,0 +1,590 @@
+{
+  "commodity": "Copper",
+  "version": "2.2",
+  "nodes": [
+    {
+      "id": "mine_escondida",
+      "label": "Escondida (Chile)",
+      "type": "resource",
+      "location": {
+        "lat": -24.27,
+        "lng": -69.07
+      },
+      "inventory": 4000.0,
+      "notes": "BHP/Rio Tinto. World's largest copper mine.",
+      "owner_id": "actor_bhp",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mine_collahuasi",
+      "label": "Collahuasi (Chile)",
+      "type": "resource",
+      "location": {
+        "lat": -20.96,
+        "lng": -68.72
+      },
+      "inventory": 2800.0,
+      "notes": "Glencore/Anglo American. High altitude.",
+      "owner_id": "actor_glencore",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mine_cerro_verde",
+      "label": "Cerro Verde (Peru)",
+      "type": "resource",
+      "location": {
+        "lat": -16.54,
+        "lng": -71.55
+      },
+      "inventory": 2500.0,
+      "notes": "Freeport-McMoRan. Near Arequipa.",
+      "owner_id": "actor_freeport",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mine_las_bambas",
+      "label": "Las Bambas (Peru)",
+      "type": "resource",
+      "location": {
+        "lat": -14.09,
+        "lng": -72.32
+      },
+      "inventory": 2200.0,
+      "notes": "MMG (China). Frequent social unrest blockades.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mine_kamoa_kakula",
+      "label": "Kamoa-Kakula (DRC)",
+      "type": "resource",
+      "location": {
+        "lat": -10.87,
+        "lng": 25.43
+      },
+      "inventory": 3000.0,
+      "notes": "Ivanhoe Mines. Highest grade major copper mine.",
+      "jurisdiction": "DR Congo",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mine_grasberg",
+      "label": "Grasberg (Indonesia)",
+      "type": "resource",
+      "location": {
+        "lat": -4.05,
+        "lng": 137.11
+      },
+      "inventory": 2000.0,
+      "notes": "Freeport. Copper/Gold giant.",
+      "owner_id": "actor_freeport",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mine_morenci",
+      "label": "Morenci (USA)",
+      "type": "resource",
+      "location": {
+        "lat": 33.08,
+        "lng": -109.37
+      },
+      "inventory": 1800.0,
+      "notes": "Freeport. Largest producer in North America.",
+      "owner_id": "actor_freeport",
+      "jurisdiction": "USA",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_antofagasta",
+      "label": "Port of Antofagasta",
+      "type": "logistic",
+      "location": {
+        "lat": -23.65,
+        "lng": -70.39
+      },
+      "notes": "Key exit for Escondida.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_iquique",
+      "label": "Port of Iquique",
+      "type": "logistic",
+      "location": {
+        "lat": -20.21,
+        "lng": -70.15
+      },
+      "notes": "Exit for Collahuasi.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_callao",
+      "label": "Port of Callao",
+      "type": "logistic",
+      "location": {
+        "lat": -12.05,
+        "lng": -77.15
+      },
+      "notes": "Peru's main gateway.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_matarani",
+      "label": "Port of Matarani",
+      "type": "logistic",
+      "location": {
+        "lat": -16.99,
+        "lng": -72.1
+      },
+      "notes": "Exit for Cerro Verde/Las Bambas.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_lobito",
+      "label": "Port of Lobito (Angola)",
+      "type": "logistic",
+      "location": {
+        "lat": -12.35,
+        "lng": 13.54
+      },
+      "notes": "New rail corridor for DRC copper.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_durban",
+      "label": "Port of Durban",
+      "type": "logistic",
+      "location": {
+        "lat": -29.85,
+        "lng": 31.02
+      },
+      "notes": "Traditional DRC exit route.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_ningbo",
+      "label": "Ningbo-Zhoushan",
+      "type": "logistic",
+      "location": {
+        "lat": 29.88,
+        "lng": 122.0
+      },
+      "notes": "Massive metals hub.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "choke_panama",
+      "label": "Panama Canal",
+      "type": "logistic",
+      "location": {
+        "lat": 9.08,
+        "lng": -79.69
+      },
+      "notes": "Vital for Chile/Peru -> Europe/US East Coast.",
+      "jurisdiction": "Panama",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "smelter_guixi",
+      "label": "Guixi Smelter (Jiangxi)",
+      "type": "transformation",
+      "location": {
+        "lat": 28.29,
+        "lng": 117.2
+      },
+      "revenue_per_day": 1200.0,
+      "notes": "World's largest copper smelter (Jiangxi Copper).",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "smelter_daye",
+      "label": "Daye Non-Ferrous (Hubei)",
+      "type": "transformation",
+      "location": {
+        "lat": 30.2,
+        "lng": 115.05
+      },
+      "revenue_per_day": 800.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "smelter_jinchuan",
+      "label": "Jinchuan Smelter (Gansu)",
+      "type": "transformation",
+      "location": {
+        "lat": 38.49,
+        "lng": 102.19
+      },
+      "revenue_per_day": 750.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "smelter_toyo",
+      "label": "Toyo Smelter (Japan)",
+      "type": "transformation",
+      "location": {
+        "lat": 33.91,
+        "lng": 133.18
+      },
+      "revenue_per_day": 600.0,
+      "notes": "Sumitomo Metal Mining.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "smelter_hamburg",
+      "label": "Aurubis Hamburg (DE)",
+      "type": "transformation",
+      "location": {
+        "lat": 53.52,
+        "lng": 9.99
+      },
+      "revenue_per_day": 900.0,
+      "notes": "Largest copper recycler/smelter in Europe.",
+      "jurisdiction": "Germany",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mfr_foxconn",
+      "label": "Foxconn Zhengzhou",
+      "type": "retail",
+      "location": {
+        "lat": 34.54,
+        "lng": 113.84
+      },
+      "revenue_per_day": 2500.0,
+      "notes": "iPhone City.",
+      "owner_id": "actor_foxconn",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mfr_gree",
+      "label": "Gree Electric (Zhuhai)",
+      "type": "retail",
+      "location": {
+        "lat": 22.22,
+        "lng": 113.5
+      },
+      "revenue_per_day": 1800.0,
+      "notes": "Air conditioners (massive copper user).",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mfr_tesla_austin",
+      "label": "Tesla Giga Texas",
+      "type": "retail",
+      "location": {
+        "lat": 30.22,
+        "lng": -97.62
+      },
+      "revenue_per_day": 1200.0,
+      "notes": "EV motors/wiring.",
+      "owner_id": "actor_tesla",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mfr_siemens_berlin",
+      "label": "Siemens Energy (Berlin)",
+      "type": "retail",
+      "location": {
+        "lat": 52.53,
+        "lng": 13.32
+      },
+      "revenue_per_day": 1500.0,
+      "notes": "Turbines/Grid infrastructure.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_matarani_port",
+      "label": "Matarani Port",
+      "type": "logistic",
+      "location": {
+        "lat": -16.99,
+        "lng": -72.1
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "mine_escondida",
+      "target": "port_antofagasta",
+      "lag": 2,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_collahuasi",
+      "target": "port_iquique",
+      "lag": 2,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_cerro_verde",
+      "target": "port_matarani",
+      "lag": 1,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_las_bambas",
+      "target": "port_matarani",
+      "lag": 4,
+      "notes": "Long trucking route",
+      "carrier_id": "actor_log_road",
+      "transport_mode": "road",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_kamoa_kakula",
+      "target": "port_lobito",
+      "lag": 6,
+      "notes": "Rail corridor",
+      "carrier_id": "actor_bnsf",
+      "transport_mode": "rail",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_trans_siberian"
+    },
+    {
+      "source": "mine_kamoa_kakula",
+      "target": "port_durban",
+      "lag": 12,
+      "notes": "Old trucking route",
+      "carrier_id": "actor_log_road",
+      "transport_mode": "road",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_antofagasta",
+      "target": "smelter_guixi",
+      "lag": 30,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_antofagasta",
+      "target": "smelter_toyo",
+      "lag": 28,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_antofagasta",
+      "target": "choke_panama",
+      "lag": 12,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_panama"
+    },
+    {
+      "source": "port_antofagasta",
+      "target": "port_ningbo",
+      "lag": 32,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_matarani",
+      "target": "smelter_guixi",
+      "lag": 30,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_matarani",
+      "target": "smelter_daye",
+      "lag": 32,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_lobito",
+      "target": "smelter_hamburg",
+      "lag": 15,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_durban",
+      "target": "smelter_guixi",
+      "lag": 25,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "choke_panama",
+      "target": "smelter_hamburg",
+      "lag": 14,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_panama"
+    },
+    {
+      "source": "choke_panama",
+      "target": "mfr_tesla_austin",
+      "lag": 6,
+      "notes": "Gulf coast entry",
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_panama"
+    },
+    {
+      "source": "mine_grasberg",
+      "target": "smelter_guixi",
+      "lag": 12,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_grasberg",
+      "target": "smelter_toyo",
+      "lag": 10,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_morenci",
+      "target": "mfr_tesla_austin",
+      "lag": 3,
+      "notes": "Rail/Truck",
+      "carrier_id": "actor_bnsf",
+      "transport_mode": "rail",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_trans_siberian"
+    },
+    {
+      "source": "smelter_guixi",
+      "target": "mfr_foxconn",
+      "lag": 4,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "smelter_daye",
+      "target": "mfr_gree",
+      "lag": 3,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "smelter_toyo",
+      "target": "mfr_foxconn",
+      "lag": 5,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "smelter_hamburg",
+      "target": "mfr_siemens_berlin",
+      "lag": 2,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "smelter_hamburg",
+      "target": "mfr_tesla_austin",
+      "lag": 18,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_cerro_verde",
+      "target": "port_matarani_port",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    }
+  ]
+}

@@ -1,0 +1,568 @@
+{
+  "commodity": "Cobalt",
+  "version": "2.1",
+  "nodes": [
+    {
+      "id": "mine_mutanda",
+      "label": "Mutanda (Glencore)",
+      "type": "resource",
+      "owner_id": "actor_glencore",
+      "location": {
+        "lat": -10.78,
+        "lng": 25.8
+      },
+      "inventory": 2500.0,
+      "notes": "World's largest cobalt mine. Care & maintenance 2019-2022, now restarting.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mine_tenke",
+      "label": "Tenke Fungurume (CMOC)",
+      "type": "resource",
+      "owner_id": "actor_cmoc",
+      "location": {
+        "lat": -10.61,
+        "lng": 26.12
+      },
+      "inventory": 3000.0,
+      "notes": "CMOC/G\u00e9camines joint venture. Mixed Oxide/Sulfide ore.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mine_kamoto",
+      "label": "Kamoto (KCC/Glencore)",
+      "type": "resource",
+      "owner_id": "actor_glencore",
+      "location": {
+        "lat": -10.72,
+        "lng": 25.46
+      },
+      "inventory": 2800.0,
+      "notes": "Underground & Open pit. Massive output.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mine_kisanfu",
+      "label": "Kisanfu (CMOC)",
+      "type": "resource",
+      "owner_id": "actor_cmoc",
+      "location": {
+        "lat": -10.55,
+        "lng": 25.95
+      },
+      "inventory": 1500.0,
+      "notes": "New major CMOC asset ramping up in 2024.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mine_metalkol",
+      "label": "Metalkol RTR (ERG)",
+      "type": "resource",
+      "location": {
+        "lat": -10.68,
+        "lng": 25.55
+      },
+      "inventory": 1800.0,
+      "notes": "Tailings reclamation project. Lower ESG footprint.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mine_artisanal",
+      "label": "Artisanal Mining Sectors",
+      "type": "resource",
+      "location": {
+        "lat": -10.85,
+        "lng": 26.0
+      },
+      "inventory": 500.0,
+      "notes": "Informal 'creuseurs'. High volatility, high ESG risk. Feeds Chinese middlemen.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "log_kasumbalesa",
+      "label": "Kasumbalesa Border",
+      "type": "logistic",
+      "location": {
+        "lat": -12.23,
+        "lng": 27.81
+      },
+      "notes": "Critical DR-Zambia chokepoint. Frequent queues.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "log_kolwezi_depot",
+      "label": "Kolwezi Aggregation",
+      "type": "logistic",
+      "location": {
+        "lat": -10.71,
+        "lng": 25.47
+      },
+      "notes": "Trading hubs for artisanal ore.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_durban",
+      "label": "Port of Durban",
+      "type": "logistic",
+      "location": {
+        "lat": -29.85,
+        "lng": 31.02
+      },
+      "notes": "Primary exit for Copperbelt minerals. Frequent weather/strike delays.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_lobito",
+      "label": "Port of Lobito (Angola)",
+      "type": "logistic",
+      "location": {
+        "lat": -12.35,
+        "lng": 13.54
+      },
+      "notes": "The 'Lobito Corridor'. Western-backed alternative to Durban.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_dar",
+      "label": "Port of Dar es Salaam",
+      "type": "logistic",
+      "location": {
+        "lat": -6.82,
+        "lng": 39.28
+      },
+      "notes": "Secondary exit route via Tanzania.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "ref_huayou",
+      "label": "Huayou Cobalt (Zhejiang)",
+      "type": "transformation",
+      "owner_id": "actor_huayou",
+      "location": {
+        "lat": 30.69,
+        "lng": 120.75
+      },
+      "revenue_per_day": 850.0,
+      "notes": "Global leader. Heavily vertically integrated with DRC mines.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "ref_gem",
+      "label": "GEM Co. (Jiangsu)",
+      "type": "transformation",
+      "location": {
+        "lat": 32.05,
+        "lng": 120.52
+      },
+      "revenue_per_day": 700.0,
+      "notes": "Green Eco-Manufacture. Major battery recycling & refining.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "ref_jinchuan",
+      "label": "Jinchuan Group (Gansu)",
+      "type": "transformation",
+      "location": {
+        "lat": 38.5,
+        "lng": 102.18
+      },
+      "revenue_per_day": 650.0,
+      "notes": "State-owned giant. Nickel-Cobalt sulfide refining.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "ref_kokkola",
+      "label": "Jervois Kokkola (Finland)",
+      "type": "transformation",
+      "location": {
+        "lat": 63.85,
+        "lng": 23.1
+      },
+      "revenue_per_day": 400.0,
+      "notes": "Largest cobalt refinery in Europe.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "ref_sherritt",
+      "label": "Sherritt (Canada)",
+      "type": "transformation",
+      "location": {
+        "lat": 53.71,
+        "lng": -113.21
+      },
+      "revenue_per_day": 300.0,
+      "notes": "Refines Cuban nickel/cobalt. Vital North American supply.",
+      "jurisdiction": "Canada",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "batt_catl",
+      "label": "CATL Ningde",
+      "type": "retail",
+      "owner_id": "actor_catl",
+      "location": {
+        "lat": 26.66,
+        "lng": 119.54
+      },
+      "revenue_per_day": 2500.0,
+      "notes": "Dominant global battery maker.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "batt_byd",
+      "label": "BYD Gigafactory (Changsha)",
+      "type": "retail",
+      "location": {
+        "lat": 28.11,
+        "lng": 113.08
+      },
+      "revenue_per_day": 2000.0,
+      "owner_id": "actor_byd",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "batt_lg_poland",
+      "label": "LG Energy Solution (Wroclaw)",
+      "type": "retail",
+      "location": {
+        "lat": 51.05,
+        "lng": 16.96
+      },
+      "revenue_per_day": 1800.0,
+      "notes": "Key supplier for European EVs (VW, Audi).",
+      "owner_id": "actor_lg",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "batt_panasonic_nv",
+      "label": "Panasonic Energy (Nevada)",
+      "type": "retail",
+      "owner_id": "actor_panasonic",
+      "location": {
+        "lat": 39.54,
+        "lng": -119.54
+      },
+      "revenue_per_day": 1500.0,
+      "notes": "Tesla Gigafactory partner.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_catl_gigafactories",
+      "label": "CATL Gigafactories",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_huayou_refined",
+      "label": "Huayou Refined",
+      "type": "retail",
+      "location": {
+        "lat": 30.69,
+        "lng": 120.75
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_ningbo_zhoushan",
+      "label": "Ningbo-Zhoushan",
+      "type": "retail",
+      "location": {
+        "lat": 29.88,
+        "lng": 122.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "mine_mutanda",
+      "target": "log_kasumbalesa",
+      "lag": 3,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_tenke",
+      "target": "log_kasumbalesa",
+      "lag": 3,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_kamoto",
+      "target": "log_kasumbalesa",
+      "lag": 3,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_kisanfu",
+      "target": "log_kasumbalesa",
+      "lag": 3,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_metalkol",
+      "target": "log_kasumbalesa",
+      "lag": 3,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_artisanal",
+      "target": "log_kolwezi_depot",
+      "lag": 1,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "log_kolwezi_depot",
+      "target": "ref_huayou",
+      "lag": 40,
+      "notes": "Direct opaque channels to China",
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "log_kasumbalesa",
+      "target": "port_durban",
+      "lag": 12,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "log_kasumbalesa",
+      "target": "port_dar",
+      "lag": 15,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_kisanfu",
+      "target": "port_lobito",
+      "lag": 8,
+      "notes": "Using new rail corridor",
+      "carrier_id": "actor_bnsf",
+      "transport_mode": "rail",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_trans_siberian"
+    },
+    {
+      "source": "port_durban",
+      "target": "ref_huayou",
+      "lag": 25,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_durban",
+      "target": "ref_gem",
+      "lag": 25,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_durban",
+      "target": "ref_jinchuan",
+      "lag": 28,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_durban",
+      "target": "ref_kokkola",
+      "lag": 22,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_lobito",
+      "target": "ref_sherritt",
+      "lag": 18,
+      "notes": "Atlantic route",
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_lobito",
+      "target": "ref_kokkola",
+      "lag": 16,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "ref_huayou",
+      "target": "batt_catl",
+      "lag": 3,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "ref_huayou",
+      "target": "batt_byd",
+      "lag": 4,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "ref_gem",
+      "target": "batt_catl",
+      "lag": 3,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "ref_jinchuan",
+      "target": "batt_catl",
+      "lag": 5,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "ref_kokkola",
+      "target": "batt_lg_poland",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "ref_sherritt",
+      "target": "batt_panasonic_nv",
+      "lag": 7,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_tenke",
+      "target": "port_durban",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "log_kasumbalesa",
+      "target": "port_lobito",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_huayou_refined",
+      "target": "mkt_catl_gigafactories",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_durban",
+      "target": "mkt_ningbo_zhoushan",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    }
+  ]
+}

@@ -1,0 +1,241 @@
+{
+  "commodity": "Dairy",
+  "version": "2.1",
+  "nodes": [
+    {
+      "id": "farm_nz",
+      "label": "New Zealand Pastures",
+      "type": "resource",
+      "location": {
+        "lat": -40.9,
+        "lng": 174.88
+      },
+      "inventory": 5000.0,
+      "notes": "Fonterra. Milk Powder.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_fonterra"
+    },
+    {
+      "id": "farm_usa",
+      "label": "California Dairies",
+      "type": "resource",
+      "location": {
+        "lat": 36.77,
+        "lng": -119.41
+      },
+      "inventory": 3000.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_tauranga",
+      "label": "Port of Tauranga",
+      "type": "logistic",
+      "location": {
+        "lat": -37.68,
+        "lng": 176.16
+      },
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_oakland",
+      "label": "Port of Oakland",
+      "type": "logistic",
+      "location": {
+        "lat": 37.79,
+        "lng": -122.27
+      },
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_china",
+      "label": "China Infant Formula",
+      "type": "retail",
+      "location": {
+        "lat": 31.23,
+        "lng": 121.47
+      },
+      "revenue_per_day": 2000.0,
+      "jurisdiction": "China",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_nestle"
+    },
+    {
+      "id": "proc_fonterra",
+      "label": "Fonterra Processing",
+      "type": "transformation",
+      "location": {
+        "lat": -37.78,
+        "lng": 175.28
+      },
+      "revenue_per_day": 1500.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_fonterra"
+    },
+    {
+      "id": "mkt_waikato_nz",
+      "label": "Waikato (NZ)",
+      "type": "retail",
+      "location": {
+        "lat": -37.78,
+        "lng": 175.27
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_port_of_le_havre",
+      "label": "Port of Le Havre",
+      "type": "logistic",
+      "location": {
+        "lat": 49.49,
+        "lng": 0.1
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_brittany_fr",
+      "label": "Brittany (FR)",
+      "type": "retail",
+      "location": {
+        "lat": 48.2,
+        "lng": -2.93
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_port_said_egypt",
+      "label": "Port Said (Egypt)",
+      "type": "logistic",
+      "location": {
+        "lat": 31.26,
+        "lng": 32.3
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_port_of_shanghai",
+      "label": "Port of Shanghai",
+      "type": "logistic",
+      "location": {
+        "lat": 31.23,
+        "lng": 121.47
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "farm_nz",
+      "target": "proc_fonterra",
+      "lag": 1,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "proc_fonterra",
+      "target": "port_tauranga",
+      "lag": 2,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_tauranga",
+      "target": "mkt_china",
+      "lag": 18,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "farm_usa",
+      "target": "port_oakland",
+      "lag": 2,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_oakland",
+      "target": "mkt_china",
+      "lag": 15,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_waikato_nz",
+      "target": "port_tauranga",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_brittany_fr",
+      "target": "port_port_of_le_havre",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_le_havre",
+      "target": "port_port_said_egypt",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_tauranga",
+      "target": "port_port_of_shanghai",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    }
+  ]
+}

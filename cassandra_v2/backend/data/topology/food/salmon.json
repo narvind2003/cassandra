@@ -1,0 +1,206 @@
+{
+  "commodity": "Salmon",
+  "version": "2.1",
+  "nodes": [
+    {
+      "id": "farm_norway",
+      "label": "Norway Fjords",
+      "type": "resource",
+      "location": {
+        "lat": 60.47,
+        "lng": 8.46
+      },
+      "inventory": 2000.0,
+      "notes": "Mowi/SalMar.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_mowi"
+    },
+    {
+      "id": "farm_chile",
+      "label": "Puerto Montt (Chile)",
+      "type": "resource",
+      "location": {
+        "lat": -41.46,
+        "lng": -72.94
+      },
+      "inventory": 1500.0,
+      "notes": "Antibiotic issues.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_mowi"
+    },
+    {
+      "id": "airport_oslo",
+      "label": "Oslo Airport",
+      "type": "logistic",
+      "location": {
+        "lat": 60.19,
+        "lng": 11.1
+      },
+      "notes": "Flying Fish.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "airport_miami",
+      "label": "Miami Airport",
+      "type": "logistic",
+      "location": {
+        "lat": 25.79,
+        "lng": -80.28
+      },
+      "notes": "Chilean entry.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_tokyo",
+      "label": "Toyosu Market",
+      "type": "retail",
+      "location": {
+        "lat": 35.64,
+        "lng": 139.79
+      },
+      "revenue_per_day": 1000.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_ny",
+      "label": "NY Sushi Scene",
+      "type": "retail",
+      "location": {
+        "lat": 40.71,
+        "lng": -74.0
+      },
+      "revenue_per_day": 800.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_shanghai_pudong",
+      "label": "Shanghai Pudong",
+      "type": "retail",
+      "location": {
+        "lat": 31.14,
+        "lng": 121.8
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_narita_airport_japan",
+      "label": "Narita Airport (Japan)",
+      "type": "logistic",
+      "location": {
+        "lat": 35.77,
+        "lng": 140.39
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_new_york_jfk",
+      "label": "New York JFK",
+      "type": "retail",
+      "location": {
+        "lat": 40.71,
+        "lng": -74.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "farm_norway",
+      "target": "airport_oslo",
+      "lag": 1,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "airport_oslo",
+      "target": "mkt_tokyo",
+      "lag": 1,
+      "notes": "Air Freight",
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "airport_oslo",
+      "target": "mkt_ny",
+      "lag": 1,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "farm_chile",
+      "target": "airport_miami",
+      "lag": 1,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "airport_miami",
+      "target": "mkt_ny",
+      "lag": 1,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "airport_oslo",
+      "target": "port_narita_airport_japan",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "airport_miami",
+      "target": "mkt_new_york_jfk",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "airport_oslo",
+      "target": "mkt_shanghai_pudong",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    }
+  ]
+}

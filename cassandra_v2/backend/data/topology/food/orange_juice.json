@@ -1,0 +1,257 @@
+{
+  "commodity": "Orange Juice",
+  "version": "2.1",
+  "nodes": [
+    {
+      "id": "farm_sao_paulo",
+      "label": "Sao Paulo Groves",
+      "type": "resource",
+      "location": {
+        "lat": -21.79,
+        "lng": -48.17
+      },
+      "inventory": 4000.0,
+      "notes": "Citrosuco/Cutrale. 80% of exports.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "farm_florida",
+      "label": "Florida Groves",
+      "type": "resource",
+      "location": {
+        "lat": 27.99,
+        "lng": -81.76
+      },
+      "inventory": 1000.0,
+      "notes": "Declining due to greening.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_santos",
+      "label": "Port of Santos (Juice)",
+      "type": "logistic",
+      "location": {
+        "lat": -23.96,
+        "lng": -46.3
+      },
+      "notes": "Dedicated juice terminals.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_cargill"
+    },
+    {
+      "id": "port_rotterdam",
+      "label": "Rotterdam Juice Terminal",
+      "type": "logistic",
+      "location": {
+        "lat": 51.95,
+        "lng": 4.1
+      },
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_newark",
+      "label": "Port Newark",
+      "type": "logistic",
+      "location": {
+        "lat": 40.68,
+        "lng": -74.14
+      },
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_eu",
+      "label": "EU Breakfast Mkt",
+      "type": "retail",
+      "location": {
+        "lat": 48.85,
+        "lng": 2.35
+      },
+      "revenue_per_day": 800.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_us_domestic_hubs",
+      "label": "US Domestic Hubs",
+      "type": "logistic",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_port_of_rotterdam_juice",
+      "label": "Port of Rotterdam (Juice)",
+      "type": "logistic",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "proc_eu_bottling_plants",
+      "label": "EU Bottling Plants",
+      "type": "transformation",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_mosaic_florida",
+      "label": "Mosaic Florida",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_rotterdam_coal_terminal",
+      "label": "Rotterdam Coal Terminal",
+      "type": "logistic",
+      "location": {
+        "lat": 51.95,
+        "lng": 4.05
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "farm_sao_paulo",
+      "target": "port_santos",
+      "lag": 2,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_santos",
+      "target": "port_rotterdam",
+      "lag": 14,
+      "notes": "Dedicated tankers",
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_santos",
+      "target": "port_newark",
+      "lag": 12,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_rotterdam",
+      "target": "mkt_eu",
+      "lag": 2,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_santos",
+      "target": "port_port_of_rotterdam_juice",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_mosaic",
+      "target": "port_us_domestic_hubs",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "plant_rotterdam",
+      "target": "proc_eu_bottling_plants",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "farm_sao_paulo",
+      "target": "port_port_of_santos",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_port_of_santos",
+      "target": "port_newark",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_mosaic_florida",
+      "target": "port_us_domestic_hubs",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_rotterdam_coal_terminal",
+      "target": "proc_eu_bottling_plants",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    }
+  ]
+}

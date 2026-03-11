@@ -1,0 +1,302 @@
+{
+  "commodity": "Fertilizer",
+  "version": "4.0",
+  "nodes": [
+    {
+      "id": "plant_yara_norway",
+      "label": "Yara Porsgrunn (Norway)",
+      "type": "transformation",
+      "location": {
+        "lat": 59.13,
+        "lng": 9.65
+      },
+      "recipes": [
+        {
+          "name": "Ammonia Synthesis",
+          "inputs": {
+            "Natural Gas (LNG)": 1.0
+          },
+          "outputs": {
+            "Fertilizer": 1.0
+          }
+        }
+      ],
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "plant_cf_iowa",
+      "label": "CF Industries (Iowa)",
+      "type": "transformation",
+      "location": {
+        "lat": 42.48,
+        "lng": -96.38
+      },
+      "recipes": [
+        {
+          "name": "Ammonia Synthesis",
+          "inputs": {
+            "Natural Gas (LNG)": 1.0
+          },
+          "outputs": {
+            "Fertilizer": 1.0
+          }
+        }
+      ],
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_adm"
+    },
+    {
+      "id": "retail_farms_eu",
+      "label": "EU Agriculture",
+      "type": "retail",
+      "location": {
+        "lat": 48.85,
+        "lng": 2.35
+      },
+      "revenue_per_day": 2000.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "retail_farms_brazil",
+      "label": "Brazil Agriculture",
+      "type": "retail",
+      "location": {
+        "lat": -14.23,
+        "lng": -51.92
+      },
+      "revenue_per_day": 1800.0,
+      "jurisdiction": "Brazil",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_brazil_soy_belt",
+      "label": "Brazil Soy Belt",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_global_agri_belts",
+      "label": "Global Agri Belts",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_amsterdam_hub",
+      "label": "Amsterdam Hub",
+      "type": "logistic",
+      "location": {
+        "lat": 52.36,
+        "lng": 4.9
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_china_hubs",
+      "label": "China Hubs",
+      "type": "logistic",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_suez_canal",
+      "label": "Suez Canal",
+      "type": "logistic",
+      "location": {
+        "lat": 30.58,
+        "lng": 32.27
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_ocp_boucraa_morocco",
+      "label": "OCP Boucraa (Morocco)",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_teck_trail_canada",
+      "label": "Teck Trail (Canada)",
+      "type": "retail",
+      "location": {
+        "lat": 49.09,
+        "lng": -117.71
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_olimpiada_russia",
+      "label": "Olimpiada (Russia)",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "plant_cf_iowa",
+      "target": "farm_iowa",
+      "lag": 1,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "plant_yara_norway",
+      "target": "retail_farms_eu",
+      "lag": 2,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "plant_yara_norway",
+      "target": "retail_farms_brazil",
+      "lag": 14,
+      "notes": "Sea shipment",
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_ocp",
+      "target": "mkt_brazil_soy_belt",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_olimpiada",
+      "target": "retail_farms_eu",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "smelter_trail",
+      "target": "port_china_hubs",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "choke_suez",
+      "target": "mkt_global_agri_belts",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "plant_yara_norway",
+      "target": "port_amsterdam_hub",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_ocp_boucraa_morocco",
+      "target": "mkt_brazil_soy_belt",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_olimpiada_russia",
+      "target": "retail_farms_eu",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_teck_trail_canada",
+      "target": "port_china_hubs",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_suez_canal",
+      "target": "mkt_global_agri_belts",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    }
+  ]
+}

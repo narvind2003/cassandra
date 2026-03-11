@@ -1,0 +1,311 @@
+{
+  "commodity": "Tuna",
+  "version": "2.1",
+  "nodes": [
+    {
+      "id": "fleet_pacific",
+      "label": "Pacific Fleet (WCPO)",
+      "type": "resource",
+      "location": {
+        "lat": 5.0,
+        "lng": 160.0
+      },
+      "inventory": 2000.0,
+      "notes": "Skipjack/Yellowfin.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_maruha_nichiro"
+    },
+    {
+      "id": "fleet_indian",
+      "label": "Indian Ocean Fleet",
+      "type": "resource",
+      "location": {
+        "lat": -10.0,
+        "lng": 70.0
+      },
+      "inventory": 1500.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "proc_bangkok",
+      "label": "Bangkok Canneries",
+      "type": "transformation",
+      "location": {
+        "lat": 13.75,
+        "lng": 100.5
+      },
+      "revenue_per_day": 1000.0,
+      "notes": "Thai Union.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_thai_union"
+    },
+    {
+      "id": "proc_manta",
+      "label": "Manta (Ecuador)",
+      "type": "transformation",
+      "location": {
+        "lat": -0.95,
+        "lng": -80.73
+      },
+      "revenue_per_day": 800.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_thai_union"
+    },
+    {
+      "id": "port_bangkok",
+      "label": "Bangkok Port",
+      "type": "logistic",
+      "location": {
+        "lat": 13.7,
+        "lng": 100.52
+      },
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_usa",
+      "label": "US Grocery",
+      "type": "retail",
+      "location": {
+        "lat": 34.05,
+        "lng": -118.24
+      },
+      "revenue_per_day": 500.0,
+      "jurisdiction": "USA",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_eu",
+      "label": "EU Retail",
+      "type": "retail",
+      "location": {
+        "lat": 48.85,
+        "lng": 2.35
+      },
+      "revenue_per_day": 600.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_central_pacific",
+      "label": "Central Pacific",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_port_of_rotterdam",
+      "label": "Port of Rotterdam",
+      "type": "logistic",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_port_of_manta_ec",
+      "label": "Port of Manta (EC)",
+      "type": "logistic",
+      "location": {
+        "lat": -0.95,
+        "lng": -80.73
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_us_east_coast",
+      "label": "US East Coast",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_western_pacific",
+      "label": "Western Pacific",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_c_kalimantan_indo",
+      "label": "C. Kalimantan (Indo)",
+      "type": "retail",
+      "location": {
+        "lat": -0.95,
+        "lng": -80.73
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_port_of_la",
+      "label": "Port of LA",
+      "type": "logistic",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "fleet_pacific",
+      "target": "proc_bangkok",
+      "lag": 5,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "fleet_pacific",
+      "target": "proc_manta",
+      "lag": 8,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "proc_bangkok",
+      "target": "port_bangkok",
+      "lag": 1,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_bangkok",
+      "target": "mkt_usa",
+      "lag": 18,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_bangkok",
+      "target": "mkt_eu",
+      "lag": 22,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "proc_manta",
+      "target": "mkt_eu",
+      "lag": 15,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_western_pacific",
+      "target": "port_bangkok",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_central_pacific",
+      "target": "port_port_of_manta_ec",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "proc_bangkok",
+      "target": "port_port_of_rotterdam",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "plantation_kalimantan",
+      "target": "mkt_us_east_coast",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "proc_bangkok",
+      "target": "port_port_of_la",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_c_kalimantan_indo",
+      "target": "mkt_us_east_coast",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    }
+  ]
+}

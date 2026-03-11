@@ -1,0 +1,698 @@
+{
+  "commodity": "Lithium-Ion Battery",
+  "version": "2.1",
+  "nodes": [
+    {
+      "id": "mine_greenbushes",
+      "label": "Greenbushes (Aus)",
+      "type": "resource",
+      "location": {
+        "lat": -33.86,
+        "lng": 116.01
+      },
+      "inventory": 3000.0,
+      "notes": "World's largest hard-rock mine. Albemarle/Tianqi JV.",
+      "owner_id": "actor_albemarle",
+      "jurisdiction": "Australia",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mine_pilgangoora",
+      "label": "Pilgangoora (Aus)",
+      "type": "resource",
+      "location": {
+        "lat": -21.04,
+        "lng": 118.89
+      },
+      "inventory": 1800.0,
+      "notes": "Pilbara Minerals. Massive expansion project.",
+      "owner_id": "actor_pilbara",
+      "jurisdiction": "Australia",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mine_wodgina",
+      "label": "Wodgina (Aus)",
+      "type": "resource",
+      "location": {
+        "lat": -21.18,
+        "lng": 118.66
+      },
+      "inventory": 1500.0,
+      "notes": "Mineral Resources / Albemarle JV.",
+      "owner_id": "actor_albemarle",
+      "jurisdiction": "Australia",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mine_kathleen_valley",
+      "label": "Kathleen Valley (Aus)",
+      "type": "resource",
+      "location": {
+        "lat": -27.53,
+        "lng": 120.55
+      },
+      "inventory": 1000.0,
+      "notes": "Liontown Resources. New underground entrant.",
+      "jurisdiction": "Australia",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_bhp"
+    },
+    {
+      "id": "mine_salar_atacama_sqm",
+      "label": "SQM Atacama (Chile)",
+      "type": "resource",
+      "location": {
+        "lat": -23.51,
+        "lng": -68.32
+      },
+      "inventory": 2500.0,
+      "notes": "Lowest cost brine. Political volatility.",
+      "owner_id": "actor_sqm",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mine_salar_atacama_alb",
+      "label": "Albemarle Atacama (Chile)",
+      "type": "resource",
+      "location": {
+        "lat": -23.65,
+        "lng": -68.45
+      },
+      "inventory": 2200.0,
+      "notes": "Major US-controlled brine source.",
+      "owner_id": "actor_albemarle",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mine_olaroz",
+      "label": "Olaroz (Argentina)",
+      "type": "resource",
+      "location": {
+        "lat": -24.11,
+        "lng": -66.8
+      },
+      "inventory": 1200.0,
+      "notes": "Allkem (Arcadium). High altitude operations.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mine_cauchari",
+      "label": "Cauchari-Olaroz (Arg)",
+      "type": "resource",
+      "location": {
+        "lat": -24.05,
+        "lng": -66.82
+      },
+      "inventory": 1000.0,
+      "notes": "Ganfeng/Lithium Americas JV.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_hedland",
+      "label": "Port Hedland",
+      "type": "logistic",
+      "location": {
+        "lat": -20.31,
+        "lng": 118.6
+      },
+      "notes": "Main exit for Pilbara spodumene.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_bunbury",
+      "label": "Port of Bunbury",
+      "type": "logistic",
+      "location": {
+        "lat": -33.32,
+        "lng": 115.64
+      },
+      "notes": "Greenbushes export hub.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_antofagasta",
+      "label": "Port of Antofagasta",
+      "type": "logistic",
+      "location": {
+        "lat": -23.64,
+        "lng": -70.4
+      },
+      "notes": "Primary exit for Chilean brine.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "choke_malacca",
+      "label": "Strait of Malacca",
+      "type": "logistic",
+      "location": {
+        "lat": 1.42,
+        "lng": 102.13
+      },
+      "notes": "Vital energy corridor.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "choke_panama",
+      "label": "Panama Canal",
+      "type": "logistic",
+      "location": {
+        "lat": 9.11,
+        "lng": -79.69
+      },
+      "notes": "Critical for Chile -> US/EU flow.",
+      "jurisdiction": "Panama",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "ref_ganfeng_xinyu",
+      "label": "Ganfeng Xinyu (Jiangxi)",
+      "type": "transformation",
+      "location": {
+        "lat": 27.83,
+        "lng": 114.93
+      },
+      "revenue_per_day": 900.0,
+      "notes": "Lithium capital of Asia. Spodumene conversion.",
+      "owner_id": "actor_ganfeng",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "ref_tianqi_shehong",
+      "label": "Tianqi Shehong (Sichuan)",
+      "type": "transformation",
+      "location": {
+        "lat": 30.85,
+        "lng": 105.38
+      },
+      "revenue_per_day": 800.0,
+      "notes": "Major hydroxide capacity.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "ref_albemarle_qinzhou",
+      "label": "Albemarle Qinzhou",
+      "type": "transformation",
+      "location": {
+        "lat": 21.96,
+        "lng": 108.62
+      },
+      "revenue_per_day": 600.0,
+      "owner_id": "actor_albemarle",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "ref_kwinana",
+      "label": "Tianqi Kwinana (Aus)",
+      "type": "transformation",
+      "location": {
+        "lat": -32.19,
+        "lng": 115.77
+      },
+      "revenue_per_day": 500.0,
+      "notes": "Australia's move down-stream.",
+      "jurisdiction": "Australia",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "ref_livent_nc",
+      "label": "Arcadium Bessemer (USA)",
+      "type": "transformation",
+      "location": {
+        "lat": 35.23,
+        "lng": -81.27
+      },
+      "revenue_per_day": 400.0,
+      "notes": "Strategic US supply.",
+      "jurisdiction": "USA",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "cam_ningbo_shanshan",
+      "label": "Ningbo Shanshan",
+      "type": "transformation",
+      "location": {
+        "lat": 29.87,
+        "lng": 121.54
+      },
+      "revenue_per_day": 1200.0,
+      "notes": "Cathode/Anode giant.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "cam_lgeo_poland",
+      "label": "LG Chem Wroclaw",
+      "type": "transformation",
+      "location": {
+        "lat": 51.05,
+        "lng": 16.96
+      },
+      "revenue_per_day": 1000.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "giga_catl_ningde",
+      "label": "CATL HQ (Ningde)",
+      "type": "transformation",
+      "location": {
+        "lat": 26.66,
+        "lng": 119.54
+      },
+      "revenue_per_day": 3500.0,
+      "notes": "Global battery king.",
+      "owner_id": "actor_catl",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "giga_byd_fudi",
+      "label": "BYD Fudi (Chongqing)",
+      "type": "transformation",
+      "location": {
+        "lat": 29.56,
+        "lng": 106.55
+      },
+      "revenue_per_day": 2800.0,
+      "notes": "Blade Battery HQ.",
+      "owner_id": "actor_byd",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "giga_tesla_nevada",
+      "label": "Tesla Giga Nevada",
+      "type": "transformation",
+      "location": {
+        "lat": 39.53,
+        "lng": -119.43
+      },
+      "revenue_per_day": 2200.0,
+      "owner_id": "actor_tesla",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "giga_sk_on_georgia",
+      "label": "SK On Georgia",
+      "type": "transformation",
+      "location": {
+        "lat": 34.19,
+        "lng": -83.47
+      },
+      "revenue_per_day": 1500.0,
+      "notes": "Ford/VW supplier.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "oem_tesla_fremont",
+      "label": "Tesla Fremont",
+      "type": "retail",
+      "location": {
+        "lat": 37.49,
+        "lng": -121.94
+      },
+      "revenue_per_day": 4000.0,
+      "owner_id": "actor_tesla",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "oem_vw_wolfsburg",
+      "label": "VW Wolfsburg",
+      "type": "retail",
+      "location": {
+        "lat": 52.42,
+        "lng": 10.78
+      },
+      "revenue_per_day": 3500.0,
+      "owner_id": "actor_vw",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_ningbo_magnet_hub",
+      "label": "Ningbo Magnet Hub",
+      "type": "logistic",
+      "location": {
+        "lat": 29.88,
+        "lng": 122.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_shanghai_port",
+      "label": "Shanghai Port",
+      "type": "logistic",
+      "location": {
+        "lat": 31.23,
+        "lng": 121.47
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "mine_greenbushes",
+      "target": "port_bunbury",
+      "lag": 1,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_greenbushes",
+      "target": "ref_kwinana",
+      "lag": 1,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_bunbury",
+      "target": "choke_malacca",
+      "lag": 8,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_malacca"
+    },
+    {
+      "source": "mine_pilgangoora",
+      "target": "port_hedland",
+      "lag": 2,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_wodgina",
+      "target": "port_hedland",
+      "lag": 2,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_kathleen_valley",
+      "target": "port_hedland",
+      "lag": 4,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_hedland",
+      "target": "choke_malacca",
+      "lag": 9,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_malacca"
+    },
+    {
+      "source": "choke_malacca",
+      "target": "ref_ganfeng_xinyu",
+      "lag": 6,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_malacca"
+    },
+    {
+      "source": "choke_malacca",
+      "target": "ref_tianqi_shehong",
+      "lag": 8,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_malacca"
+    },
+    {
+      "source": "choke_malacca",
+      "target": "ref_albemarle_qinzhou",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_malacca"
+    },
+    {
+      "source": "mine_salar_atacama_sqm",
+      "target": "port_antofagasta",
+      "lag": 2,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_salar_atacama_alb",
+      "target": "port_antofagasta",
+      "lag": 2,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_antofagasta",
+      "target": "choke_panama",
+      "lag": 10,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_panama"
+    },
+    {
+      "source": "port_antofagasta",
+      "target": "ref_ganfeng_xinyu",
+      "lag": 35,
+      "notes": "Pacific route to China",
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_olaroz",
+      "target": "port_antofagasta",
+      "lag": 4,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_cauchari",
+      "target": "port_antofagasta",
+      "lag": 4,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "choke_panama",
+      "target": "ref_livent_nc",
+      "lag": 8,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_panama"
+    },
+    {
+      "source": "choke_panama",
+      "target": "cam_lgeo_poland",
+      "lag": 18,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_panama"
+    },
+    {
+      "source": "ref_ganfeng_xinyu",
+      "target": "cam_ningbo_shanshan",
+      "lag": 3,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "ref_tianqi_shehong",
+      "target": "giga_catl_ningde",
+      "lag": 4,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "ref_albemarle_qinzhou",
+      "target": "giga_byd_fudi",
+      "lag": 5,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "ref_kwinana",
+      "target": "giga_sk_on_georgia",
+      "lag": 25,
+      "notes": "Long sea route",
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "ref_livent_nc",
+      "target": "giga_tesla_nevada",
+      "lag": 4,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "cam_ningbo_shanshan",
+      "target": "giga_catl_ningde",
+      "lag": 1,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "cam_lgeo_poland",
+      "target": "oem_vw_wolfsburg",
+      "lag": 2,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "giga_catl_ningde",
+      "target": "oem_tesla_fremont",
+      "lag": 20,
+      "notes": "LFP packs to US",
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "giga_catl_ningde",
+      "target": "oem_vw_wolfsburg",
+      "lag": 25,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "giga_byd_fudi",
+      "target": "oem_tesla_fremont",
+      "lag": 20,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "giga_tesla_nevada",
+      "target": "oem_tesla_fremont",
+      "lag": 1,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "giga_sk_on_georgia",
+      "target": "oem_tesla_fremont",
+      "lag": 5,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_bunbury",
+      "target": "port_ningbo_magnet_hub",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_antofagasta",
+      "target": "port_shanghai_port",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    }
+  ]
+}

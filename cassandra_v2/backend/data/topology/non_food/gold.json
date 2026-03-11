@@ -1,0 +1,491 @@
+{
+  "commodity": "Gold",
+  "version": "2.1",
+  "nodes": [
+    {
+      "id": "mine_muruntau",
+      "label": "Muruntau (Uzbekistan)",
+      "type": "resource",
+      "location": {
+        "lat": 41.49,
+        "lng": 64.58
+      },
+      "inventory": 2000.0,
+      "notes": "World's largest gold mine.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_state_uz"
+    },
+    {
+      "id": "mine_carlin",
+      "label": "Nevada Gold Mines (USA)",
+      "type": "resource",
+      "location": {
+        "lat": 40.96,
+        "lng": -116.32
+      },
+      "inventory": 2500.0,
+      "notes": "Barrick/Newmont JV.",
+      "jurisdiction": "USA",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mine_grasberg",
+      "label": "Grasberg (Indonesia)",
+      "type": "resource",
+      "location": {
+        "lat": -4.05,
+        "lng": 137.11
+      },
+      "inventory": 2000.0,
+      "notes": "Massive gold/copper deposit.",
+      "owner_id": "actor_freeport",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mine_olimpiada",
+      "label": "Olimpiada (Russia)",
+      "type": "resource",
+      "location": {
+        "lat": 59.86,
+        "lng": 92.91
+      },
+      "inventory": 1500.0,
+      "notes": "Polyus. Sanctioned.",
+      "jurisdiction": "Russia",
+      "risk_level": 0.9,
+      "is_sanctioned": true,
+      "conflict_zone": false,
+      "owner_id": "actor_gazprom"
+    },
+    {
+      "id": "mine_boddington",
+      "label": "Boddington (Aus)",
+      "type": "resource",
+      "location": {
+        "lat": -32.74,
+        "lng": 116.35
+      },
+      "inventory": 1200.0,
+      "notes": "Australia's largest.",
+      "jurisdiction": "Australia",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_newmont"
+    },
+    {
+      "id": "hub_zurich_airport",
+      "label": "Zurich Airport",
+      "type": "logistic",
+      "location": {
+        "lat": 47.45,
+        "lng": 8.55
+      },
+      "notes": "Global gold transit hub.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "hub_dubai",
+      "label": "Dubai Gold Souk",
+      "type": "logistic",
+      "location": {
+        "lat": 25.27,
+        "lng": 55.3
+      },
+      "notes": "Transit point for Russian gold.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "hub_hong_kong",
+      "label": "Hong Kong Vaults",
+      "type": "logistic",
+      "location": {
+        "lat": 22.31,
+        "lng": 114.16
+      },
+      "notes": "Gateway to China.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "ref_valcambi",
+      "label": "Valcambi (Swiss)",
+      "type": "transformation",
+      "location": {
+        "lat": 45.84,
+        "lng": 9.0
+      },
+      "revenue_per_day": 3000.0,
+      "notes": "Refines 1,600 tons/year.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "ref_pamp",
+      "label": "PAMP (Swiss)",
+      "type": "transformation",
+      "location": {
+        "lat": 45.85,
+        "lng": 9.02
+      },
+      "revenue_per_day": 2000.0,
+      "notes": "Prestigous bars.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "ref_metalor",
+      "label": "Metalor (Swiss)",
+      "type": "transformation",
+      "location": {
+        "lat": 47.0,
+        "lng": 6.93
+      },
+      "revenue_per_day": 1800.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "ref_rand",
+      "label": "Rand Refinery (SA)",
+      "type": "transformation",
+      "location": {
+        "lat": -26.22,
+        "lng": 28.16
+      },
+      "revenue_per_day": 1500.0,
+      "jurisdiction": "Saudi Arabia",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "ref_perth",
+      "label": "Perth Mint",
+      "type": "transformation",
+      "location": {
+        "lat": -31.95,
+        "lng": 115.87
+      },
+      "revenue_per_day": 1200.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "ref_krastsvetmet",
+      "label": "Krastsvetmet (RU)",
+      "type": "transformation",
+      "location": {
+        "lat": 56.01,
+        "lng": 92.86
+      },
+      "revenue_per_day": 1000.0,
+      "notes": "Russian state refinery.",
+      "jurisdiction": "Russia",
+      "risk_level": 0.9,
+      "is_sanctioned": true,
+      "conflict_zone": false
+    },
+    {
+      "id": "vault_london",
+      "label": "LBMA Vaults",
+      "type": "retail",
+      "location": {
+        "lat": 51.51,
+        "lng": -0.09
+      },
+      "revenue_per_day": 500.0,
+      "notes": "OTC trading hub.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "vault_ny",
+      "label": "COMEX (New York)",
+      "type": "retail",
+      "location": {
+        "lat": 40.71,
+        "lng": -74.0
+      },
+      "revenue_per_day": 600.0,
+      "notes": "Futures delivery.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "vault_shanghai",
+      "label": "SGE (Shanghai)",
+      "type": "retail",
+      "location": {
+        "lat": 31.23,
+        "lng": 121.47
+      },
+      "revenue_per_day": 800.0,
+      "notes": "Physical delivery.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_swiss_refineries",
+      "label": "Swiss Refineries",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_rbi_india",
+      "label": "RBI (India)",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_carlin_usa",
+      "label": "Carlin (USA)",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_london_vaults",
+      "label": "London Vaults",
+      "type": "retail",
+      "location": {
+        "lat": 51.5,
+        "lng": -0.12
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "mine_muruntau",
+      "target": "ref_valcambi",
+      "lag": 3,
+      "notes": "Air freight",
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_carlin",
+      "target": "ref_valcambi",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_grasberg",
+      "target": "ref_metalor",
+      "lag": 6,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_boddington",
+      "target": "ref_perth",
+      "lag": 1,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_olimpiada",
+      "target": "ref_krastsvetmet",
+      "lag": 2,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "ref_krastsvetmet",
+      "target": "hub_dubai",
+      "lag": 4,
+      "notes": "Sanctions evasion",
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "ref_krastsvetmet",
+      "target": "hub_hong_kong",
+      "lag": 5,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "ref_valcambi",
+      "target": "hub_zurich_airport",
+      "lag": 1,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "ref_pamp",
+      "target": "hub_zurich_airport",
+      "lag": 1,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "ref_metalor",
+      "target": "hub_zurich_airport",
+      "lag": 1,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "hub_zurich_airport",
+      "target": "vault_london",
+      "lag": 1,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "hub_zurich_airport",
+      "target": "vault_ny",
+      "lag": 2,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "hub_zurich_airport",
+      "target": "hub_hong_kong",
+      "lag": 3,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "ref_rand",
+      "target": "vault_london",
+      "lag": 3,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "ref_perth",
+      "target": "vault_shanghai",
+      "lag": 8,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "hub_dubai",
+      "target": "hub_hong_kong",
+      "lag": 2,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "hub_hong_kong",
+      "target": "vault_shanghai",
+      "lag": 1,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_carlin_usa",
+      "target": "ref_valcambi",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_muruntau",
+      "target": "vault_shanghai",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_swiss_refineries",
+      "target": "vault_london",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_london_vaults",
+      "target": "mkt_rbi_india",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    }
+  ]
+}

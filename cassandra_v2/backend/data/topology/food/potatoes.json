@@ -1,0 +1,280 @@
+{
+  "commodity": "Potatoes",
+  "version": "2.1",
+  "nodes": [
+    {
+      "id": "farm_idaho",
+      "label": "Idaho (USA)",
+      "type": "resource",
+      "location": {
+        "lat": 44.06,
+        "lng": -114.74
+      },
+      "inventory": 4000.0,
+      "notes": "Russet Burbank.",
+      "jurisdiction": "USA",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_lamb_weston"
+    },
+    {
+      "id": "farm_netherlands",
+      "label": "Netherlands Seed",
+      "type": "resource",
+      "location": {
+        "lat": 52.13,
+        "lng": 5.29
+      },
+      "inventory": 2000.0,
+      "notes": "Top seed exporter.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "proc_mccain",
+      "label": "McCain (Global)",
+      "type": "transformation",
+      "location": {
+        "lat": 46.5,
+        "lng": -67.7
+      },
+      "revenue_per_day": 1000.0,
+      "notes": "Frozen fries.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "proc_lamb_weston",
+      "label": "Lamb Weston (USA)",
+      "type": "transformation",
+      "location": {
+        "lat": 46.22,
+        "lng": -119.1
+      },
+      "revenue_per_day": 800.0,
+      "jurisdiction": "USA",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_rotterdam",
+      "label": "Rotterdam (NL)",
+      "type": "logistic",
+      "location": {
+        "lat": 51.95,
+        "lng": 4.1
+      },
+      "jurisdiction": "Netherlands",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_global_fastfood",
+      "label": "Global Fast Food",
+      "type": "retail",
+      "location": {
+        "lat": 40.71,
+        "lng": -74.0
+      },
+      "revenue_per_day": 2000.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_port_of_tacoma",
+      "label": "Port of Tacoma",
+      "type": "logistic",
+      "location": {
+        "lat": 47.25,
+        "lng": -122.44
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_tokyo_port",
+      "label": "Tokyo Port",
+      "type": "logistic",
+      "location": {
+        "lat": 35.67,
+        "lng": 139.75
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_port_of_rotterdam",
+      "label": "Port of Rotterdam",
+      "type": "logistic",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_port_of_dumai",
+      "label": "Port of Dumai",
+      "type": "logistic",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_rotterdam_coal_terminal",
+      "label": "Rotterdam Coal Terminal",
+      "type": "logistic",
+      "location": {
+        "lat": 51.95,
+        "lng": 4.05
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_pnw_portland",
+      "label": "PNW (Portland)",
+      "type": "logistic",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_shanghai_port",
+      "label": "Shanghai Port",
+      "type": "logistic",
+      "location": {
+        "lat": 31.23,
+        "lng": 121.47
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "farm_idaho",
+      "target": "proc_lamb_weston",
+      "lag": 1,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "proc_lamb_weston",
+      "target": "mkt_global_fastfood",
+      "lag": 5,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "farm_netherlands",
+      "target": "port_rotterdam",
+      "lag": 1,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_rotterdam",
+      "target": "mkt_global_fastfood",
+      "lag": 15,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "farm_idaho",
+      "target": "port_port_of_tacoma",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "farm_netherlands",
+      "target": "port_port_of_rotterdam",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_pnw",
+      "target": "port_tokyo_port",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_pnw_portland",
+      "target": "port_tokyo_port",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_rotterdam_coal_terminal",
+      "target": "port_port_of_dumai",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_rotterdam_coal_terminal",
+      "target": "port_shanghai_port",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    }
+  ]
+}

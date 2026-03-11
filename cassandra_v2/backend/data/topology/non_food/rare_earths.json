@@ -1,0 +1,402 @@
+{
+  "commodity": "Rare Earths",
+  "version": "2.1",
+  "nodes": [
+    {
+      "id": "mine_bayan_obo",
+      "label": "Bayan Obo (China)",
+      "type": "resource",
+      "location": {
+        "lat": 41.77,
+        "lng": 109.96
+      },
+      "inventory": 6000.0,
+      "notes": "World's largest. Light REEs (NdPr).",
+      "jurisdiction": "China",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_cofco"
+    },
+    {
+      "id": "mine_kachin",
+      "label": "Kachin State (Myanmar)",
+      "type": "resource",
+      "location": {
+        "lat": 25.4,
+        "lng": 97.4
+      },
+      "inventory": 2000.0,
+      "notes": "Heavy REEs (Dy/Tb). Conflict zone.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mine_mountain_pass",
+      "label": "Mountain Pass (USA)",
+      "type": "resource",
+      "location": {
+        "lat": 35.48,
+        "lng": -115.54
+      },
+      "inventory": 2500.0,
+      "notes": "MP Materials. Bastnaesite.",
+      "jurisdiction": "USA",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mine_mount_weld",
+      "label": "Mount Weld (Aus)",
+      "type": "resource",
+      "location": {
+        "lat": -28.87,
+        "lng": 122.5
+      },
+      "inventory": 1500.0,
+      "notes": "Lynas. High grade.",
+      "jurisdiction": "Australia",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_bhp"
+    },
+    {
+      "id": "proc_baotou",
+      "label": "Baotou Steel Rare-Earth",
+      "type": "transformation",
+      "location": {
+        "lat": 40.65,
+        "lng": 109.84
+      },
+      "revenue_per_day": 1500.0,
+      "notes": "Northern Light REE monopoly.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "proc_ganzhou",
+      "label": "Ganzhou Rare Earth",
+      "type": "transformation",
+      "location": {
+        "lat": 25.83,
+        "lng": 114.93
+      },
+      "revenue_per_day": 1200.0,
+      "notes": "Southern Heavy REE kingdom.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "proc_kuantan",
+      "label": "Lynas LAMP (Malaysia)",
+      "type": "transformation",
+      "location": {
+        "lat": 3.98,
+        "lng": 103.38
+      },
+      "revenue_per_day": 800.0,
+      "notes": "Largest non-Chinese separation plant.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "proc_shenghe",
+      "label": "Shenghe Resources",
+      "type": "transformation",
+      "location": {
+        "lat": 30.67,
+        "lng": 104.06
+      },
+      "revenue_per_day": 900.0,
+      "notes": "Processor of MP Materials ore.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mag_ningbo",
+      "label": "Ningbo Magnet Hub",
+      "type": "transformation",
+      "location": {
+        "lat": 29.86,
+        "lng": 121.55
+      },
+      "revenue_per_day": 2000.0,
+      "notes": "JL Mag / NdFeB magnets.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mag_hitachi",
+      "label": "Hitachi Metals (JP)",
+      "type": "transformation",
+      "location": {
+        "lat": 36.05,
+        "lng": 140.1
+      },
+      "revenue_per_day": 1200.0,
+      "notes": "High performance magnets.",
+      "jurisdiction": "Japan",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_la_lb",
+      "label": "Port of LA",
+      "type": "logistic",
+      "location": {
+        "lat": 33.74,
+        "lng": -118.26
+      },
+      "notes": "Exit for MP ore.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_fremantle",
+      "label": "Fremantle Port",
+      "type": "logistic",
+      "location": {
+        "lat": -32.05,
+        "lng": 115.74
+      },
+      "notes": "Exit for Lynas ore.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_kuantan",
+      "label": "Kuantan Port",
+      "type": "logistic",
+      "location": {
+        "lat": 3.97,
+        "lng": 103.42
+      },
+      "notes": "Entry for Lynas ore.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mfr_tesla_shanghai",
+      "label": "Tesla Giga Shanghai",
+      "type": "retail",
+      "location": {
+        "lat": 30.87,
+        "lng": 121.77
+      },
+      "revenue_per_day": 3000.0,
+      "owner_id": "actor_tesla",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mfr_vw_eu",
+      "label": "VW Zwickau (EV)",
+      "type": "retail",
+      "location": {
+        "lat": 50.71,
+        "lng": 12.49
+      },
+      "revenue_per_day": 1800.0,
+      "owner_id": "actor_vw",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_baotou_steel_re",
+      "label": "Baotou Steel RE",
+      "type": "retail",
+      "location": {
+        "lat": 40.65,
+        "lng": 109.84
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_toyota_city",
+      "label": "Toyota City",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "mine_bayan_obo",
+      "target": "proc_baotou",
+      "lag": 1,
+      "notes": "Local rail",
+      "carrier_id": "actor_bnsf",
+      "transport_mode": "rail",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_trans_siberian"
+    },
+    {
+      "source": "mine_kachin",
+      "target": "proc_ganzhou",
+      "lag": 3,
+      "notes": "Truck across border",
+      "carrier_id": "actor_log_road",
+      "transport_mode": "road",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_mountain_pass",
+      "target": "port_la_lb",
+      "lag": 2,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_la_lb",
+      "target": "proc_shenghe",
+      "lag": 18,
+      "notes": "Concentrate to China",
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_mount_weld",
+      "target": "port_fremantle",
+      "lag": 4,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_fremantle",
+      "target": "port_kuantan",
+      "lag": 10,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_kuantan",
+      "target": "proc_kuantan",
+      "lag": 1,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "proc_baotou",
+      "target": "mag_ningbo",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "proc_ganzhou",
+      "target": "mag_ningbo",
+      "lag": 4,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "proc_shenghe",
+      "target": "mag_ningbo",
+      "lag": 6,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "proc_kuantan",
+      "target": "mag_hitachi",
+      "lag": 8,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mag_ningbo",
+      "target": "mfr_tesla_shanghai",
+      "lag": 2,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mag_ningbo",
+      "target": "mfr_vw_eu",
+      "lag": 30,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mag_hitachi",
+      "target": "mfr_vw_eu",
+      "lag": 35,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_bayan_obo",
+      "target": "mkt_baotou_steel_re",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_mount_weld",
+      "target": "port_kuantan",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_kuantan",
+      "target": "mkt_toyota_city",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    }
+  ]
+}

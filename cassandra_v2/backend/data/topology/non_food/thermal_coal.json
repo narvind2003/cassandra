@@ -1,0 +1,485 @@
+{
+  "commodity": "Thermal Coal",
+  "version": "2.2",
+  "nodes": [
+    {
+      "id": "mine_kaltim",
+      "label": "Kaltim Prima (Indonesia)",
+      "type": "resource",
+      "location": {
+        "lat": 0.55,
+        "lng": 117.55
+      },
+      "inventory": 6000.0,
+      "notes": "East Kalimantan giant.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mine_adaro",
+      "label": "Adaro (Indonesia)",
+      "type": "resource",
+      "location": {
+        "lat": -2.17,
+        "lng": 115.39
+      },
+      "inventory": 5000.0,
+      "notes": "Envirocoal (low ash/sulfur).",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mine_hunter",
+      "label": "Hunter Valley (Aus)",
+      "type": "resource",
+      "location": {
+        "lat": -32.56,
+        "lng": 151.17
+      },
+      "inventory": 4000.0,
+      "notes": "High CV thermal coal.",
+      "jurisdiction": "Australia",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_bhp"
+    },
+    {
+      "id": "mine_mpumalanga",
+      "label": "Mpumalanga (South Africa)",
+      "type": "resource",
+      "location": {
+        "lat": -26.0,
+        "lng": 29.5
+      },
+      "inventory": 3500.0,
+      "notes": "Exports to EU/India.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mine_cerrejon",
+      "label": "Cerrej\u00f3n (Colombia)",
+      "type": "resource",
+      "location": {
+        "lat": 11.08,
+        "lng": -72.6
+      },
+      "inventory": 3000.0,
+      "notes": "Critical EU supplier.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mine_kuzbass",
+      "label": "Kuzbass (Russia)",
+      "type": "resource",
+      "location": {
+        "lat": 54.43,
+        "lng": 86.07
+      },
+      "inventory": 4500.0,
+      "notes": "Rail to East/West.",
+      "jurisdiction": "Russia",
+      "risk_level": 0.9,
+      "is_sanctioned": true,
+      "conflict_zone": false,
+      "owner_id": "actor_gazprom"
+    },
+    {
+      "id": "mine_shaanxi",
+      "label": "Shaanxi/Inner Mongolia",
+      "type": "resource",
+      "location": {
+        "lat": 39.5,
+        "lng": 109.5
+      },
+      "inventory": 8000.0,
+      "notes": "China's domestic engine.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_newcastle",
+      "label": "Port of Newcastle",
+      "type": "logistic",
+      "location": {
+        "lat": -32.92,
+        "lng": 151.78
+      },
+      "notes": "World's largest coal export port.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_samarinda",
+      "label": "Samarinda/Balikpapan",
+      "type": "logistic",
+      "location": {
+        "lat": -1.26,
+        "lng": 116.89
+      },
+      "notes": "Barge aggregation points.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_rbct",
+      "label": "Richards Bay (RBCT)",
+      "type": "logistic",
+      "location": {
+        "lat": -28.8,
+        "lng": 32.04
+      },
+      "notes": "Deepwater terminal.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_bolivar",
+      "label": "Puerto Bol\u00edvar",
+      "type": "logistic",
+      "location": {
+        "lat": 12.25,
+        "lng": -71.97
+      },
+      "notes": "Cerrej\u00f3n exit.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_vostochny",
+      "label": "Vostochny Port",
+      "type": "logistic",
+      "location": {
+        "lat": 42.73,
+        "lng": 133.08
+      },
+      "notes": "Russian Pacific exit.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_qinhuangdao",
+      "label": "Port of Qinhuangdao",
+      "type": "logistic",
+      "location": {
+        "lat": 39.93,
+        "lng": 119.61
+      },
+      "notes": "China's North-South coal artery.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_shanghai",
+      "label": "Shanghai Port",
+      "type": "logistic",
+      "location": {
+        "lat": 31.23,
+        "lng": 121.47
+      },
+      "revenue_per_day": 1000.0,
+      "notes": "Global coal hub.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "plant_mundra",
+      "label": "Adani Mundra (India)",
+      "type": "retail",
+      "location": {
+        "lat": 22.83,
+        "lng": 69.71
+      },
+      "revenue_per_day": 800.0,
+      "notes": "Massive import terminal.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "plant_datang",
+      "label": "Datang Power (China)",
+      "type": "retail",
+      "location": {
+        "lat": 39.9,
+        "lng": 116.4
+      },
+      "revenue_per_day": 1200.0,
+      "jurisdiction": "China",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "plant_guangdong",
+      "label": "Guangzhou Power",
+      "type": "retail",
+      "location": {
+        "lat": 23.12,
+        "lng": 113.26
+      },
+      "revenue_per_day": 1500.0,
+      "notes": "Receives Qinhuangdao/Indo coal.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "plant_jara",
+      "label": "JERA Hekinan (Japan)",
+      "type": "retail",
+      "location": {
+        "lat": 34.83,
+        "lng": 136.96
+      },
+      "revenue_per_day": 700.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "plant_rotterdam",
+      "label": "Rotterdam Coal Terminal",
+      "type": "retail",
+      "location": {
+        "lat": 51.95,
+        "lng": 4.05
+      },
+      "revenue_per_day": 500.0,
+      "notes": "EU entry point.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_richards_bay_coal_sa",
+      "label": "Richards Bay Coal (SA)",
+      "type": "retail",
+      "location": {
+        "lat": -28.8,
+        "lng": 32.04
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_hekinan_power_japan",
+      "label": "Hekinan Power (Japan)",
+      "type": "retail",
+      "location": {
+        "lat": 34.83,
+        "lng": 136.96
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_mundra_port_india",
+      "label": "Mundra Port (India)",
+      "type": "logistic",
+      "location": {
+        "lat": 22.83,
+        "lng": 69.71
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "mine_hunter",
+      "target": "port_newcastle",
+      "lag": 1,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_newcastle",
+      "target": "plant_jara",
+      "lag": 12,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_newcastle",
+      "target": "plant_datang",
+      "lag": 14,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_newcastle",
+      "target": "plant_mundra",
+      "lag": 18,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_kaltim",
+      "target": "port_shanghai",
+      "lag": 6,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_adaro",
+      "target": "port_samarinda",
+      "lag": 3,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_samarinda",
+      "target": "plant_guangdong",
+      "lag": 6,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_mpumalanga",
+      "target": "port_rbct",
+      "lag": 2,
+      "notes": "Rail link",
+      "carrier_id": "actor_bnsf",
+      "transport_mode": "rail",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_trans_siberian"
+    },
+    {
+      "source": "port_rbct",
+      "target": "plant_mundra",
+      "lag": 12,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_rbct",
+      "target": "plant_rotterdam",
+      "lag": 20,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_cerrejon",
+      "target": "port_bolivar",
+      "lag": 1,
+      "notes": "Dedicated rail",
+      "carrier_id": "actor_bnsf",
+      "transport_mode": "rail",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_trans_siberian"
+    },
+    {
+      "source": "port_bolivar",
+      "target": "plant_rotterdam",
+      "lag": 14,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_kuzbass",
+      "target": "port_vostochny",
+      "lag": 7,
+      "notes": "Trans-Siberian rail",
+      "carrier_id": "actor_rzd",
+      "transport_mode": "rail",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_trans_siberian"
+    },
+    {
+      "source": "port_vostochny",
+      "target": "plant_datang",
+      "lag": 4,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_shaanxi",
+      "target": "port_qinhuangdao",
+      "lag": 3,
+      "notes": "Da-Qin Railway",
+      "carrier_id": "actor_bnsf",
+      "transport_mode": "rail",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_trans_siberian"
+    },
+    {
+      "source": "port_qinhuangdao",
+      "target": "plant_guangdong",
+      "lag": 5,
+      "notes": "Coastal shipping",
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_newcastle",
+      "target": "mkt_hekinan_power_japan",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_richards_bay_coal_sa",
+      "target": "port_mundra_port_india",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    }
+  ]
+}

@@ -1,0 +1,521 @@
+{
+  "commodity": "Palm Oil",
+  "version": "2.1",
+  "nodes": [
+    {
+      "id": "plantation_riau",
+      "label": "Riau (Sumatra)",
+      "type": "resource",
+      "location": {
+        "lat": 0.51,
+        "lng": 101.45
+      },
+      "inventory": 5000.0,
+      "notes": "Indonesia's palm heartland.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "plantation_kalimantan",
+      "label": "C. Kalimantan (Indo)",
+      "type": "resource",
+      "location": {
+        "lat": -1.68,
+        "lng": 113.38
+      },
+      "inventory": 4000.0,
+      "notes": "Peatland expansion zone.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "plantation_sabah",
+      "label": "Sabah (Malaysia)",
+      "type": "resource",
+      "location": {
+        "lat": 5.42,
+        "lng": 117.03
+      },
+      "inventory": 3000.0,
+      "notes": "High yield estates.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_dumai",
+      "label": "Port of Dumai",
+      "type": "logistic",
+      "location": {
+        "lat": 1.68,
+        "lng": 101.45
+      },
+      "notes": "Top export port.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_balikpapan",
+      "label": "Port of Balikpapan",
+      "type": "logistic",
+      "location": {
+        "lat": -1.26,
+        "lng": 116.83
+      },
+      "notes": "Kalimantan exit.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_klang",
+      "label": "Port Klang (MY)",
+      "type": "logistic",
+      "location": {
+        "lat": 3.0,
+        "lng": 101.4
+      },
+      "notes": "Futures delivery point.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_lahad_datu",
+      "label": "Lahad Datu (Sabah)",
+      "type": "logistic",
+      "location": {
+        "lat": 5.03,
+        "lng": 118.33
+      },
+      "notes": "POIC industrial park.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_kandla",
+      "label": "Kandla (India)",
+      "type": "logistic",
+      "location": {
+        "lat": 23.0,
+        "lng": 70.22
+      },
+      "notes": "West India entry.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_haldia",
+      "label": "Haldia (India)",
+      "type": "logistic",
+      "location": {
+        "lat": 22.02,
+        "lng": 88.06
+      },
+      "notes": "East India entry.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_rotterdam",
+      "label": "Rotterdam (EU)",
+      "type": "logistic",
+      "location": {
+        "lat": 51.95,
+        "lng": 4.05
+      },
+      "notes": "Biofuel entry.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "choke_malacca",
+      "label": "Strait of Malacca",
+      "type": "logistic",
+      "location": {
+        "lat": 1.42,
+        "lng": 102.13
+      },
+      "notes": "Critical artery.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "ref_wilmar_sg",
+      "label": "Wilmar Jurong (SG)",
+      "type": "transformation",
+      "location": {
+        "lat": 1.27,
+        "lng": 103.68
+      },
+      "revenue_per_day": 1000.0,
+      "notes": "Trading giant.",
+      "owner_id": "actor_wilmar",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "ref_wilmar_china",
+      "label": "Wilmar Shanghai",
+      "type": "transformation",
+      "location": {
+        "lat": 31.23,
+        "lng": 121.5
+      },
+      "revenue_per_day": 800.0,
+      "notes": "Arawana brand.",
+      "owner_id": "actor_wilmar",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "ref_neste_rott",
+      "label": "Neste Rotterdam",
+      "type": "transformation",
+      "location": {
+        "lat": 51.95,
+        "lng": 4.02
+      },
+      "revenue_per_day": 600.0,
+      "notes": "Renewable diesel.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "ref_adani_wilmar",
+      "label": "Adani Wilmar (India)",
+      "type": "transformation",
+      "location": {
+        "lat": 23.05,
+        "lng": 70.15
+      },
+      "revenue_per_day": 700.0,
+      "notes": "Fortune Oil.",
+      "owner_id": "actor_wilmar",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_india",
+      "label": "Indian Consumer",
+      "type": "retail",
+      "location": {
+        "lat": 20.59,
+        "lng": 78.96
+      },
+      "revenue_per_day": 2000.0,
+      "notes": "Price sensitive.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_china",
+      "label": "China Consumer",
+      "type": "retail",
+      "location": {
+        "lat": 35.0,
+        "lng": 105.0
+      },
+      "revenue_per_day": 1800.0,
+      "jurisdiction": "China",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_nestle"
+    },
+    {
+      "id": "mkt_sandakan",
+      "label": "Sandakan",
+      "type": "retail",
+      "location": {
+        "lat": 5.84,
+        "lng": 118.11
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_malacca_strait",
+      "label": "Malacca Strait",
+      "type": "logistic",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_north_sumatra_indo",
+      "label": "North Sumatra (Indo)",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_kandla_port",
+      "label": "Kandla Port",
+      "type": "logistic",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_rotterdam_coal_terminal",
+      "label": "Rotterdam Coal Terminal",
+      "type": "logistic",
+      "location": {
+        "lat": 51.95,
+        "lng": 4.05
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "plantation_riau",
+      "target": "port_dumai",
+      "lag": 1,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "plantation_kalimantan",
+      "target": "port_balikpapan",
+      "lag": 2,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "plantation_sabah",
+      "target": "port_lahad_datu",
+      "lag": 1,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_dumai",
+      "target": "choke_malacca",
+      "lag": 1,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_malacca"
+    },
+    {
+      "source": "port_dumai",
+      "target": "port_kandla",
+      "lag": 12,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_dumai",
+      "target": "port_haldia",
+      "lag": 10,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_balikpapan",
+      "target": "ref_wilmar_china",
+      "lag": 15,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_balikpapan",
+      "target": "port_rotterdam",
+      "lag": 28,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_klang",
+      "target": "choke_malacca",
+      "lag": 1,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_malacca"
+    },
+    {
+      "source": "port_lahad_datu",
+      "target": "ref_wilmar_china",
+      "lag": 10,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "choke_malacca",
+      "target": "port_rotterdam",
+      "lag": 22,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_malacca"
+    },
+    {
+      "source": "choke_malacca",
+      "target": "ref_wilmar_sg",
+      "lag": 1,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_malacca"
+    },
+    {
+      "source": "port_kandla",
+      "target": "ref_adani_wilmar",
+      "lag": 1,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_haldia",
+      "target": "mkt_india",
+      "lag": 5,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_rotterdam",
+      "target": "ref_neste_rott",
+      "lag": 1,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "ref_wilmar_china",
+      "target": "mkt_china",
+      "lag": 3,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "ref_adani_wilmar",
+      "target": "mkt_india",
+      "lag": 3,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "farm_sumatra_north",
+      "target": "port_dumai",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "plantation_sabah",
+      "target": "mkt_sandakan",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_dumai",
+      "target": "port_malacca_strait",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_north_sumatra_indo",
+      "target": "port_dumai",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "choke_malacca",
+      "target": "port_kandla_port",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "choke_malacca",
+      "target": "port_rotterdam_coal_terminal",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    }
+  ]
+}

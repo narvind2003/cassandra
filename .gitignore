@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+venv/
+env/
+__pycache__/
+.python-version
+
+# System
+.DS_Store
+Thumbs.db
+
+# Build
+dist/
+build/
+*.pyc
+
+# IDEs
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+backend.log
+frontend.log
+backend.pid
+frontend.pid
+.pytest_cache
+__pycache__/
+node_modules/
+venv/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite
+*.db

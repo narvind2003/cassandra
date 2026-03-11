@@ -1,0 +1,612 @@
+{
+  "commodity": "Iron Ore",
+  "version": "2.2",
+  "nodes": [
+    {
+      "id": "mine_pilbara_bhp",
+      "label": "Mt. Whaleback (BHP)",
+      "type": "resource",
+      "location": {
+        "lat": -23.36,
+        "lng": 119.52
+      },
+      "inventory": 5000.0,
+      "notes": "Backbone of BHP's WAIO.",
+      "owner_id": "actor_bhp",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mine_pilbara_rio",
+      "label": "Tom Price (Rio Tinto)",
+      "type": "resource",
+      "location": {
+        "lat": -22.76,
+        "lng": 117.79
+      },
+      "inventory": 4500.0,
+      "notes": "High grade hematite.",
+      "owner_id": "actor_rio",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mine_pilbara_fmg",
+      "label": "Eliwana (Fortescue)",
+      "type": "resource",
+      "location": {
+        "lat": -22.43,
+        "lng": 116.82
+      },
+      "inventory": 3000.0,
+      "notes": "The 'Green Metal' giant.",
+      "owner_id": "actor_fmg",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mine_carajas",
+      "label": "Caraj\u00e1s S11D (Vale)",
+      "type": "resource",
+      "location": {
+        "lat": -6.41,
+        "lng": -50.36
+      },
+      "inventory": 6000.0,
+      "notes": "World's largest iron ore mine.",
+      "owner_id": "actor_vale",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mine_minas_rio",
+      "label": "Minas-Rio (Anglo)",
+      "type": "resource",
+      "location": {
+        "lat": -18.91,
+        "lng": -43.42
+      },
+      "inventory": 2000.0,
+      "notes": "Includes 529km slurry pipeline.",
+      "owner_id": "actor_anglo",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mine_simandou",
+      "label": "Simandou (Guinea)",
+      "type": "resource",
+      "location": {
+        "lat": 8.54,
+        "lng": -8.93
+      },
+      "inventory": 2500.0,
+      "notes": "High grade. New Trans-Guinean rail.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_hedland",
+      "label": "Port Hedland",
+      "type": "logistic",
+      "location": {
+        "lat": -20.31,
+        "lng": 118.6
+      },
+      "notes": "Largest bulk export port on Earth.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_dampier",
+      "label": "Port of Dampier",
+      "type": "logistic",
+      "location": {
+        "lat": -20.66,
+        "lng": 116.7
+      },
+      "notes": "Rio Tinto's main exit.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_pontadomadeira",
+      "label": "Ponta da Madeira",
+      "type": "logistic",
+      "location": {
+        "lat": -2.56,
+        "lng": -44.37
+      },
+      "notes": "Vale's S11D deepwater terminal.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_acu",
+      "label": "Port of A\u00e7u",
+      "type": "logistic",
+      "location": {
+        "lat": -21.82,
+        "lng": -40.99
+      },
+      "notes": "Minas-Rio export hub.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_morebaya",
+      "label": "Port of Morebaya",
+      "type": "logistic",
+      "location": {
+        "lat": 9.38,
+        "lng": -13.18
+      },
+      "notes": "New Simandou deepwater port.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_rotterdam",
+      "label": "Rotterdam (EU)",
+      "type": "logistic",
+      "location": {
+        "lat": 51.95,
+        "lng": 4.05
+      },
+      "notes": "European entry hub.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "choke_malacca",
+      "label": "Strait of Malacca",
+      "type": "logistic",
+      "location": {
+        "lat": 1.42,
+        "lng": 102.13
+      },
+      "notes": "Vital for Brazil/Africa -> China.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mill_caofeidian",
+      "label": "Shougang Caofeidian",
+      "type": "transformation",
+      "location": {
+        "lat": 39.11,
+        "lng": 118.46
+      },
+      "revenue_per_day": 1500.0,
+      "notes": "Bohai Rim steel giant.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mill_baowu_shanghai",
+      "label": "Baowu Shanghai",
+      "type": "transformation",
+      "location": {
+        "lat": 31.4,
+        "lng": 121.39
+      },
+      "revenue_per_day": 1800.0,
+      "notes": "World's largest steelmaker.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mill_posco_gwangyang",
+      "label": "POSCO Gwangyang",
+      "type": "transformation",
+      "location": {
+        "lat": 34.93,
+        "lng": 127.75
+      },
+      "revenue_per_day": 1200.0,
+      "notes": "Largest single steel plant.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mill_nippon_kimitsu",
+      "label": "Nippon Steel Kimitsu",
+      "type": "transformation",
+      "location": {
+        "lat": 35.33,
+        "lng": 139.86
+      },
+      "revenue_per_day": 900.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mill_tata_jamshedpur",
+      "label": "Tata Steel Jamshedpur",
+      "type": "transformation",
+      "location": {
+        "lat": 22.78,
+        "lng": 86.17
+      },
+      "revenue_per_day": 600.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mill_bluescope_portkembla",
+      "label": "BlueScope Port Kembla",
+      "type": "transformation",
+      "location": {
+        "lat": -34.48,
+        "lng": 150.9
+      },
+      "revenue_per_day": 1200.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "const_china_infra",
+      "label": "China Infrastructure",
+      "type": "retail",
+      "location": {
+        "lat": 35.0,
+        "lng": 110.0
+      },
+      "revenue_per_day": 5000.0,
+      "notes": "Rail, Bridges, Cities.",
+      "jurisdiction": "China",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mfr_toyota",
+      "label": "Toyota City",
+      "type": "retail",
+      "location": {
+        "lat": 35.08,
+        "lng": 137.15
+      },
+      "revenue_per_day": 2000.0,
+      "owner_id": "actor_toyota",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "retail_construction_india",
+      "label": "India Construction",
+      "type": "retail",
+      "location": {
+        "lat": 20.59,
+        "lng": 78.96
+      },
+      "revenue_per_day": 800.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "retail_construction_aus",
+      "label": "Australia Construction",
+      "type": "retail",
+      "location": {
+        "lat": -33.86,
+        "lng": 151.2
+      },
+      "revenue_per_day": 700.0,
+      "jurisdiction": "Australia",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_pilbara_bhp_rio",
+      "label": "Pilbara (BHP/Rio)",
+      "type": "retail",
+      "location": {
+        "lat": -23.0,
+        "lng": 119.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_rotterdam_coal_terminal",
+      "label": "Rotterdam Coal Terminal",
+      "type": "logistic",
+      "location": {
+        "lat": 51.95,
+        "lng": 4.05
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "mine_pilbara_bhp",
+      "target": "port_hedland",
+      "lag": 1,
+      "carrier_id": "actor_star_bulk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_pilbara_fmg",
+      "target": "port_hedland",
+      "lag": 2,
+      "carrier_id": "actor_star_bulk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_pilbara_rio",
+      "target": "port_dampier",
+      "lag": 1,
+      "carrier_id": "actor_star_bulk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_carajas",
+      "target": "port_pontadomadeira",
+      "lag": 3,
+      "notes": "Rail flow",
+      "carrier_id": "actor_bnsf",
+      "transport_mode": "rail",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_trans_siberian"
+    },
+    {
+      "source": "mine_minas_rio",
+      "target": "port_acu",
+      "lag": 1,
+      "notes": "Slurry pipe",
+      "carrier_id": "actor_transneft",
+      "transport_mode": "pipe",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_simandou",
+      "target": "port_morebaya",
+      "lag": 2,
+      "notes": "Trans-Guinean Rail",
+      "carrier_id": "actor_bnsf",
+      "transport_mode": "rail",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_trans_siberian"
+    },
+    {
+      "source": "port_hedland",
+      "target": "mill_caofeidian",
+      "lag": 12,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_hedland",
+      "target": "mill_baowu_shanghai",
+      "lag": 11,
+      "carrier_id": "actor_star_bulk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_hedland",
+      "target": "mill_posco_gwangyang",
+      "lag": 10,
+      "carrier_id": "actor_golden_ocean",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_hedland",
+      "target": "mill_bluescope_portkembla",
+      "lag": 6,
+      "carrier_id": "actor_golden_ocean",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_dampier",
+      "target": "mill_nippon_kimitsu",
+      "lag": 10,
+      "carrier_id": "actor_star_bulk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_dampier",
+      "target": "mill_baowu_shanghai",
+      "lag": 11,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_pontadomadeira",
+      "target": "choke_malacca",
+      "lag": 25,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_malacca"
+    },
+    {
+      "source": "port_pontadomadeira",
+      "target": "port_rotterdam",
+      "lag": 14,
+      "carrier_id": "actor_star_bulk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_acu",
+      "target": "choke_malacca",
+      "lag": 26,
+      "carrier_id": "actor_star_bulk",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_malacca"
+    },
+    {
+      "source": "port_morebaya",
+      "target": "choke_malacca",
+      "lag": 18,
+      "carrier_id": "actor_star_bulk",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_malacca"
+    },
+    {
+      "source": "choke_malacca",
+      "target": "mill_caofeidian",
+      "lag": 8,
+      "carrier_id": "actor_star_bulk",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_malacca"
+    },
+    {
+      "source": "choke_malacca",
+      "target": "mill_baowu_shanghai",
+      "lag": 6,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_malacca"
+    },
+    {
+      "source": "choke_malacca",
+      "target": "mill_posco_gwangyang",
+      "lag": 7,
+      "carrier_id": "actor_star_bulk",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_malacca"
+    },
+    {
+      "source": "choke_malacca",
+      "target": "mill_nippon_kimitsu",
+      "lag": 7,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_malacca"
+    },
+    {
+      "source": "mill_caofeidian",
+      "target": "const_china_infra",
+      "lag": 2,
+      "carrier_id": "actor_golden_ocean",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mill_baowu_shanghai",
+      "target": "const_china_infra",
+      "lag": 1,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mill_nippon_kimitsu",
+      "target": "mfr_toyota",
+      "lag": 1,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mill_posco_gwangyang",
+      "target": "mfr_toyota",
+      "lag": 2,
+      "carrier_id": "actor_golden_ocean",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mill_tata_jamshedpur",
+      "target": "retail_construction_india",
+      "lag": 1,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mill_bluescope_portkembla",
+      "target": "retail_construction_aus",
+      "lag": 1,
+      "carrier_id": "actor_golden_ocean",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_pilbara_bhp_rio",
+      "target": "port_hedland",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_pontadomadeira",
+      "target": "port_rotterdam_coal_terminal",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    }
+  ]
+}

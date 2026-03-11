@@ -1,0 +1,628 @@
+{
+  "commodity": "Wheat",
+  "version": "2.1",
+  "nodes": [
+    {
+      "id": "farm_kansas",
+      "label": "Kansas HRW (USA)",
+      "type": "resource",
+      "location": {
+        "lat": 38.5,
+        "lng": -98.3
+      },
+      "inventory": 4000.0,
+      "notes": "Hard Red Winter wheat.",
+      "jurisdiction": "USA",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_adm"
+    },
+    {
+      "id": "farm_blacksea_ru",
+      "label": "Krasnodar/Rostov (RU)",
+      "type": "resource",
+      "location": {
+        "lat": 45.03,
+        "lng": 38.97
+      },
+      "inventory": 5000.0,
+      "notes": "Global price setter.",
+      "jurisdiction": "Russia",
+      "risk_level": 0.9,
+      "is_sanctioned": true,
+      "conflict_zone": false,
+      "owner_id": "actor_gazprom"
+    },
+    {
+      "id": "farm_blacksea_ua",
+      "label": "Ukraine Steppe",
+      "type": "resource",
+      "location": {
+        "lat": 48.37,
+        "lng": 31.16
+      },
+      "inventory": 3000.0,
+      "notes": "War-impacted logistics.",
+      "jurisdiction": "Ukraine",
+      "risk_level": 1.0,
+      "is_sanctioned": false,
+      "conflict_zone": true,
+      "owner_id": "actor_state_ua"
+    },
+    {
+      "id": "farm_france",
+      "label": "Beauce (France)",
+      "type": "resource",
+      "location": {
+        "lat": 48.4,
+        "lng": 1.5
+      },
+      "inventory": 2500.0,
+      "notes": "EU breadbasket.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "farm_wa",
+      "label": "Western Australia",
+      "type": "resource",
+      "location": {
+        "lat": -31.95,
+        "lng": 117.5
+      },
+      "inventory": 2000.0,
+      "notes": "White wheat for Asian noodles.",
+      "jurisdiction": "Australia",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_bhp"
+    },
+    {
+      "id": "silo_hutchinson",
+      "label": "Hutchinson Elevators",
+      "type": "logistic",
+      "location": {
+        "lat": 38.06,
+        "lng": -97.93
+      },
+      "notes": "Massive inland storage.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_nola",
+      "label": "Port of NOLA",
+      "type": "logistic",
+      "location": {
+        "lat": 29.94,
+        "lng": -90.05
+      },
+      "notes": "Gulf export route.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_pnw",
+      "label": "PNW (Portland)",
+      "type": "logistic",
+      "location": {
+        "lat": 45.6,
+        "lng": -122.75
+      },
+      "notes": "Asia route.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_novorossiysk",
+      "label": "Novorossiysk (RU)",
+      "type": "logistic",
+      "location": {
+        "lat": 44.72,
+        "lng": 37.78
+      },
+      "notes": "Deepwater Black Sea giant.",
+      "jurisdiction": "Russia",
+      "risk_level": 0.9,
+      "is_sanctioned": true,
+      "conflict_zone": false,
+      "owner_id": "actor_gazprom"
+    },
+    {
+      "id": "port_odessa",
+      "label": "Greater Odessa (UA)",
+      "type": "logistic",
+      "location": {
+        "lat": 46.48,
+        "lng": 30.72
+      },
+      "notes": "Grain Corridor hub.",
+      "jurisdiction": "Ukraine",
+      "risk_level": 1.0,
+      "is_sanctioned": false,
+      "conflict_zone": true,
+      "owner_id": "actor_state_ua"
+    },
+    {
+      "id": "port_constanta",
+      "label": "Constanta (Romania)",
+      "type": "logistic",
+      "location": {
+        "lat": 44.17,
+        "lng": 28.63
+      },
+      "notes": "Key alternative for Ukraine.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_rouen",
+      "label": "Port of Rouen (FR)",
+      "type": "logistic",
+      "location": {
+        "lat": 49.44,
+        "lng": 1.05
+      },
+      "notes": "Top EU grain port.",
+      "jurisdiction": "France",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_kwinana",
+      "label": "CBH Kwinana",
+      "type": "logistic",
+      "location": {
+        "lat": -32.23,
+        "lng": 115.75
+      },
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "choke_bosphorus",
+      "label": "Bosphorus Strait",
+      "type": "logistic",
+      "location": {
+        "lat": 41.0,
+        "lng": 29.0
+      },
+      "notes": "The choke for Black Sea grain.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mill_turkey",
+      "label": "Mersin/Gaziantep Mills",
+      "type": "transformation",
+      "location": {
+        "lat": 36.8,
+        "lng": 34.63
+      },
+      "revenue_per_day": 800.0,
+      "notes": "World's flour/pasta factory.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mill_cairo",
+      "label": "Cairo Mills",
+      "type": "transformation",
+      "location": {
+        "lat": 30.04,
+        "lng": 31.23
+      },
+      "revenue_per_day": 500.0,
+      "notes": "State-subsidized bread.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mill_jakarta",
+      "label": "Bogasari (Jakarta)",
+      "type": "transformation",
+      "location": {
+        "lat": -6.1,
+        "lng": 106.88
+      },
+      "revenue_per_day": 1000.0,
+      "notes": "World's largest flour mill.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mill_algiers",
+      "label": "Groupe Metidji (Algiers)",
+      "type": "transformation",
+      "location": {
+        "lat": 36.7,
+        "lng": 3.1
+      },
+      "revenue_per_day": 400.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "bakery_algiers",
+      "label": "Algerian Bakeries",
+      "type": "retail",
+      "location": {
+        "lat": 36.75,
+        "lng": 3.05
+      },
+      "revenue_per_day": 300.0,
+      "notes": "Major baguette consumer.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "bakery_cairo",
+      "label": "Cairo Bakeries",
+      "type": "retail",
+      "location": {
+        "lat": 30.04,
+        "lng": 31.23
+      },
+      "revenue_per_day": 600.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "noodle_factory_jakarta",
+      "label": "Indomie Factory (Jakarta)",
+      "type": "retail",
+      "location": {
+        "lat": -6.1,
+        "lng": 106.88
+      },
+      "revenue_per_day": 1000.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_port_said_egypt",
+      "label": "Port Said (Egypt)",
+      "type": "logistic",
+      "location": {
+        "lat": 31.26,
+        "lng": 32.3
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_tianqi_kwinana_aus",
+      "label": "Tianqi Kwinana (Aus)",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_georgia_arkansas",
+      "label": "Georgia/Arkansas",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_bulog_jakarta",
+      "label": "Bulog Jakarta",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "farm_kansas",
+      "target": "silo_hutchinson",
+      "lag": 1,
+      "carrier_id": "actor_star_bulk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "silo_hutchinson",
+      "target": "port_nola",
+      "lag": 7,
+      "notes": "Barge",
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "silo_hutchinson",
+      "target": "port_pnw",
+      "lag": 5,
+      "notes": "Rail",
+      "carrier_id": "actor_bnsf",
+      "transport_mode": "rail",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_trans_siberian"
+    },
+    {
+      "source": "farm_blacksea_ru",
+      "target": "port_novorossiysk",
+      "lag": 2,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_novorossiysk",
+      "target": "choke_bosphorus",
+      "lag": 2,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_bosphorus"
+    },
+    {
+      "source": "farm_blacksea_ua",
+      "target": "port_odessa",
+      "lag": 2,
+      "carrier_id": "actor_golden_ocean",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "farm_blacksea_ua",
+      "target": "port_constanta",
+      "lag": 4,
+      "notes": "Barge/Rail/Truck",
+      "carrier_id": "actor_bnsf",
+      "transport_mode": "rail",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_trans_siberian"
+    },
+    {
+      "source": "port_odessa",
+      "target": "choke_bosphorus",
+      "lag": 2,
+      "carrier_id": "actor_star_bulk",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_bosphorus"
+    },
+    {
+      "source": "port_constanta",
+      "target": "choke_bosphorus",
+      "lag": 2,
+      "carrier_id": "actor_golden_ocean",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_bosphorus"
+    },
+    {
+      "source": "farm_france",
+      "target": "port_rouen",
+      "lag": 2,
+      "carrier_id": "actor_star_bulk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_rouen",
+      "target": "mill_algiers",
+      "lag": 4,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_rouen",
+      "target": "mill_cairo",
+      "lag": 8,
+      "carrier_id": "actor_star_bulk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "choke_bosphorus",
+      "target": "mill_turkey",
+      "lag": 2,
+      "carrier_id": "actor_star_bulk",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_bosphorus"
+    },
+    {
+      "source": "choke_bosphorus",
+      "target": "mill_cairo",
+      "lag": 3,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_bosphorus"
+    },
+    {
+      "source": "choke_bosphorus",
+      "target": "mill_jakarta",
+      "lag": 20,
+      "carrier_id": "actor_golden_ocean",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_bosphorus"
+    },
+    {
+      "source": "farm_wa",
+      "target": "port_kwinana",
+      "lag": 1,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_kwinana",
+      "target": "mill_jakarta",
+      "lag": 8,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_pnw",
+      "target": "mill_jakarta",
+      "lag": 18,
+      "carrier_id": "actor_golden_ocean",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_nola",
+      "target": "mill_cairo",
+      "lag": 25,
+      "carrier_id": "actor_star_bulk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mill_turkey",
+      "target": "bakery_algiers",
+      "lag": 5,
+      "notes": "Flour/Pasta export",
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mill_turkey",
+      "target": "mill_cairo",
+      "lag": 4,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mill_algiers",
+      "target": "bakery_algiers",
+      "lag": 1,
+      "carrier_id": "actor_golden_ocean",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mill_cairo",
+      "target": "bakery_cairo",
+      "lag": 1,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mill_jakarta",
+      "target": "noodle_factory_jakarta",
+      "lag": 1,
+      "carrier_id": "actor_golden_ocean",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "farm_usa",
+      "target": "port_nola",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "term_novorossiysk",
+      "target": "choke_bosphorus",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "choke_bosphorus",
+      "target": "port_port_said_egypt",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_georgia_arkansas",
+      "target": "port_nola",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_novorossiysk",
+      "target": "choke_bosphorus",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_tianqi_kwinana_aus",
+      "target": "mkt_bulog_jakarta",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    }
+  ]
+}

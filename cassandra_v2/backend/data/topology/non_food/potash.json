@@ -1,0 +1,510 @@
+{
+  "commodity": "Potash",
+  "version": "2.1",
+  "nodes": [
+    {
+      "id": "mine_nutrien",
+      "label": "Nutrien Rocanville (Can)",
+      "type": "resource",
+      "location": {
+        "lat": 50.46,
+        "lng": -101.54
+      },
+      "inventory": 6000.0,
+      "notes": "World's largest potash mine.",
+      "owner_id": "actor_nutrien",
+      "jurisdiction": "Canada",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mine_mosaic",
+      "label": "Mosaic Esterhazy (Can)",
+      "type": "resource",
+      "location": {
+        "lat": 50.65,
+        "lng": -102.07
+      },
+      "inventory": 4000.0,
+      "notes": "Massive underground reserve.",
+      "owner_id": "actor_mosaic",
+      "jurisdiction": "Canada",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mine_belaruskali",
+      "label": "Belaruskali (Belarus)",
+      "type": "resource",
+      "location": {
+        "lat": 52.79,
+        "lng": 27.54
+      },
+      "inventory": 5000.0,
+      "notes": "Sanctioned giant.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mine_uralkali",
+      "label": "Uralkali (Russia)",
+      "type": "resource",
+      "location": {
+        "lat": 59.41,
+        "lng": 56.8
+      },
+      "inventory": 4500.0,
+      "notes": "Berezniki mine.",
+      "jurisdiction": "Russia",
+      "risk_level": 0.9,
+      "is_sanctioned": true,
+      "conflict_zone": false,
+      "owner_id": "actor_gazprom"
+    },
+    {
+      "id": "port_vancouver",
+      "label": "Neptune Terminal (Van)",
+      "type": "logistic",
+      "location": {
+        "lat": 49.3,
+        "lng": -123.04
+      },
+      "notes": "Canpotex Asia exit.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_portland",
+      "label": "Portland Terminal (OR)",
+      "type": "logistic",
+      "location": {
+        "lat": 45.63,
+        "lng": -122.77
+      },
+      "notes": "Canpotex Brazil/Asia exit.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_saint_john",
+      "label": "Saint John (NB)",
+      "type": "logistic",
+      "location": {
+        "lat": 45.27,
+        "lng": -66.06
+      },
+      "notes": "Atlantic exit for PotashCorp.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_st_petersburg",
+      "label": "St. Petersburg (RU)",
+      "type": "logistic",
+      "location": {
+        "lat": 59.89,
+        "lng": 30.26
+      },
+      "notes": "New route for Belarus.",
+      "jurisdiction": "Russia",
+      "risk_level": 0.9,
+      "is_sanctioned": true,
+      "conflict_zone": false,
+      "owner_id": "actor_gazprom"
+    },
+    {
+      "id": "port_paranagua",
+      "label": "Paranagu\u00e1 (Brazil)",
+      "type": "logistic",
+      "location": {
+        "lat": -25.51,
+        "lng": -48.5
+      },
+      "notes": "Top fertilizer import hub.",
+      "jurisdiction": "Brazil",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_vale"
+    },
+    {
+      "id": "port_santos",
+      "label": "Santos (Brazil)",
+      "type": "logistic",
+      "location": {
+        "lat": -23.96,
+        "lng": -46.3
+      },
+      "notes": "New DP World terminal.",
+      "jurisdiction": "Brazil",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_vale"
+    },
+    {
+      "id": "choke_panama",
+      "label": "Panama Canal",
+      "type": "logistic",
+      "location": {
+        "lat": 9.11,
+        "lng": -79.69
+      },
+      "notes": "Critical for Canada -> Brazil.",
+      "jurisdiction": "Panama",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "farm_brazil_cerrado",
+      "label": "Cerrado Farms (BR)",
+      "type": "retail",
+      "location": {
+        "lat": -15.0,
+        "lng": -55.0
+      },
+      "revenue_per_day": 2000.0,
+      "notes": "Soybean engine needs K.",
+      "jurisdiction": "Brazil",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "farm_china",
+      "label": "China Farms",
+      "type": "retail",
+      "location": {
+        "lat": 35.0,
+        "lng": 114.0
+      },
+      "revenue_per_day": 1800.0,
+      "jurisdiction": "China",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "farm_usa_cornbelt",
+      "label": "US Corn Belt",
+      "type": "retail",
+      "location": {
+        "lat": 41.5,
+        "lng": -93.0
+      },
+      "revenue_per_day": 1500.0,
+      "jurisdiction": "USA",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_soligorsk_belarus",
+      "label": "Soligorsk (Belarus)",
+      "type": "retail",
+      "location": {
+        "lat": 52.78,
+        "lng": 27.54
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_berezniki_ru",
+      "label": "Berezniki (RU)",
+      "type": "retail",
+      "location": {
+        "lat": 59.41,
+        "lng": 56.81
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_saskatchewan_can",
+      "label": "Saskatchewan (CAN)",
+      "type": "retail",
+      "location": {
+        "lat": 52.93,
+        "lng": -106.45
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_klaipeda_lithuania",
+      "label": "Klaipeda (Lithuania)",
+      "type": "retail",
+      "location": {
+        "lat": 55.7,
+        "lng": 21.14
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_port_of_qinhuangdao",
+      "label": "Port of Qinhuangdao",
+      "type": "logistic",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_westridge_marine_vancouver",
+      "label": "Westridge Marine (Vancouver)",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_port_of_santos",
+      "label": "Port of Santos",
+      "type": "logistic",
+      "location": {
+        "lat": -23.96,
+        "lng": -46.33
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "mine_nutrien",
+      "target": "port_vancouver",
+      "lag": 4,
+      "notes": "CP Rail",
+      "carrier_id": "actor_cn_rail",
+      "transport_mode": "rail",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_trans_siberian"
+    },
+    {
+      "source": "mine_nutrien",
+      "target": "port_portland",
+      "lag": 5,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_nutrien",
+      "target": "farm_usa_cornbelt",
+      "lag": 3,
+      "notes": "Direct Rail",
+      "carrier_id": "actor_cn_rail",
+      "transport_mode": "rail",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_trans_siberian"
+    },
+    {
+      "source": "mine_mosaic",
+      "target": "port_saint_john",
+      "lag": 6,
+      "notes": "CN Rail",
+      "carrier_id": "actor_cn_rail",
+      "transport_mode": "rail",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_trans_siberian"
+    },
+    {
+      "source": "mine_belaruskali",
+      "target": "port_st_petersburg",
+      "lag": 4,
+      "notes": "Rail (Sanction evasion)",
+      "carrier_id": "actor_bnsf",
+      "transport_mode": "rail",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_trans_siberian"
+    },
+    {
+      "source": "mine_belaruskali",
+      "target": "farm_china",
+      "lag": 15,
+      "notes": "Rail Silk Road",
+      "carrier_id": "actor_bnsf",
+      "transport_mode": "rail",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_trans_siberian"
+    },
+    {
+      "source": "mine_uralkali",
+      "target": "port_st_petersburg",
+      "lag": 3,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_uralkali",
+      "target": "farm_china",
+      "lag": 12,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_vancouver",
+      "target": "farm_china",
+      "lag": 16,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_vancouver",
+      "target": "port_paranagua",
+      "lag": 25,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_portland",
+      "target": "choke_panama",
+      "lag": 8,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_panama"
+    },
+    {
+      "source": "port_saint_john",
+      "target": "port_santos",
+      "lag": 12,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "choke_panama",
+      "target": "port_paranagua",
+      "lag": 10,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_panama"
+    },
+    {
+      "source": "choke_panama",
+      "target": "port_santos",
+      "lag": 11,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_panama"
+    },
+    {
+      "source": "port_st_petersburg",
+      "target": "port_santos",
+      "lag": 22,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_st_petersburg",
+      "target": "farm_china",
+      "lag": 35,
+      "notes": "Long sea route",
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_paranagua",
+      "target": "farm_brazil_cerrado",
+      "lag": 4,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_santos",
+      "target": "farm_brazil_cerrado",
+      "lag": 5,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_soligorsk_belarus",
+      "target": "mkt_klaipeda_lithuania",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_saskatchewan_can",
+      "target": "mkt_westridge_marine_vancouver",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_westridge_marine_vancouver",
+      "target": "port_port_of_qinhuangdao",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_westridge_marine_vancouver",
+      "target": "port_port_of_santos",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    }
+  ]
+}

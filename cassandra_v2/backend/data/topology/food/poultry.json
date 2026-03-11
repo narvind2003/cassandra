@@ -1,0 +1,304 @@
+{
+  "commodity": "Poultry",
+  "version": "2.1",
+  "nodes": [
+    {
+      "id": "farm_brazil",
+      "label": "Parana Chicken (BR)",
+      "type": "resource",
+      "location": {
+        "lat": -25.25,
+        "lng": -52.02
+      },
+      "inventory": 4000.0,
+      "notes": "BRF/JBS. Halal expert.",
+      "jurisdiction": "Brazil",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_jbs"
+    },
+    {
+      "id": "farm_usa",
+      "label": "Georgia/Arkansas",
+      "type": "resource",
+      "location": {
+        "lat": 32.16,
+        "lng": -82.9
+      },
+      "inventory": 3000.0,
+      "notes": "Tyson/Pilgrim's.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_adm"
+    },
+    {
+      "id": "port_paranagua",
+      "label": "Port of Paranagua",
+      "type": "logistic",
+      "location": {
+        "lat": -25.51,
+        "lng": -48.5
+      },
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_savannah",
+      "label": "Port of Savannah",
+      "type": "logistic",
+      "location": {
+        "lat": 32.08,
+        "lng": -81.09
+      },
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_saudi",
+      "label": "Saudi Halal Mkt",
+      "type": "retail",
+      "location": {
+        "lat": 24.71,
+        "lng": 46.67
+      },
+      "revenue_per_day": 800.0,
+      "jurisdiction": "Saudi Arabia",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_china",
+      "label": "China Feet/Wings",
+      "type": "retail",
+      "location": {
+        "lat": 31.23,
+        "lng": 121.47
+      },
+      "revenue_per_day": 900.0,
+      "jurisdiction": "China",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_nestle"
+    },
+    {
+      "id": "port_port_of_jeddah_ksa",
+      "label": "Port of Jeddah (KSA)",
+      "type": "logistic",
+      "location": {
+        "lat": 21.48,
+        "lng": 39.19
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_tokyo_jp",
+      "label": "Tokyo (JP)",
+      "type": "retail",
+      "location": {
+        "lat": 35.67,
+        "lng": 139.75
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_cp_foods_thai",
+      "label": "CP Foods (Thai)",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_sk_on_georgia",
+      "label": "SK On Georgia",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_tokyo_port",
+      "label": "Tokyo Port",
+      "type": "logistic",
+      "location": {
+        "lat": 35.67,
+        "lng": 139.75
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_port_of_qingdao",
+      "label": "Port of Qingdao",
+      "type": "logistic",
+      "location": {
+        "lat": 36.06,
+        "lng": 120.38
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_port_of_paranagu",
+      "label": "Port of Paranagu\u00e1",
+      "type": "logistic",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "farm_brazil",
+      "target": "port_paranagua",
+      "lag": 1,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_paranagua",
+      "target": "mkt_saudi",
+      "lag": 18,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_paranagua",
+      "target": "mkt_china",
+      "lag": 35,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "farm_usa",
+      "target": "port_savannah",
+      "lag": 1,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_savannah",
+      "target": "mkt_china",
+      "lag": 25,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_paranagua",
+      "target": "port_paranagua",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "giga_sk_on_georgia",
+      "target": "port_savannah",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_paranagua",
+      "target": "port_port_of_jeddah_ksa",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_cp_foods_thai",
+      "target": "mkt_tokyo_jp",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_port_of_paranagu",
+      "target": "port_paranagua",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_sk_on_georgia",
+      "target": "port_savannah",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_savannah",
+      "target": "port_port_of_qingdao",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_cp_foods_thai",
+      "target": "port_tokyo_port",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    }
+  ]
+}

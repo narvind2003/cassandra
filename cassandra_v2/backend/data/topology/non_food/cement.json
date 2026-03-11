@@ -1,0 +1,327 @@
+{
+  "commodity": "Cement",
+  "version": "2.1",
+  "nodes": [
+    {
+      "id": "plant_anhui_conch",
+      "label": "Anhui Conch (China)",
+      "type": "resource",
+      "location": {
+        "lat": 31.02,
+        "lng": 118.3
+      },
+      "inventory": 8000.0,
+      "notes": "World's largest cement maker.",
+      "jurisdiction": "China",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_cofco"
+    },
+    {
+      "id": "plant_ultratech",
+      "label": "UltraTech (India)",
+      "type": "resource",
+      "location": {
+        "lat": 24.58,
+        "lng": 73.68
+      },
+      "inventory": 5000.0,
+      "notes": "India's infrastructure backbone.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "plant_dangote",
+      "label": "Dangote Cement (Nigeria)",
+      "type": "resource",
+      "location": {
+        "lat": 6.9,
+        "lng": 3.4
+      },
+      "inventory": 2000.0,
+      "notes": "African giant.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "plant_vietnam",
+      "label": "Vietnam Clinker",
+      "type": "resource",
+      "location": {
+        "lat": 20.8,
+        "lng": 106.6
+      },
+      "inventory": 4000.0,
+      "notes": "Top global clinker exporter.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_haiphong",
+      "label": "Port of Haiphong",
+      "type": "logistic",
+      "location": {
+        "lat": 20.86,
+        "lng": 106.68
+      },
+      "notes": "Vietnam export hub.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_houston",
+      "label": "Port of Houston",
+      "type": "logistic",
+      "location": {
+        "lat": 29.76,
+        "lng": -95.36
+      },
+      "notes": "US cement import.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "kiln_cemex",
+      "label": "CEMEX Monterrey (MX)",
+      "type": "transformation",
+      "location": {
+        "lat": 25.68,
+        "lng": -100.31
+      },
+      "revenue_per_day": 1200.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "site_neom",
+      "label": "NEOM (Saudi)",
+      "type": "retail",
+      "location": {
+        "lat": 28.0,
+        "lng": 35.0
+      },
+      "revenue_per_day": 2500.0,
+      "notes": "Massive consumption.",
+      "jurisdiction": "Saudi Arabia",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "site_mumbai_metro",
+      "label": "Mumbai Metro",
+      "type": "retail",
+      "location": {
+        "lat": 19.07,
+        "lng": 72.87
+      },
+      "revenue_per_day": 1500.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "retail_construction_texas",
+      "label": "Texas Construction",
+      "type": "retail",
+      "location": {
+        "lat": 31.96,
+        "lng": -99.9
+      },
+      "revenue_per_day": 1200.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_london_gateway",
+      "label": "London Gateway",
+      "type": "retail",
+      "location": {
+        "lat": 51.5,
+        "lng": -0.12
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "proc_plant_cemex_mx",
+      "label": "plant_cemex (MX)",
+      "type": "transformation",
+      "location": {
+        "lat": 25.68,
+        "lng": -100.31
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_shanghai_hub",
+      "label": "Shanghai Hub",
+      "type": "logistic",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_holcim_eu",
+      "label": "Holcim (EU)",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_cat_lai_port",
+      "label": "Cat Lai Port",
+      "type": "logistic",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "plant_anhui_conch",
+      "target": "site_neom",
+      "lag": 25,
+      "notes": "Sea shipment",
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "plant_ultratech",
+      "target": "site_mumbai_metro",
+      "lag": 2,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "plant_vietnam",
+      "target": "port_haiphong",
+      "lag": 1,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_haiphong",
+      "target": "port_houston",
+      "lag": 30,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "plant_cemex",
+      "target": "port_houston",
+      "lag": 3,
+      "notes": "Cross-border",
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "plant_dangote",
+      "target": "site_neom",
+      "lag": 15,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_houston",
+      "target": "retail_construction_texas",
+      "lag": 2,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "plant_anhui_conch",
+      "target": "port_shanghai_hub",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "proc_plant_cemex_mx",
+      "target": "port_houston",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_holcim_eu",
+      "target": "mkt_london_gateway",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_hcmc",
+      "target": "site_neom",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_cat_lai_port",
+      "target": "site_neom",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    }
+  ]
+}

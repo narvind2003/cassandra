@@ -1,0 +1,226 @@
+{
+  "commodity": "Palladium",
+  "version": "1.0",
+  "nodes": [
+    {
+      "id": "mine_norilsk_pd",
+      "label": "Norilsk (Russia)",
+      "type": "resource",
+      "location": {
+        "lat": 69.3,
+        "lng": 88.2
+      },
+      "inventory": 400.0,
+      "jurisdiction": "Russia",
+      "risk_level": 0.9,
+      "is_sanctioned": true,
+      "conflict_zone": false,
+      "owner_id": "actor_norilsk"
+    },
+    {
+      "id": "mine_stillwater",
+      "label": "Stillwater (USA)",
+      "type": "resource",
+      "location": {
+        "lat": 45.4,
+        "lng": -109.9
+      },
+      "inventory": 100.0,
+      "jurisdiction": "USA",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "refinery_krasnoyarsk",
+      "label": "Krasnoyarsk Metals",
+      "type": "transformation",
+      "location": {
+        "lat": 56.0,
+        "lng": 92.9
+      },
+      "revenue_per_day": 200.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "factory_ford",
+      "label": "Ford Rouge Complex",
+      "type": "retail",
+      "location": {
+        "lat": 42.3,
+        "lng": -83.1
+      },
+      "revenue_per_day": 400.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_basf_germany",
+      "label": "BASF (Germany)",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_helsinki",
+      "label": "Helsinki",
+      "type": "retail",
+      "location": {
+        "lat": 60.16,
+        "lng": 24.93
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_shanghai_pgm_hub",
+      "label": "Shanghai PGM Hub",
+      "type": "logistic",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_rustenburg_sa",
+      "label": "Rustenburg (SA)",
+      "type": "retail",
+      "location": {
+        "lat": -25.66,
+        "lng": 27.24
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_detroit_auto_hub",
+      "label": "Detroit Auto Hub",
+      "type": "logistic",
+      "location": {
+        "lat": 42.33,
+        "lng": -83.04
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_helsinki_port",
+      "label": "Helsinki Port",
+      "type": "logistic",
+      "location": {
+        "lat": 60.16,
+        "lng": 24.93
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_toyota_city",
+      "label": "Toyota City",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "mine_norilsk_pd",
+      "target": "refinery_krasnoyarsk",
+      "lag": 5,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "refinery_krasnoyarsk",
+      "target": "factory_ford",
+      "lag": 25,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_stillwater",
+      "target": "factory_ford",
+      "lag": 5,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_norilsk_pd",
+      "target": "port_helsinki_port",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_helsinki",
+      "target": "mkt_basf_germany",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_stillwater",
+      "target": "port_detroit_auto_hub",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_norilsk_pd",
+      "target": "port_shanghai_pgm_hub",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    }
+  ]
+}

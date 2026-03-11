@@ -1,0 +1,425 @@
+{
+  "commodity": "Rubber",
+  "version": "2.1",
+  "nodes": [
+    {
+      "id": "farm_songkhla",
+      "label": "Songkhla (Thailand)",
+      "type": "resource",
+      "location": {
+        "lat": 7.17,
+        "lng": 100.61
+      },
+      "inventory": 3000.0,
+      "notes": "World's rubber heartland.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "farm_sumatra_north",
+      "label": "North Sumatra (Indo)",
+      "type": "resource",
+      "location": {
+        "lat": 2.97,
+        "lng": 99.06
+      },
+      "inventory": 2500.0,
+      "notes": "Key SIR20 source.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "farm_vietnam_south",
+      "label": "Binh Phuoc (Vietnam)",
+      "type": "resource",
+      "location": {
+        "lat": 11.75,
+        "lng": 106.9
+      },
+      "inventory": 2000.0,
+      "notes": "Rapidly growing supply.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_state_vietnam"
+    },
+    {
+      "id": "farm_cote_ivoire",
+      "label": "Ivory Coast",
+      "type": "resource",
+      "location": {
+        "lat": 6.8,
+        "lng": -5.3
+      },
+      "inventory": 1500.0,
+      "notes": "Top African producer.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_songkhla",
+      "label": "Port of Songkhla",
+      "type": "logistic",
+      "location": {
+        "lat": 7.21,
+        "lng": 100.58
+      },
+      "notes": "Southern Thai export.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_belawan",
+      "label": "Port of Belawan",
+      "type": "logistic",
+      "location": {
+        "lat": 3.78,
+        "lng": 98.69
+      },
+      "notes": "Sumatran exit.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_hcmc",
+      "label": "Cat Lai Port",
+      "type": "logistic",
+      "location": {
+        "lat": 10.76,
+        "lng": 106.77
+      },
+      "notes": "Vietnam exit.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_qingdao",
+      "label": "Port of Qingdao",
+      "type": "logistic",
+      "location": {
+        "lat": 36.06,
+        "lng": 120.38
+      },
+      "notes": "Rubber entry to China.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mfr_qingdao_tire",
+      "label": "Sailun/Doublestar (CN)",
+      "type": "transformation",
+      "location": {
+        "lat": 36.1,
+        "lng": 120.4
+      },
+      "revenue_per_day": 800.0,
+      "notes": "Tire manufacturing hub.",
+      "jurisdiction": "China",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_sinopec"
+    },
+    {
+      "id": "mfr_bridgestone",
+      "label": "Bridgestone (Japan)",
+      "type": "transformation",
+      "location": {
+        "lat": 35.68,
+        "lng": 139.76
+      },
+      "revenue_per_day": 1000.0,
+      "notes": "World's largest tire maker.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mfr_michelin",
+      "label": "Michelin (France)",
+      "type": "transformation",
+      "location": {
+        "lat": 45.77,
+        "lng": 3.08
+      },
+      "revenue_per_day": 950.0,
+      "notes": "Premium tires.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mfr_goodyear",
+      "label": "Goodyear (USA)",
+      "type": "transformation",
+      "location": {
+        "lat": 41.08,
+        "lng": -81.51
+      },
+      "revenue_per_day": 700.0,
+      "jurisdiction": "USA",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "retail_auto_eu",
+      "label": "EU Auto Plants",
+      "type": "retail",
+      "location": {
+        "lat": 48.85,
+        "lng": 2.35
+      },
+      "revenue_per_day": 1500.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "retail_auto_us",
+      "label": "US Auto Plants",
+      "type": "retail",
+      "location": {
+        "lat": 42.33,
+        "lng": -83.04
+      },
+      "revenue_per_day": 1200.0,
+      "jurisdiction": "USA",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_port_of_nagoya_jp",
+      "label": "Port of Nagoya (JP)",
+      "type": "logistic",
+      "location": {
+        "lat": 35.18,
+        "lng": 136.9
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_southern_thailand",
+      "label": "Southern Thailand",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_port_of_savannah",
+      "label": "Port of Savannah",
+      "type": "logistic",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_laem_chabang_thai",
+      "label": "Laem Chabang (Thai)",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "farm_songkhla",
+      "target": "port_songkhla",
+      "lag": 1,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_songkhla",
+      "target": "port_qingdao",
+      "lag": 8,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_songkhla",
+      "target": "mfr_bridgestone",
+      "lag": 7,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "farm_sumatra_north",
+      "target": "port_belawan",
+      "lag": 2,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_belawan",
+      "target": "mfr_goodyear",
+      "lag": 25,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_belawan",
+      "target": "mfr_michelin",
+      "lag": 22,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "farm_vietnam_south",
+      "target": "port_hcmc",
+      "lag": 2,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_hcmc",
+      "target": "port_qingdao",
+      "lag": 6,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "farm_cote_ivoire",
+      "target": "mfr_michelin",
+      "lag": 12,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_qingdao",
+      "target": "mfr_qingdao_tire",
+      "lag": 1,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mfr_qingdao_tire",
+      "target": "retail_auto_eu",
+      "lag": 25,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mfr_bridgestone",
+      "target": "retail_auto_us",
+      "lag": 15,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mfr_michelin",
+      "target": "retail_auto_eu",
+      "lag": 2,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_laem_chabang",
+      "target": "port_port_of_nagoya_jp",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_laem_chabang",
+      "target": "port_qingdao",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_southern_thailand",
+      "target": "mkt_laem_chabang_thai",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_laem_chabang_thai",
+      "target": "port_port_of_nagoya_jp",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_belawan",
+      "target": "port_port_of_savannah",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_laem_chabang_thai",
+      "target": "port_qingdao",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    }
+  ]
+}

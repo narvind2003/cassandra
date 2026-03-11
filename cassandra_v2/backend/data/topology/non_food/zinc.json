@@ -1,0 +1,373 @@
+{
+  "commodity": "Zinc",
+  "version": "2.1",
+  "nodes": [
+    {
+      "id": "mine_red_dog",
+      "label": "Red Dog Mine (Alaska)",
+      "type": "resource",
+      "location": {
+        "lat": 68.07,
+        "lng": -162.87
+      },
+      "inventory": 2000.0,
+      "notes": "Teck Resources. Seasonal shipping window (July-Oct).",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_teck"
+    },
+    {
+      "id": "mine_antamina",
+      "label": "Antamina (Peru)",
+      "type": "resource",
+      "location": {
+        "lat": -9.53,
+        "lng": -77.05
+      },
+      "inventory": 2500.0,
+      "notes": "Massive Copper/Zinc skarn.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_glencore"
+    },
+    {
+      "id": "mine_rampura",
+      "label": "Rampura Agucha (India)",
+      "type": "resource",
+      "location": {
+        "lat": 25.83,
+        "lng": 74.74
+      },
+      "inventory": 3000.0,
+      "notes": "Hindustan Zinc (Vedanta). World's largest underground zinc mine.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mine_dugald_river",
+      "label": "Dugald River (Aus)",
+      "type": "resource",
+      "location": {
+        "lat": -20.21,
+        "lng": 140.24
+      },
+      "inventory": 1500.0,
+      "notes": "MMG. High grade.",
+      "jurisdiction": "Australia",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_bhp"
+    },
+    {
+      "id": "port_red_dog",
+      "label": "Port of Red Dog",
+      "type": "logistic",
+      "location": {
+        "lat": 67.57,
+        "lng": -164.06
+      },
+      "notes": "Frozen 9 months/year.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_callao",
+      "label": "Port of Callao",
+      "type": "logistic",
+      "location": {
+        "lat": -12.05,
+        "lng": -77.15
+      },
+      "notes": "Antamina exit.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_townsville",
+      "label": "Port of Townsville",
+      "type": "logistic",
+      "location": {
+        "lat": -19.25,
+        "lng": 146.83
+      },
+      "notes": "Queensland mineral exit.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "smelter_korea_zinc",
+      "label": "Korea Zinc (Onsan)",
+      "type": "transformation",
+      "location": {
+        "lat": 35.43,
+        "lng": 129.35
+      },
+      "revenue_per_day": 800.0,
+      "notes": "World's largest zinc refinery.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_korea_zinc"
+    },
+    {
+      "id": "smelter_zhuzhou",
+      "label": "Zhuzhou Smelter (China)",
+      "type": "transformation",
+      "location": {
+        "lat": 27.83,
+        "lng": 113.13
+      },
+      "revenue_per_day": 700.0,
+      "notes": "Hunan province hub.",
+      "jurisdiction": "China",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_sinopec"
+    },
+    {
+      "id": "smelter_chanderiya",
+      "label": "Chanderiya (India)",
+      "type": "transformation",
+      "location": {
+        "lat": 24.83,
+        "lng": 74.82
+      },
+      "revenue_per_day": 600.0,
+      "notes": "Vedanta's flagship.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "smelter_nyrstar_budel",
+      "label": "Nyrstar Budel (NL)",
+      "type": "transformation",
+      "location": {
+        "lat": 51.26,
+        "lng": 5.58
+      },
+      "revenue_per_day": 500.0,
+      "notes": "Major EU supplier.",
+      "jurisdiction": "Netherlands",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_nyrstar"
+    },
+    {
+      "id": "smelter_nyrstar_hobart",
+      "label": "Nyrstar Hobart (Aus)",
+      "type": "transformation",
+      "location": {
+        "lat": -42.84,
+        "lng": 147.31
+      },
+      "revenue_per_day": 400.0,
+      "jurisdiction": "Australia",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_nyrstar"
+    },
+    {
+      "id": "smelter_trail",
+      "label": "Teck Trail (Canada)",
+      "type": "transformation",
+      "location": {
+        "lat": 49.09,
+        "lng": -117.71
+      },
+      "revenue_per_day": 450.0,
+      "jurisdiction": "Canada",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_teck"
+    },
+    {
+      "id": "mfr_arcelor_gent",
+      "label": "ArcelorMittal Gent",
+      "type": "retail",
+      "location": {
+        "lat": 51.17,
+        "lng": 3.79
+      },
+      "revenue_per_day": 1000.0,
+      "notes": "Galvanized steel for auto.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mfr_posco_gwangyang",
+      "label": "POSCO Gwangyang",
+      "type": "retail",
+      "location": {
+        "lat": 34.93,
+        "lng": 127.75
+      },
+      "revenue_per_day": 1200.0,
+      "notes": "Galvanizing line.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "proc_trail_smelter",
+      "label": "Trail Smelter",
+      "type": "transformation",
+      "location": {
+        "lat": 49.09,
+        "lng": -117.71
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "mine_red_dog",
+      "target": "port_red_dog",
+      "lag": 1,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_red_dog",
+      "target": "smelter_trail",
+      "lag": 5,
+      "notes": "Coastal barge",
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_red_dog",
+      "target": "smelter_korea_zinc",
+      "lag": 12,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_antamina",
+      "target": "port_callao",
+      "lag": 2,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_callao",
+      "target": "smelter_korea_zinc",
+      "lag": 22,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_callao",
+      "target": "smelter_zhuzhou",
+      "lag": 25,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_callao",
+      "target": "smelter_nyrstar_budel",
+      "lag": 20,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_rampura",
+      "target": "smelter_chanderiya",
+      "lag": 1,
+      "notes": "Local trucking",
+      "carrier_id": "actor_log_road",
+      "transport_mode": "road",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_dugald_river",
+      "target": "port_townsville",
+      "lag": 3,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_townsville",
+      "target": "smelter_nyrstar_hobart",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_townsville",
+      "target": "smelter_zhuzhou",
+      "lag": 15,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "smelter_korea_zinc",
+      "target": "mfr_posco_gwangyang",
+      "lag": 2,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "smelter_nyrstar_budel",
+      "target": "mfr_arcelor_gent",
+      "lag": 3,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_red_dog",
+      "target": "proc_trail_smelter",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_red_dog",
+      "target": "smelter_korea_zinc",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    }
+  ]
+}

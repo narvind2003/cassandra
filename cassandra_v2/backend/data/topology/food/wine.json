@@ -1,0 +1,305 @@
+{
+  "commodity": "Wine",
+  "version": "2.1",
+  "nodes": [
+    {
+      "id": "vineyard_bordeaux",
+      "label": "Bordeaux (France)",
+      "type": "resource",
+      "location": {
+        "lat": 44.83,
+        "lng": -0.57
+      },
+      "inventory": 1000.0,
+      "notes": "Fine wine.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "vineyard_tuscany",
+      "label": "Tuscany (Italy)",
+      "type": "resource",
+      "location": {
+        "lat": 43.77,
+        "lng": 11.25
+      },
+      "inventory": 1000.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "vineyard_napa",
+      "label": "Napa Valley (USA)",
+      "type": "resource",
+      "location": {
+        "lat": 38.29,
+        "lng": -122.28
+      },
+      "inventory": 800.0,
+      "jurisdiction": "USA",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "vineyard_mendoza",
+      "label": "Mendoza (Argentina)",
+      "type": "resource",
+      "location": {
+        "lat": -32.88,
+        "lng": -68.84
+      },
+      "inventory": 700.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_le_havre",
+      "label": "Le Havre (FR)",
+      "type": "logistic",
+      "location": {
+        "lat": 49.49,
+        "lng": 0.1
+      },
+      "jurisdiction": "France",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_genoa",
+      "label": "Genoa (IT)",
+      "type": "logistic",
+      "location": {
+        "lat": 44.4,
+        "lng": 8.94
+      },
+      "jurisdiction": "Italy",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "winery_napa",
+      "label": "Napa Wineries",
+      "type": "transformation",
+      "location": {
+        "lat": 38.35,
+        "lng": -122.35
+      },
+      "revenue_per_day": 800.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_usa",
+      "label": "US Distribution",
+      "type": "retail",
+      "location": {
+        "lat": 40.71,
+        "lng": -74.0
+      },
+      "revenue_per_day": 1500.0,
+      "jurisdiction": "USA",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_china",
+      "label": "China Luxury",
+      "type": "retail",
+      "location": {
+        "lat": 31.23,
+        "lng": 121.47
+      },
+      "revenue_per_day": 1000.0,
+      "jurisdiction": "China",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_nestle"
+    },
+    {
+      "id": "port_port_of_new_york",
+      "label": "Port of New York",
+      "type": "logistic",
+      "location": {
+        "lat": 40.71,
+        "lng": -74.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_port_of_le_havre",
+      "label": "Port of Le Havre",
+      "type": "logistic",
+      "location": {
+        "lat": 49.49,
+        "lng": 0.1
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_port_of_valparaiso",
+      "label": "Port of Valparaiso",
+      "type": "logistic",
+      "location": {
+        "lat": -33.04,
+        "lng": -71.62
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_port_of_oakland",
+      "label": "Port of Oakland",
+      "type": "logistic",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_shanghai_port",
+      "label": "Shanghai Port",
+      "type": "logistic",
+      "location": {
+        "lat": 31.23,
+        "lng": 121.47
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "vineyard_bordeaux",
+      "target": "port_le_havre",
+      "lag": 2,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_le_havre",
+      "target": "mkt_usa",
+      "lag": 10,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_le_havre",
+      "target": "mkt_china",
+      "lag": 25,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "vineyard_tuscany",
+      "target": "port_genoa",
+      "lag": 2,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_genoa",
+      "target": "mkt_usa",
+      "lag": 12,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "vineyard_napa",
+      "target": "winery_napa",
+      "lag": 1,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "winery_napa",
+      "target": "mkt_usa",
+      "lag": 2,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "vineyard_bordeaux",
+      "target": "port_port_of_le_havre",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "vineyard_mendoza",
+      "target": "port_port_of_valparaiso",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_le_havre",
+      "target": "port_port_of_new_york",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "vineyard_napa",
+      "target": "port_port_of_oakland",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_port_of_oakland",
+      "target": "port_shanghai_port",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    }
+  ]
+}

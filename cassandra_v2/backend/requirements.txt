@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+networkx
+pydantic
+yfinance
+feedparser

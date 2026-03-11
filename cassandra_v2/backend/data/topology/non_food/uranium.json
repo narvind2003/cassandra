@@ -1,0 +1,587 @@
+{
+  "commodity": "Uranium",
+  "version": "2.1",
+  "nodes": [
+    {
+      "id": "mine_cigar_lake",
+      "label": "Cigar Lake (Canada)",
+      "type": "resource",
+      "location": {
+        "lat": 58.07,
+        "lng": -104.54
+      },
+      "inventory": 2000.0,
+      "notes": "World's highest grade mine.",
+      "jurisdiction": "Canada",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_cameco"
+    },
+    {
+      "id": "mine_inkai",
+      "label": "Inkai (Kazakhstan)",
+      "type": "resource",
+      "location": {
+        "lat": 45.32,
+        "lng": 67.6
+      },
+      "inventory": 3000.0,
+      "notes": "ISR mining. Kazatomprom/Cameco.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_kazatomprom"
+    },
+    {
+      "id": "mine_rossing",
+      "label": "R\u00f6ssing (Namibia)",
+      "type": "resource",
+      "location": {
+        "lat": -22.48,
+        "lng": 15.04
+      },
+      "inventory": 1500.0,
+      "notes": "Chinese owned (CNNC).",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mine_olympic_dam",
+      "label": "Olympic Dam (Aus)",
+      "type": "resource",
+      "location": {
+        "lat": -30.44,
+        "lng": 136.87
+      },
+      "inventory": 2500.0,
+      "notes": "BHP. Copper-Uranium-Gold.",
+      "jurisdiction": "Australia",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_bhp"
+    },
+    {
+      "id": "port_aktau",
+      "label": "Port of Aktau",
+      "type": "logistic",
+      "location": {
+        "lat": 43.63,
+        "lng": 51.16
+      },
+      "notes": "Caspian exit (TITR).",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_baku",
+      "label": "Port of Baku",
+      "type": "logistic",
+      "location": {
+        "lat": 40.35,
+        "lng": 49.95
+      },
+      "notes": "Middle Corridor hub.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_st_petersburg",
+      "label": "St. Petersburg",
+      "type": "logistic",
+      "location": {
+        "lat": 59.93,
+        "lng": 30.33
+      },
+      "notes": "Traditional Russian exit.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_walvis_bay",
+      "label": "Walvis Bay",
+      "type": "logistic",
+      "location": {
+        "lat": -22.95,
+        "lng": 14.5
+      },
+      "notes": "Namibian uranium exit.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_adelaide",
+      "label": "Port Adelaide",
+      "type": "logistic",
+      "location": {
+        "lat": -34.8,
+        "lng": 138.5
+      },
+      "notes": "Australian exit.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "conv_cameco_ph",
+      "label": "Cameco Port Hope (Can)",
+      "type": "transformation",
+      "location": {
+        "lat": 43.95,
+        "lng": -78.29
+      },
+      "revenue_per_day": 500.0,
+      "notes": "U3O8 -> UF6 conversion.",
+      "jurisdiction": "Canada",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_cameco"
+    },
+    {
+      "id": "conv_converdyn",
+      "label": "ConverDyn (USA)",
+      "type": "transformation",
+      "location": {
+        "lat": 37.15,
+        "lng": -88.73
+      },
+      "revenue_per_day": 400.0,
+      "notes": "Metropolis Works.",
+      "jurisdiction": "USA",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "conv_orano_malvesi",
+      "label": "Orano Malvesi (France)",
+      "type": "transformation",
+      "location": {
+        "lat": 43.19,
+        "lng": 2.99
+      },
+      "revenue_per_day": 450.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "enrich_rosatom",
+      "label": "Rosatom TVEL (RU)",
+      "type": "transformation",
+      "location": {
+        "lat": 56.14,
+        "lng": 47.24
+      },
+      "revenue_per_day": 1200.0,
+      "notes": "40% global capacity.",
+      "jurisdiction": "Russia",
+      "risk_level": 0.9,
+      "is_sanctioned": true,
+      "conflict_zone": false
+    },
+    {
+      "id": "enrich_urenco_eu",
+      "label": "Urenco Almelo (NL)",
+      "type": "transformation",
+      "location": {
+        "lat": 52.35,
+        "lng": 6.66
+      },
+      "revenue_per_day": 1000.0,
+      "jurisdiction": "Netherlands",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "enrich_urenco_usa",
+      "label": "Urenco Eunice (USA)",
+      "type": "transformation",
+      "location": {
+        "lat": 32.44,
+        "lng": -103.29
+      },
+      "revenue_per_day": 800.0,
+      "jurisdiction": "USA",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "npp_bruce",
+      "label": "Bruce Power (Canada)",
+      "type": "retail",
+      "location": {
+        "lat": 44.32,
+        "lng": -81.59
+      },
+      "revenue_per_day": 2500.0,
+      "notes": "World's largest operating NPP.",
+      "jurisdiction": "Canada",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "npp_gravelines",
+      "label": "Gravelines (France)",
+      "type": "retail",
+      "location": {
+        "lat": 51.01,
+        "lng": 2.13
+      },
+      "revenue_per_day": 2000.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "npp_qinshan",
+      "label": "Qinshan (China)",
+      "type": "retail",
+      "location": {
+        "lat": 30.43,
+        "lng": 120.95
+      },
+      "revenue_per_day": 2200.0,
+      "jurisdiction": "China",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "npp_kk",
+      "label": "Kashiwazaki-Kariwa",
+      "type": "retail",
+      "location": {
+        "lat": 37.43,
+        "lng": 138.6
+      },
+      "revenue_per_day": 1800.0,
+      "notes": "Restarting.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_st_petersburg_port",
+      "label": "St. Petersburg Port",
+      "type": "logistic",
+      "location": {
+        "lat": 59.93,
+        "lng": 30.33
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_rosatom_enrichment",
+      "label": "Rosatom Enrichment",
+      "type": "retail",
+      "location": {
+        "lat": 56.85,
+        "lng": 60.61
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_vogtle_npp_usa",
+      "label": "Vogtle NPP (USA)",
+      "type": "retail",
+      "location": {
+        "lat": 33.14,
+        "lng": -81.76
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_eu_nuclear_fleet",
+      "label": "EU Nuclear Fleet",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "proc_blind_river_refinery",
+      "label": "Blind River Refinery",
+      "type": "transformation",
+      "location": {
+        "lat": 46.18,
+        "lng": -82.95
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "mine_cigar_lake",
+      "target": "conv_cameco_ph",
+      "lag": 3,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_olympic_dam",
+      "target": "port_adelaide",
+      "lag": 2,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_adelaide",
+      "target": "conv_cameco_ph",
+      "lag": 25,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_adelaide",
+      "target": "conv_converdyn",
+      "lag": 28,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_inkai",
+      "target": "port_st_petersburg",
+      "lag": 5,
+      "notes": "Rail via Russia",
+      "carrier_id": "actor_bnsf",
+      "transport_mode": "rail",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_trans_siberian"
+    },
+    {
+      "source": "mine_inkai",
+      "target": "port_aktau",
+      "lag": 3,
+      "notes": "Trans-Caspian start",
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_aktau",
+      "target": "port_baku",
+      "lag": 2,
+      "notes": "Ferry",
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_baku",
+      "target": "conv_orano_malvesi",
+      "lag": 10,
+      "notes": "Rail to Black Sea -> Ship",
+      "carrier_id": "actor_bnsf",
+      "transport_mode": "rail",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_trans_siberian"
+    },
+    {
+      "source": "port_baku",
+      "target": "conv_cameco_ph",
+      "lag": 20,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_rossing",
+      "target": "port_walvis_bay",
+      "lag": 1,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_walvis_bay",
+      "target": "enrich_rosatom",
+      "lag": 25,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_walvis_bay",
+      "target": "npp_qinshan",
+      "lag": 20,
+      "notes": "Direct to China",
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "conv_cameco_ph",
+      "target": "enrich_urenco_eu",
+      "lag": 10,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "conv_cameco_ph",
+      "target": "enrich_urenco_usa",
+      "lag": 5,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "conv_converdyn",
+      "target": "enrich_urenco_usa",
+      "lag": 3,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "conv_orano_malvesi",
+      "target": "enrich_urenco_eu",
+      "lag": 2,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_st_petersburg",
+      "target": "enrich_rosatom",
+      "lag": 2,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "enrich_rosatom",
+      "target": "npp_qinshan",
+      "lag": 12,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "enrich_rosatom",
+      "target": "npp_gravelines",
+      "lag": 8,
+      "notes": "Controversial EU imports",
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "enrich_rosatom",
+      "target": "enrich_urenco_usa",
+      "lag": 15,
+      "notes": "Underfeed supply",
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "enrich_urenco_eu",
+      "target": "npp_gravelines",
+      "lag": 1,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "enrich_urenco_eu",
+      "target": "npp_kk",
+      "lag": 25,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "enrich_urenco_usa",
+      "target": "npp_bruce",
+      "lag": 4,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_inkai",
+      "target": "port_st_petersburg_port",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_cigar_lake",
+      "target": "proc_blind_river_refinery",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_rosatom_enrichment",
+      "target": "mkt_eu_nuclear_fleet",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "conv_converdyn",
+      "target": "mkt_vogtle_npp_usa",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    }
+  ]
+}

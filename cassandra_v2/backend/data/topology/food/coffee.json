@@ -1,0 +1,555 @@
+{
+  "commodity": "Coffee",
+  "version": "2.1",
+  "nodes": [
+    {
+      "id": "farm_minas",
+      "label": "Minas Gerais (Brazil)",
+      "type": "resource",
+      "location": {
+        "lat": -18.51,
+        "lng": -44.55
+      },
+      "inventory": 2000.0,
+      "notes": "World's Arabica heartland.",
+      "jurisdiction": "Brazil",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_jbs"
+    },
+    {
+      "id": "farm_daklak",
+      "label": "Dak Lak (Vietnam)",
+      "type": "resource",
+      "location": {
+        "lat": 12.66,
+        "lng": 108.03
+      },
+      "inventory": 1800.0,
+      "notes": "Robusta giant.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "farm_huila",
+      "label": "Huila (Colombia)",
+      "type": "resource",
+      "location": {
+        "lat": 2.53,
+        "lng": -75.54
+      },
+      "inventory": 1000.0,
+      "notes": "High quality washed Arabica.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "farm_sidama",
+      "label": "Sidama (Ethiopia)",
+      "type": "resource",
+      "location": {
+        "lat": 6.7,
+        "lng": 38.28
+      },
+      "inventory": 800.0,
+      "notes": "The birthplace of coffee.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "farm_nyeri",
+      "label": "Nyeri (Kenya)",
+      "type": "resource",
+      "location": {
+        "lat": -0.42,
+        "lng": 36.95
+      },
+      "inventory": 600.0,
+      "notes": "AA Auction lots.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_santos",
+      "label": "Port of Santos",
+      "type": "logistic",
+      "location": {
+        "lat": -23.96,
+        "lng": -46.3
+      },
+      "notes": "Largest coffee export port.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_cargill"
+    },
+    {
+      "id": "port_hcmc",
+      "label": "Cat Lai Port (VN)",
+      "type": "logistic",
+      "location": {
+        "lat": 10.74,
+        "lng": 106.75
+      },
+      "notes": "Robusta exit.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_djibouti",
+      "label": "Port of Djibouti",
+      "type": "logistic",
+      "location": {
+        "lat": 11.59,
+        "lng": 43.14
+      },
+      "notes": "Ethiopia's gateway.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_mombasa",
+      "label": "Port of Mombasa",
+      "type": "logistic",
+      "location": {
+        "lat": -4.04,
+        "lng": 39.66
+      },
+      "notes": "East African hub.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_nola",
+      "label": "Port of New Orleans",
+      "type": "logistic",
+      "location": {
+        "lat": 29.94,
+        "lng": -90.05
+      },
+      "notes": "Largest US coffee stockpile.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_antwerp",
+      "label": "Port of Antwerp",
+      "type": "logistic",
+      "location": {
+        "lat": 51.22,
+        "lng": 4.4
+      },
+      "notes": "World's biggest coffee warehouse.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "choke_suez",
+      "label": "Suez Canal",
+      "type": "logistic",
+      "location": {
+        "lat": 30.58,
+        "lng": 32.26
+      },
+      "notes": "Vital for Robusta -> EU.",
+      "jurisdiction": "Egypt",
+      "risk_level": 0.9,
+      "is_sanctioned": false,
+      "conflict_zone": true
+    },
+    {
+      "id": "roast_nestle_mex",
+      "label": "Nescaf\u00e9 Veracruz",
+      "type": "transformation",
+      "location": {
+        "lat": 19.17,
+        "lng": -96.13
+      },
+      "revenue_per_day": 800.0,
+      "notes": "Massive instant coffee plant.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "roast_nestle_uk",
+      "label": "Nescaf\u00e9 Tutbury (UK)",
+      "type": "transformation",
+      "location": {
+        "lat": 52.85,
+        "lng": -1.68
+      },
+      "revenue_per_day": 600.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "roast_hamburg",
+      "label": "Neumann Gruppe (DE)",
+      "type": "transformation",
+      "location": {
+        "lat": 53.53,
+        "lng": 9.99
+      },
+      "revenue_per_day": 500.0,
+      "jurisdiction": "Germany",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "roast_seattle",
+      "label": "Starbucks Kent Plant",
+      "type": "transformation",
+      "location": {
+        "lat": 47.41,
+        "lng": -122.24
+      },
+      "revenue_per_day": 700.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_starbucks"
+    },
+    {
+      "id": "roast_trieste",
+      "label": "illycaff\u00e8 Trieste",
+      "type": "transformation",
+      "location": {
+        "lat": 45.64,
+        "lng": 13.78
+      },
+      "revenue_per_day": 400.0,
+      "notes": "Espresso capital.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "retail_eu",
+      "label": "EU Supermarkets",
+      "type": "retail",
+      "location": {
+        "lat": 48.85,
+        "lng": 2.35
+      },
+      "revenue_per_day": 2000.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "retail_us",
+      "label": "US Coffee Shops",
+      "type": "retail",
+      "location": {
+        "lat": 40.71,
+        "lng": -74.0
+      },
+      "revenue_per_day": 2500.0,
+      "jurisdiction": "USA",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_nestle_refineries",
+      "label": "Nestle Refineries",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_port_of_la",
+      "label": "Port of LA",
+      "type": "logistic",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_aurubis_hamburg_de",
+      "label": "Aurubis Hamburg (DE)",
+      "type": "retail",
+      "location": {
+        "lat": 53.55,
+        "lng": 9.99
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "farm_minas",
+      "target": "port_santos",
+      "lag": 3,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_santos",
+      "target": "port_nola",
+      "lag": 15,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_santos",
+      "target": "port_antwerp",
+      "lag": 18,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_santos",
+      "target": "roast_nestle_mex",
+      "lag": 20,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "farm_daklak",
+      "target": "port_hcmc",
+      "lag": 2,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_hcmc",
+      "target": "choke_suez",
+      "lag": 18,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_suez"
+    },
+    {
+      "source": "choke_suez",
+      "target": "port_antwerp",
+      "lag": 8,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_suez"
+    },
+    {
+      "source": "choke_suez",
+      "target": "roast_trieste",
+      "lag": 4,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_suez"
+    },
+    {
+      "source": "farm_huila",
+      "target": "port_nola",
+      "lag": 8,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "farm_huila",
+      "target": "roast_nestle_mex",
+      "lag": 10,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "farm_sidama",
+      "target": "port_djibouti",
+      "lag": 3,
+      "notes": "Truck/Rail",
+      "carrier_id": "actor_bnsf",
+      "transport_mode": "rail",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_trans_siberian"
+    },
+    {
+      "source": "port_djibouti",
+      "target": "choke_suez",
+      "lag": 4,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_suez"
+    },
+    {
+      "source": "farm_nyeri",
+      "target": "port_mombasa",
+      "lag": 2,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_mombasa",
+      "target": "choke_suez",
+      "lag": 6,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_suez"
+    },
+    {
+      "source": "port_nola",
+      "target": "roast_seattle",
+      "lag": 6,
+      "notes": "Rail to West Coast",
+      "carrier_id": "actor_bnsf",
+      "transport_mode": "rail",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_trans_siberian"
+    },
+    {
+      "source": "port_nola",
+      "target": "roast_nestle_mex",
+      "lag": 5,
+      "notes": "Gulf shipping",
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_antwerp",
+      "target": "roast_hamburg",
+      "lag": 1,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_antwerp",
+      "target": "roast_nestle_uk",
+      "lag": 2,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "roast_seattle",
+      "target": "retail_us",
+      "lag": 4,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "roast_nestle_mex",
+      "target": "retail_us",
+      "lag": 5,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "roast_hamburg",
+      "target": "retail_eu",
+      "lag": 2,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "roast_nestle_uk",
+      "target": "retail_eu",
+      "lag": 2,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "roast_trieste",
+      "target": "retail_eu",
+      "lag": 3,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_antwerp",
+      "target": "mkt_nestle_refineries",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "farm_daklak",
+      "target": "port_cat_lai_port",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_santos",
+      "target": "mkt_aurubis_hamburg_de",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_cat_lai_port",
+      "target": "port_port_of_la",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    }
+  ]
+}

@@ -1,0 +1,609 @@
+{
+  "commodity": "Corn (Maize)",
+  "version": "2.1",
+  "nodes": [
+    {
+      "id": "farm_iowa",
+      "label": "Iowa/Illinois (USA)",
+      "type": "resource",
+      "location": {
+        "lat": 41.87,
+        "lng": -93.62
+      },
+      "inventory": 6000.0,
+      "recipes": [
+        {
+          "name": "Corn Growth",
+          "inputs": {
+            "Fertilizer": 0.1
+          },
+          "outputs": {
+            "Corn (Maize)": 1.0
+          }
+        }
+      ],
+      "notes": "The Corn Belt.",
+      "jurisdiction": "USA",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_adm"
+    },
+    {
+      "id": "farm_matogrosso",
+      "label": "Mato Grosso (BR)",
+      "type": "resource",
+      "location": {
+        "lat": -12.68,
+        "lng": -55.92
+      },
+      "inventory": 4000.0,
+      "notes": "Safrinha (2nd crop) giant.",
+      "jurisdiction": "Brazil",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_jbs"
+    },
+    {
+      "id": "farm_ukraine",
+      "label": "Poltava (Ukraine)",
+      "type": "resource",
+      "location": {
+        "lat": 49.58,
+        "lng": 34.55
+      },
+      "inventory": 2500.0,
+      "notes": "EU/China supplier.",
+      "jurisdiction": "Ukraine",
+      "risk_level": 1.0,
+      "is_sanctioned": false,
+      "conflict_zone": true,
+      "owner_id": "actor_state_ua"
+    },
+    {
+      "id": "farm_argentina",
+      "label": "C\u00f3rdoba (Argentina)",
+      "type": "resource",
+      "location": {
+        "lat": -31.42,
+        "lng": -64.18
+      },
+      "inventory": 2000.0,
+      "notes": "Drought sensitive.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "silo_decatur",
+      "label": "ADM Decatur",
+      "type": "logistic",
+      "location": {
+        "lat": 39.84,
+        "lng": -88.95
+      },
+      "revenue_per_day": 800.0,
+      "notes": "Fructose/Ethanol hub.",
+      "owner_id": "actor_adm",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "eth_poet_sd",
+      "label": "POET Biorefining (SD)",
+      "type": "transformation",
+      "location": {
+        "lat": 43.54,
+        "lng": -96.73
+      },
+      "revenue_per_day": 600.0,
+      "notes": "Ethanol major.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_nola",
+      "label": "Port of NOLA",
+      "type": "logistic",
+      "location": {
+        "lat": 29.94,
+        "lng": -90.05
+      },
+      "notes": "Barge exit.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_pnw",
+      "label": "Kalama Export (WA)",
+      "type": "logistic",
+      "location": {
+        "lat": 46.0,
+        "lng": -122.84
+      },
+      "notes": "Rail exit to Asia.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_santarem",
+      "label": "Port of Santar\u00e9m",
+      "type": "logistic",
+      "location": {
+        "lat": -2.42,
+        "lng": -54.72
+      },
+      "notes": "Amazon exit.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_odessa",
+      "label": "Greater Odessa (UA)",
+      "type": "logistic",
+      "location": {
+        "lat": 46.48,
+        "lng": 30.72
+      },
+      "jurisdiction": "Ukraine",
+      "risk_level": 1.0,
+      "is_sanctioned": false,
+      "conflict_zone": true,
+      "owner_id": "actor_state_ua"
+    },
+    {
+      "id": "port_constanta",
+      "label": "Constanta (Romania)",
+      "type": "logistic",
+      "location": {
+        "lat": 44.17,
+        "lng": 28.63
+      },
+      "notes": "Ukraine transit.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "choke_panama",
+      "label": "Panama Canal",
+      "type": "logistic",
+      "location": {
+        "lat": 9.11,
+        "lng": -79.69
+      },
+      "jurisdiction": "Panama",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "border_laredo",
+      "label": "Laredo Rail Crossing",
+      "type": "logistic",
+      "location": {
+        "lat": 27.5,
+        "lng": -99.5
+      },
+      "notes": "Key US->Mexico rail.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_dalian",
+      "label": "Port of Dalian",
+      "type": "logistic",
+      "location": {
+        "lat": 38.92,
+        "lng": 121.6
+      },
+      "notes": "North China feed hub.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_guangzhou",
+      "label": "Port of Guangzhou",
+      "type": "logistic",
+      "location": {
+        "lat": 23.12,
+        "lng": 113.26
+      },
+      "notes": "South China demand.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "feed_jalisco",
+      "label": "Jalisco Livestock (MX)",
+      "type": "retail",
+      "location": {
+        "lat": 20.65,
+        "lng": -103.34
+      },
+      "revenue_per_day": 500.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "feed_shandong",
+      "label": "Shandong Hog Farms",
+      "type": "retail",
+      "location": {
+        "lat": 36.65,
+        "lng": 117.12
+      },
+      "revenue_per_day": 1000.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "feed_guangdong",
+      "label": "Guangdong Feed",
+      "type": "retail",
+      "location": {
+        "lat": 23.12,
+        "lng": 113.26
+      },
+      "revenue_per_day": 800.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "feed_japan",
+      "label": "Zen-Noh Feed (Japan)",
+      "type": "retail",
+      "location": {
+        "lat": 35.68,
+        "lng": 139.76
+      },
+      "revenue_per_day": 600.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "retail_fuel_blender",
+      "label": "US Fuel Blenders",
+      "type": "retail",
+      "location": {
+        "lat": 41.87,
+        "lng": -87.62
+      },
+      "revenue_per_day": 1200.0,
+      "notes": "E10/E15 Gasoline market.",
+      "jurisdiction": "USA",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_nagoya_japan",
+      "label": "Nagoya (Japan)",
+      "type": "retail",
+      "location": {
+        "lat": 35.18,
+        "lng": 136.9
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_mississippi_river",
+      "label": "Mississippi River",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_cf_industries_iowa",
+      "label": "CF Industries (Iowa)",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_port_of_santos",
+      "label": "Port of Santos",
+      "type": "logistic",
+      "location": {
+        "lat": -23.96,
+        "lng": -46.33
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_nescaf_veracruz",
+      "label": "Nescaf\u00e9 Veracruz",
+      "type": "retail",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "farm_iowa",
+      "target": "silo_decatur",
+      "lag": 1,
+      "carrier_id": "actor_star_bulk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "farm_iowa",
+      "target": "eth_poet_sd",
+      "lag": 2,
+      "carrier_id": "actor_golden_ocean",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "eth_poet_sd",
+      "target": "retail_fuel_blender",
+      "lag": 2,
+      "carrier_id": "actor_golden_ocean",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "farm_iowa",
+      "target": "port_nola",
+      "lag": 6,
+      "notes": "Barge",
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "farm_iowa",
+      "target": "port_pnw",
+      "lag": 5,
+      "notes": "Rail",
+      "carrier_id": "actor_bnsf",
+      "transport_mode": "rail",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_trans_siberian"
+    },
+    {
+      "source": "farm_iowa",
+      "target": "border_laredo",
+      "lag": 4,
+      "notes": "KCS Rail",
+      "carrier_id": "actor_bnsf",
+      "transport_mode": "rail",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_trans_siberian"
+    },
+    {
+      "source": "farm_matogrosso",
+      "target": "port_santarem",
+      "lag": 4,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_santarem",
+      "target": "choke_panama",
+      "lag": 8,
+      "carrier_id": "actor_star_bulk",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_panama"
+    },
+    {
+      "source": "farm_ukraine",
+      "target": "port_odessa",
+      "lag": 2,
+      "carrier_id": "actor_golden_ocean",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "farm_ukraine",
+      "target": "port_constanta",
+      "lag": 3,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_nola",
+      "target": "choke_panama",
+      "lag": 6,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_panama"
+    },
+    {
+      "source": "choke_panama",
+      "target": "feed_japan",
+      "lag": 20,
+      "carrier_id": "actor_star_bulk",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_panama"
+    },
+    {
+      "source": "choke_panama",
+      "target": "port_dalian",
+      "lag": 22,
+      "carrier_id": "actor_star_bulk",
+      "transport_mode": "sea",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_panama"
+    },
+    {
+      "source": "port_pnw",
+      "target": "feed_japan",
+      "lag": 12,
+      "carrier_id": "actor_star_bulk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_pnw",
+      "target": "port_dalian",
+      "lag": 16,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "border_laredo",
+      "target": "feed_jalisco",
+      "lag": 3,
+      "carrier_id": "actor_golden_ocean",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_dalian",
+      "target": "feed_shandong",
+      "lag": 2,
+      "carrier_id": "actor_star_bulk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_guangzhou",
+      "target": "feed_guangdong",
+      "lag": 1,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_odessa",
+      "target": "port_guangzhou",
+      "lag": 25,
+      "carrier_id": "actor_golden_ocean",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_constanta",
+      "target": "port_guangzhou",
+      "lag": 26,
+      "carrier_id": "actor_star_bulk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "log_mississippi",
+      "target": "choke_panama",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_santos",
+      "target": "mkt_nagoya_japan",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_cf_industries_iowa",
+      "target": "mkt_mississippi_river",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "farm_matogrosso",
+      "target": "port_port_of_santos",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mkt_mississippi_river",
+      "target": "choke_panama",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_port_of_santos",
+      "target": "mkt_nagoya_japan",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_nola",
+      "target": "mkt_nescaf_veracruz",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    }
+  ]
+}

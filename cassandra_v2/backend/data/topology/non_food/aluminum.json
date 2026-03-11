@@ -1,0 +1,538 @@
+{
+  "commodity": "Aluminum",
+  "version": "2.1",
+  "nodes": [
+    {
+      "id": "mine_boke",
+      "label": "Bok\u00e9 (Guinea)",
+      "type": "resource",
+      "location": {
+        "lat": 10.93,
+        "lng": -14.29
+      },
+      "inventory": 5000.0,
+      "notes": "World's largest bauxite hub.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mine_weipa",
+      "label": "Weipa (Australia)",
+      "type": "resource",
+      "location": {
+        "lat": -12.63,
+        "lng": 141.87
+      },
+      "inventory": 4000.0,
+      "notes": "Rio Tinto. Shallow red earth.",
+      "jurisdiction": "Australia",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_bhp"
+    },
+    {
+      "id": "mine_juruti",
+      "label": "Juruti (Brazil)",
+      "type": "resource",
+      "location": {
+        "lat": -2.16,
+        "lng": -56.09
+      },
+      "inventory": 3000.0,
+      "notes": "Alcoa Amazon mine.",
+      "jurisdiction": "Brazil",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_jbs"
+    },
+    {
+      "id": "port_kamsar",
+      "label": "Port of Kamsar",
+      "type": "logistic",
+      "location": {
+        "lat": 10.66,
+        "lng": -14.6
+      },
+      "notes": "Guinea's bauxite exit.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_weipa",
+      "label": "Port of Weipa",
+      "type": "logistic",
+      "location": {
+        "lat": -12.67,
+        "lng": 141.86
+      },
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_vila_do_conde",
+      "label": "Vila do Conde",
+      "type": "logistic",
+      "location": {
+        "lat": -1.56,
+        "lng": -48.74
+      },
+      "notes": "Amazon exit.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "ref_alunorte",
+      "label": "Alunorte (Brazil)",
+      "type": "transformation",
+      "location": {
+        "lat": -1.53,
+        "lng": -48.73
+      },
+      "revenue_per_day": 800.0,
+      "notes": "World's largest alumina refinery.",
+      "jurisdiction": "Brazil",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "ref_yarwun",
+      "label": "Yarwun (Australia)",
+      "type": "transformation",
+      "location": {
+        "lat": -23.82,
+        "lng": 151.15
+      },
+      "revenue_per_day": 600.0,
+      "jurisdiction": "Australia",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "ref_weiqiao",
+      "label": "Weiqiao Alumina (Shandong)",
+      "type": "transformation",
+      "location": {
+        "lat": 37.02,
+        "lng": 117.93
+      },
+      "revenue_per_day": 1200.0,
+      "notes": "Massive importer.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "smelter_hongqiao",
+      "label": "China Hongqiao (Coal)",
+      "type": "transformation",
+      "location": {
+        "lat": 37.0,
+        "lng": 117.9
+      },
+      "revenue_per_day": 1500.0,
+      "notes": "Being phased out.",
+      "jurisdiction": "China",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_sinopec"
+    },
+    {
+      "id": "smelter_wenshan",
+      "label": "Wenshan Aluminum (Hydro)",
+      "type": "transformation",
+      "location": {
+        "lat": 23.37,
+        "lng": 104.25
+      },
+      "revenue_per_day": 1400.0,
+      "notes": "New 'Green Aluminum' hub.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "smelter_alba",
+      "label": "Alba (Bahrain)",
+      "type": "transformation",
+      "location": {
+        "lat": 26.08,
+        "lng": 50.6
+      },
+      "revenue_per_day": 1300.0,
+      "notes": "World's largest single site (ex-China).",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "smelter_ega",
+      "label": "EGA Jebel Ali (UAE)",
+      "type": "transformation",
+      "location": {
+        "lat": 25.02,
+        "lng": 55.08
+      },
+      "revenue_per_day": 1100.0,
+      "jurisdiction": "UAE",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "smelter_rusal",
+      "label": "Rusal Bratsk (Russia)",
+      "type": "transformation",
+      "location": {
+        "lat": 56.13,
+        "lng": 101.62
+      },
+      "revenue_per_day": 900.0,
+      "notes": "Siberian Hydro.",
+      "jurisdiction": "Russia",
+      "risk_level": 0.9,
+      "is_sanctioned": true,
+      "conflict_zone": false
+    },
+    {
+      "id": "smelter_isal",
+      "label": "ISAL (Iceland)",
+      "type": "transformation",
+      "location": {
+        "lat": 64.04,
+        "lng": -22.04
+      },
+      "revenue_per_day": 500.0,
+      "notes": "Rio Tinto. Geothermal/Hydro.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "smelter_kitimat",
+      "label": "Kitimat (Canada)",
+      "type": "transformation",
+      "location": {
+        "lat": 54.0,
+        "lng": -128.69
+      },
+      "revenue_per_day": 600.0,
+      "jurisdiction": "Canada",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mfr_boeing",
+      "label": "Boeing Everett",
+      "type": "retail",
+      "location": {
+        "lat": 47.92,
+        "lng": -122.27
+      },
+      "revenue_per_day": 2000.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mfr_ford",
+      "label": "Ford Dearborn",
+      "type": "retail",
+      "location": {
+        "lat": 42.3,
+        "lng": -83.21
+      },
+      "revenue_per_day": 1800.0,
+      "notes": "F-150 Aluminum body.",
+      "owner_id": "actor_ford",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mfr_foxconn",
+      "label": "Foxconn Zhengzhou",
+      "type": "retail",
+      "location": {
+        "lat": 34.54,
+        "lng": 113.84
+      },
+      "revenue_per_day": 2500.0,
+      "notes": "iPhone casings.",
+      "owner_id": "actor_foxconn",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_global_auto_hubs",
+      "label": "Global Auto Hubs",
+      "type": "logistic",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_gladstone_refineries",
+      "label": "Gladstone Refineries",
+      "type": "retail",
+      "location": {
+        "lat": -23.84,
+        "lng": 151.25
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_port_of_qingdao",
+      "label": "Port of Qingdao",
+      "type": "logistic",
+      "location": {
+        "lat": 36.06,
+        "lng": 120.38
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "mine_boke",
+      "target": "port_kamsar",
+      "lag": 2,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_kamsar",
+      "target": "ref_weiqiao",
+      "lag": 40,
+      "notes": "Cape route via Africa",
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_kamsar",
+      "target": "ref_alunorte",
+      "lag": 12,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_kamsar",
+      "target": "smelter_alba",
+      "lag": 20,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_weipa",
+      "target": "port_weipa",
+      "lag": 1,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_weipa",
+      "target": "ref_yarwun",
+      "lag": 3,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_weipa",
+      "target": "ref_weiqiao",
+      "lag": 12,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mine_juruti",
+      "target": "port_vila_do_conde",
+      "lag": 2,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_vila_do_conde",
+      "target": "ref_alunorte",
+      "lag": 1,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "ref_alunorte",
+      "target": "smelter_isal",
+      "lag": 10,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "ref_alunorte",
+      "target": "smelter_kitimat",
+      "lag": 18,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "ref_alunorte",
+      "target": "smelter_rusal",
+      "lag": 25,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "ref_yarwun",
+      "target": "smelter_ega",
+      "lag": 15,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "ref_yarwun",
+      "target": "smelter_kitimat",
+      "lag": 16,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "ref_weiqiao",
+      "target": "smelter_hongqiao",
+      "lag": 2,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "ref_weiqiao",
+      "target": "smelter_wenshan",
+      "lag": 8,
+      "notes": "Rail to Yunnan",
+      "carrier_id": "actor_bnsf",
+      "transport_mode": "rail",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_trans_siberian"
+    },
+    {
+      "source": "smelter_hongqiao",
+      "target": "mfr_foxconn",
+      "lag": 3,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "smelter_wenshan",
+      "target": "mfr_foxconn",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "smelter_isal",
+      "target": "mfr_ford",
+      "lag": 12,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "smelter_kitimat",
+      "target": "mfr_boeing",
+      "lag": 3,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "smelter_alba",
+      "target": "mfr_ford",
+      "lag": 20,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "smelter_ega",
+      "target": "mfr_boeing",
+      "lag": 25,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_weipa",
+      "target": "mkt_gladstone_refineries",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "smelter_ega",
+      "target": "port_global_auto_hubs",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_kamsar",
+      "target": "port_port_of_qingdao",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    }
+  ]
+}

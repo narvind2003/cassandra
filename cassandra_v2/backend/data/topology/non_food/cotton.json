@@ -1,0 +1,487 @@
+{
+  "commodity": "Cotton",
+  "version": "2.1",
+  "nodes": [
+    {
+      "id": "farm_xinjiang",
+      "label": "Xinjiang XPCC (China)",
+      "type": "resource",
+      "location": {
+        "lat": 41.11,
+        "lng": 85.16
+      },
+      "inventory": 5000.0,
+      "notes": "90% of Chinese production.",
+      "jurisdiction": "China",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_cofco"
+    },
+    {
+      "id": "farm_texas",
+      "label": "West Texas (USA)",
+      "type": "resource",
+      "location": {
+        "lat": 33.57,
+        "lng": -101.85
+      },
+      "inventory": 4000.0,
+      "notes": "World's export engine.",
+      "jurisdiction": "USA",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "farm_gujarat",
+      "label": "Gujarat (India)",
+      "type": "resource",
+      "location": {
+        "lat": 22.25,
+        "lng": 71.19
+      },
+      "inventory": 3000.0,
+      "notes": "Shankar-6 variety.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "farm_mato_grosso",
+      "label": "Mato Grosso (Brazil)",
+      "type": "resource",
+      "location": {
+        "lat": -12.68,
+        "lng": -55.92
+      },
+      "inventory": 2500.0,
+      "notes": "Rapidly growing export share.",
+      "jurisdiction": "Brazil",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_jbs"
+    },
+    {
+      "id": "port_la_lb",
+      "label": "Port of LA/Long Beach",
+      "type": "logistic",
+      "location": {
+        "lat": 33.74,
+        "lng": -118.26
+      },
+      "notes": "Top US cotton exit.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_savannah",
+      "label": "Port of Savannah",
+      "type": "logistic",
+      "location": {
+        "lat": 32.08,
+        "lng": -81.09
+      },
+      "notes": "East Coast exit.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_santos",
+      "label": "Port of Santos",
+      "type": "logistic",
+      "location": {
+        "lat": -23.96,
+        "lng": -46.3
+      },
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_cargill"
+    },
+    {
+      "id": "port_mundra",
+      "label": "Mundra Port (India)",
+      "type": "logistic",
+      "location": {
+        "lat": 22.83,
+        "lng": 69.71
+      },
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_hcmc",
+      "label": "Cat Lai (Vietnam)",
+      "type": "logistic",
+      "location": {
+        "lat": 10.76,
+        "lng": 106.77
+      },
+      "notes": "Textile import hub.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_chittagong",
+      "label": "Chittagong (Bangladesh)",
+      "type": "logistic",
+      "location": {
+        "lat": 22.32,
+        "lng": 91.81
+      },
+      "notes": "Garment sector lifeline.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mill_vietnam_south",
+      "label": "Dong Nai Textiles (VN)",
+      "type": "transformation",
+      "location": {
+        "lat": 10.95,
+        "lng": 106.82
+      },
+      "revenue_per_day": 600.0,
+      "notes": "Adidas/Nike supply chain.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mill_dhaka",
+      "label": "Dhaka Garments (BD)",
+      "type": "transformation",
+      "location": {
+        "lat": 23.81,
+        "lng": 90.41
+      },
+      "revenue_per_day": 800.0,
+      "notes": "H&M/Zara supply chain.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mill_shandong",
+      "label": "Shandong Weiqiao (CN)",
+      "type": "transformation",
+      "location": {
+        "lat": 37.0,
+        "lng": 117.9
+      },
+      "revenue_per_day": 1000.0,
+      "notes": "World's largest cotton textile maker.",
+      "jurisdiction": "China",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false,
+      "owner_id": "actor_sinopec"
+    },
+    {
+      "id": "mill_bursa",
+      "label": "Bursa Textiles (Turkey)",
+      "type": "transformation",
+      "location": {
+        "lat": 40.18,
+        "lng": 29.06
+      },
+      "revenue_per_day": 400.0,
+      "notes": "High quality fabrics.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "retail_fast_fashion_eu",
+      "label": "Inditex HQ (Spain)",
+      "type": "retail",
+      "location": {
+        "lat": 43.3,
+        "lng": -8.5
+      },
+      "revenue_per_day": 1500.0,
+      "notes": "Zara/Massimo Dutti.",
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "retail_sport_us",
+      "label": "Nike HQ (Oregon)",
+      "type": "retail",
+      "location": {
+        "lat": 45.51,
+        "lng": -122.83
+      },
+      "base_demand": 500.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "mkt_dong_nai_garments",
+      "label": "Dong Nai Garments",
+      "type": "retail",
+      "location": {
+        "lat": 10.94,
+        "lng": 106.81
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_cat_lai_port",
+      "label": "Cat Lai Port",
+      "type": "logistic",
+      "location": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    },
+    {
+      "id": "port_port_of_qingdao",
+      "label": "Port of Qingdao",
+      "type": "logistic",
+      "location": {
+        "lat": 36.06,
+        "lng": 120.38
+      },
+      "inventory": 1000.0,
+      "revenue_per_day": 100.0,
+      "jurisdiction": "International",
+      "risk_level": 0.05,
+      "is_sanctioned": false,
+      "conflict_zone": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "farm_xinjiang",
+      "target": "mill_shandong",
+      "lag": 5,
+      "notes": "Rail to East",
+      "carrier_id": "actor_bnsf",
+      "transport_mode": "rail",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_trans_siberian"
+    },
+    {
+      "source": "farm_xinjiang",
+      "target": "mill_vietnam_south",
+      "lag": 10,
+      "notes": "Road/Rail",
+      "carrier_id": "actor_bnsf",
+      "transport_mode": "rail",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_trans_siberian"
+    },
+    {
+      "source": "farm_texas",
+      "target": "port_la_lb",
+      "lag": 4,
+      "notes": "Rail Landbridge",
+      "carrier_id": "actor_bnsf",
+      "transport_mode": "rail",
+      "risk_level": 0.1,
+      "infrastructure_id": "infra_trans_siberian"
+    },
+    {
+      "source": "farm_texas",
+      "target": "port_savannah",
+      "lag": 5,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "farm_gujarat",
+      "target": "port_mundra",
+      "lag": 2,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "farm_mato_grosso",
+      "target": "port_santos",
+      "lag": 6,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_la_lb",
+      "target": "port_hcmc",
+      "lag": 18,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_la_lb",
+      "target": "port_chittagong",
+      "lag": 25,
+      "carrier_id": "actor_msc",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_savannah",
+      "target": "mill_bursa",
+      "lag": 15,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_mundra",
+      "target": "port_chittagong",
+      "lag": 8,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_mundra",
+      "target": "mill_bursa",
+      "lag": 12,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_santos",
+      "target": "port_chittagong",
+      "lag": 30,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_santos",
+      "target": "port_hcmc",
+      "lag": 35,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_hcmc",
+      "target": "mill_vietnam_south",
+      "lag": 1,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_chittagong",
+      "target": "mill_dhaka",
+      "lag": 2,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mill_vietnam_south",
+      "target": "retail_sport_us",
+      "lag": 15,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mill_dhaka",
+      "target": "retail_fast_fashion_eu",
+      "lag": 18,
+      "carrier_id": "actor_cosco",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "mill_bursa",
+      "target": "retail_fast_fashion_eu",
+      "lag": 5,
+      "notes": "Truck to Spain",
+      "carrier_id": "actor_log_road",
+      "transport_mode": "road",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_hcmc",
+      "target": "mkt_dong_nai_garments",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "farm_texas",
+      "target": "port_port_of_la",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "farm_xinjiang",
+      "target": "port_port_of_qingdao",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_port_of_la",
+      "target": "port_cat_lai_port",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_port_of_la",
+      "target": "port_chittagong",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    },
+    {
+      "source": "port_cat_lai_port",
+      "target": "mkt_dong_nai_garments",
+      "lag": 5,
+      "carrier_id": "actor_maersk",
+      "transport_mode": "sea",
+      "risk_level": 0.1
+    }
+  ]
+}
