@@ -52,6 +52,31 @@ const MapController = ({ selectedNode, selectedEdge, nodes }: { selectedNode: an
     return null;
 };
 
+const CollapsiblePanel = ({
+    title,
+    isOpen,
+    onToggle,
+    children
+}: {
+    title: string;
+    isOpen: boolean;
+    onToggle: () => void;
+    children: React.ReactNode;
+}) => {
+    return (
+        <div className="border-b border-slate-800">
+            <button
+                onClick={onToggle}
+                className="w-full px-4 py-3 flex items-center justify-between text-[10px] text-slate-400 uppercase tracking-widest font-bold bg-slate-950 hover:bg-slate-900/70 transition-colors"
+            >
+                <span>{title}</span>
+                {isOpen ? <ChevronDown size={12} /> : <ChevronRight size={12} />}
+            </button>
+            {isOpen && <div className="bg-slate-950/50">{children}</div>}
+        </div>
+    );
+};
+
 // Deterministic Jitter
 const getJitteredPosition = (lat: number, lng: number, id: string) => {
     const seed = id.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
@@ -285,6 +310,9 @@ export default function App() {
   const [showLogistics, setShowLogistics] = useState(true);
   const [riskView, setRiskView] = useState(false);
   const [showDossier, setShowDossier] = useState(false);
+  const [panelRiskOpen, setPanelRiskOpen] = useState(true);
+  const [panelNewsOpen, setPanelNewsOpen] = useState(true);
+  const [panelScenarioOpen, setPanelScenarioOpen] = useState(true);
 
   const data = timeline.length > 0 ? timeline[day] : null;
   const [backendWarming, setBackendWarming] = useState(false);
@@ -812,22 +840,29 @@ export default function App() {
       </div>
 
       {/* Sidebar (Right) - Ops & Analysis */}
-      <div className="w-80 border-l border-slate-800 bg-slate-950 flex flex-col z-20 shadow-2xl shrink-0">
-        <FinancialDashboard 
-            totalLoss={totalLoss} 
-            currentPrices={data.prices} 
-            selectedCommodity={selectedCommodity}
-            systemicBreakdown={{ ...cumulativeBreakdown, blocked_chokes: data.systemic_risk_breakdown?.blocked_chokes || [] }}
-            systemicSummary={cumulativeSummary}
-        />
-        
-        <div className="flex-1 overflow-hidden flex flex-col min-h-0">
-            <div className="h-1/3 overflow-y-auto border-b border-slate-800 shrink-0">
-                <NewsFeed onSimulate={handleSim} />
-            </div>
-            <div className="flex-1 overflow-y-auto">
-                <ScenarioControl selectedNode={selectedNode} onInject={handleSim} onPlaybook={handlePlaybook} />
-            </div>
+      <div className="w-80 border-l border-slate-800 bg-slate-950 flex flex-col z-20 shadow-2xl shrink-0 overflow-hidden">
+        <div className="flex-1 overflow-y-auto custom-scrollbar">
+            <CollapsiblePanel title="Systemic Risk" isOpen={panelRiskOpen} onToggle={() => setPanelRiskOpen(v => !v)}>
+                <FinancialDashboard 
+                    totalLoss={totalLoss} 
+                    currentPrices={data.prices} 
+                    selectedCommodity={selectedCommodity}
+                    systemicBreakdown={{ ...cumulativeBreakdown, blocked_chokes: data.systemic_risk_breakdown?.blocked_chokes || [] }}
+                    systemicSummary={cumulativeSummary}
+                />
+            </CollapsiblePanel>
+
+            <CollapsiblePanel title="Global Intelligence" isOpen={panelNewsOpen} onToggle={() => setPanelNewsOpen(v => !v)}>
+                <div className="max-h-[320px] overflow-y-auto">
+                    <NewsFeed onSimulate={handleSim} />
+                </div>
+            </CollapsiblePanel>
+
+            <CollapsiblePanel title="Scenario Control" isOpen={panelScenarioOpen} onToggle={() => setPanelScenarioOpen(v => !v)}>
+                <div className="overflow-y-auto">
+                    <ScenarioControl selectedNode={selectedNode} onInject={handleSim} onPlaybook={handlePlaybook} />
+                </div>
+            </CollapsiblePanel>
         </div>
         
         <div className="p-4 border-t border-slate-800 bg-slate-900/50 mt-auto">
